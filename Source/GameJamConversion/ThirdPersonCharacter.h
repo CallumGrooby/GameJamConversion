@@ -20,7 +20,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 		float rayCastRange{1000};
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableObjects")
 		AInteractableObject* pickedupObject;
 
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")

@@ -15,16 +15,22 @@ public:
 	// Sets default values for this actor's properties
 	AInteractableObject();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableObjects");
+	bool objectIsPickedUp{ false };
+
+	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
+	void Move();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	AActor* characterToFollow;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
-	virtual void PickUp();
-	virtual void Drop();
-	virtual void Use();
-
+	void PickUp(AActor* character, bool doOnce);
+	void Drop();
+	void Use();
 };

@@ -2,6 +2,7 @@
 
 
 #include "InteractableObject.h"
+#include "ThirdPersonCharacter.h"
 
 // Sets default values
 AInteractableObject::AInteractableObject()
@@ -24,9 +25,24 @@ void AInteractableObject::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void AInteractableObject::PickUp()
+void AInteractableObject::PickUp(AActor* pickedUpCharacter, bool doOnce)
 {
+	if (doOnce)
+	{		
+		pickedUpCharacter = characterToFollow;
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedUpCharacter->GetActorLabel());
+		
+		objectIsPickedUp = true;
+		doOnce = false;
+	}
+}
 
+void AInteractableObject::Move()
+{
+	if (objectIsPickedUp && characterToFollow != NULL)
+	{
+		SetActorLocation(characterToFollow->GetActorLocation());
+	}
 }
 
 void AInteractableObject::Use()

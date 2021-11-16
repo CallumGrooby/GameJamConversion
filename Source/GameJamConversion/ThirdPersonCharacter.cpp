@@ -34,7 +34,6 @@ void AThirdPersonCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 AInteractableObject* AThirdPersonCharacter::PickUpObject()
 {
-	DrawDebugLine(GetWorld(), LocationOne, LocationTwo, FColor::Black, true, -1, 0, 10);
 	FHitResult hit = CastRay(GetActorLocation(), GetActorRotation());
 	AInteractableObject* interactableObject = Cast<AInteractableObject>(hit.Actor);
 
@@ -52,8 +51,7 @@ void AThirdPersonCharacter::PickUpLogic()
 	if (pickedupObject == NULL)
 		return;
 	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedupObject->GetActorLabel());
-
-
+	pickedupObject->PickUp(this, true);
 }
 
 
