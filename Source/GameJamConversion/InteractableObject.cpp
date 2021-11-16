@@ -29,19 +29,17 @@ void AInteractableObject::PickUp(AActor* pickedUpCharacter, bool doOnce)
 {
 	if (doOnce)
 	{		
-		pickedUpCharacter = characterToFollow;
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedUpCharacter->GetActorLabel());
-		
 		objectIsPickedUp = true;
 		doOnce = false;
 	}
 }
 
-void AInteractableObject::Move()
+void AInteractableObject::FollowPlayer()
 {
-	if (objectIsPickedUp && characterToFollow != NULL)
-	{
-		SetActorLocation(characterToFollow->GetActorLocation());
+	if (objectIsPickedUp)
+	{ 
+
 	}
 }
 
@@ -52,7 +50,10 @@ void AInteractableObject::Use()
 
 void AInteractableObject::Drop()
 {
-
+	if (objectIsPickedUp)
+	{
+		objectIsPickedUp = false;
+	}
 }
 
 

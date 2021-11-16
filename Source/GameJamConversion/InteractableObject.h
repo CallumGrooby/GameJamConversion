@@ -19,7 +19,7 @@ public:
 	bool objectIsPickedUp{ false };
 
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
-	void Move();
+	void FollowPlayer();
 
 protected:
 	// Called when the game starts or when spawned
