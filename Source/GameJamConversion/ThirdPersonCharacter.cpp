@@ -3,6 +3,7 @@
 #define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Green,text)
 #define printFString(text, fstring) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Magenta, FString::Printf(TEXT(text), fstring))
 #include "InteractableObject.h"
+#include "GameFramework/Controller.h"
 #include "ThirdPersonCharacter.h"
 #include "DrawDebugHelpers.h"
 

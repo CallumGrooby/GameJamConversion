@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "ThirdPersonCharacter.h"
 #include "InteractableObject.generated.h"
 
 UCLASS()
@@ -20,16 +21,15 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 	void FollowPlayer();
+	AActor* characterToFollow;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	AActor* characterToFollow;
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
 	void PickUp(AActor* character, bool doOnce);
 	void Drop();
 	void Use();

@@ -31,15 +31,26 @@ void AInteractableObject::PickUp(AActor* pickedUpCharacter, bool doOnce)
 	{		
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedUpCharacter->GetActorLabel());
 		objectIsPickedUp = true;
+		characterToFollow = pickedUpCharacter;
 		doOnce = false;
+	}
+	else
+	{
+		objectIsPickedUp = false;
 	}
 }
 
 void AInteractableObject::FollowPlayer()
 {
-	if (objectIsPickedUp)
+	if (objectIsPickedUp && characterToFollow != NULL)
 	{ 
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, characterToFollow->GetActorLabel());
+		
+		FVector handPosition = characterToFollow->GetActorLocation() + (characterToFollow->GetActorForwardVector() * 150.0f);
 
+		UE_LOG(LogTemp, Error, TEXT("PhysicsHandle working %s"), *handPosition.ToString());
+		UE_LOG(LogTemp, Error, TEXT("PhysicsHandle working %s"), *characterToFollow->GetActorForwardVector().ToString());
+		SetActorLocation(handPosition);
 	}
 }
 
@@ -53,6 +64,9 @@ void AInteractableObject::Drop()
 	if (objectIsPickedUp)
 	{
 		objectIsPickedUp = false;
+		//Drop Logic
+	
+		characterToFollow = NULL;
 	}
 }
 

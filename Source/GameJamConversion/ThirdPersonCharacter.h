@@ -6,6 +6,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "InteractableObject.h"
+#include "GameFramework/Controller.h"
 #include "ThirdPersonCharacter.generated.h"
 
 UCLASS()
