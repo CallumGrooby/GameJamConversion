@@ -55,6 +55,14 @@ void AThirdPersonCharacter::PickUpLogic()
 	pickedupObject->PickUp(this, true);
 }
 
+void AThirdPersonCharacter::DropObject()
+{
+	if (pickedupObject != NULL)
+	{
+		pickedupObject->Drop();
+		pickedupObject = NULL;
+	}
+}
 
 FHitResult AThirdPersonCharacter::CastRay(FVector rayLocation, FRotator rayRotation)
 {

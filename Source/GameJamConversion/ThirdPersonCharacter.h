@@ -30,6 +30,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		void PickUpLogic();
 
+	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
+		void DropObject();
 
 protected:
 	// Called when the game starts or when spawned

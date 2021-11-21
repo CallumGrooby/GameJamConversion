@@ -30,7 +30,7 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	void PickUp(AActor* character, bool doOnce);
-	void Drop();
-	void Use();
+	virtual void PickUp(AActor* character, bool doOnce);
+	virtual void Drop();
+	virtual void Use();
 };
