@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
+#include "Components/TextRenderComponent.h"
 #include "Puzzle_Keyboard.h"
 
 // Sets default values
@@ -18,13 +19,27 @@ int inputedCode[4]{0,0,0,0};
 void APuzzle_Keyboard::BeginPlay()
 {
 	Super::BeginPlay();
+	if (monitor != NULL)
+	{
+		UTextRenderComponent* editableText[] = { Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar1"))), 
+			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar2"))),
+			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar3"))),
+			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar4"))),
+		};
+		
+		//for (size_t i = 0; i < sizeof(editableText); i++)
+		//{
+		//	text[i] = editableText[i];
+		//}
+		//UpdateMonitor(NULL);
+	}
 }
 
 // Called every frame
 void APuzzle_Keyboard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	UpdateMonitor(NULL);
 }
 
 void APuzzle_Keyboard::KeyboardLogic(int inputedDigit)
@@ -68,6 +83,33 @@ bool APuzzle_Keyboard::IsCodeCorrect()
 	}
 
 	return true;
+}
+
+void APuzzle_Keyboard::UpdateMonitor(int currentCharacterIndex)
+{
+	if (currentCharacterIndex == NULL)
+	{
+		for (size_t i = 0; i < sizeof(text); i++)
+		{
+			text[i]->SetText(TEXT("_"));
+		}
+		return;
+	}
+	
+	switch (currentCharacterIndex)
+	{
+	case 1:
+		break;
+	case 2:
+		break;
+	case 3:
+		break;
+	case 4:
+		break;
+	default:
+		break;
+	}
+
 }
 
 

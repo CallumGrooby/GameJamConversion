@@ -31,7 +31,7 @@ void APuzzle_KeyboardInputs::InputNewKey(int characterToInput)
 	APuzzle_Keyboard::KeyboardLogic(characterToInput);
 }
 
-void APuzzle_KeyboardInputs::ButtonPressed()
+void APuzzle_KeyboardInputs::UpdateText(AActor* parentObject)
 {
-
+	
 }

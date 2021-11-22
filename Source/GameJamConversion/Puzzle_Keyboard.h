@@ -14,6 +14,10 @@ class GAMEJAMCONVERSION_API APuzzle_Keyboard : public AActor
 public:	
 	// Sets default values for this actor's properties
 	APuzzle_Keyboard();
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Monitor")
+		AActor* monitor;
+
+	class UTextRenderComponent* text[4]{0,0,0,0};
 
 protected:
 	// Called when the game starts or when spawned
@@ -25,4 +29,5 @@ public:
 	
 	void KeyboardLogic(int inputtedCode);
 	bool IsCodeCorrect();
+	void UpdateMonitor(int characterToInput);
 };

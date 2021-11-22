@@ -25,7 +25,7 @@ public:
 	void InputNewKey(int characterToInput);
 
 	UFUNCTION(BlueprintCallable, Category = "Puzzle_KeyboardInputs")
-		void ButtonPressed();
+		void UpdateText(AActor* parentObject);
 
 protected:
 	// Called when the game starts or when spawned
