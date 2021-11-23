@@ -16,8 +16,10 @@ public:
 	APuzzle_Keyboard();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Monitor")
 		AActor* monitor;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Monitor")
+	TArray<int32> generatedCode;
 
-	class UTextRenderComponent* text[4]{0,0,0,0};
+	TArray<class UTextRenderComponent*>  text;
 
 protected:
 	// Called when the game starts or when spawned
