@@ -10,22 +10,14 @@ APuzzle_Keyboard::APuzzle_Keyboard()
 {
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
 }
-
-TArray<int32> inputedCode;
-
-
-int currentCodePos = 0;
 // Called when the game starts or when spawned
 void APuzzle_Keyboard::BeginPlay()
 {
 	Super::BeginPlay();
-
-	generatedCode.Init(1, 3);
-	UE_LOG(LogTemp, Warning, TEXT("array %d"), generatedCode.Num());
-
-	for (int32 i = 0; i <= generatedCode.Num(); i++)
+	currentCodePos = 0;
+	generatedCode.Init(1, 4);
+	for (int32 i = 0; i <= 4; i++)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("num %d"), i);
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, GetActorLabel());
@@ -34,17 +26,17 @@ void APuzzle_Keyboard::BeginPlay()
 
 	if (monitor != NULL)
 	{
-		UTextRenderComponent* editableText[] = { Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar1"))), 
+		UTextRenderComponent* editableText[] = { 
+			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar1"))), 
 			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar2"))),
 			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar3"))),
 			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar4"))),
 		};
-		
-		for (size_t i = 0; i < 4; i++)
-		{
-			text.Add(editableText[i]);
-		}
-		UpdateMonitor(NULL);
+			for (size_t i = 0; i <= generatedCode.Num(); i++)
+			{
+				text.Add(editableText[i]);
+			}
+			UpdateMonitor(NULL);
 	}
 }
 
@@ -52,36 +44,18 @@ void APuzzle_Keyboard::BeginPlay()
 void APuzzle_Keyboard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//UpdateMonitor(NULL);
 }
 
-void APuzzle_Keyboard::KeyboardLogic(int inputedDigit)
+void APuzzle_Keyboard::KeyboardLogic(int32 inputedDigit)
 {
 	inputedCode[currentCodePos] = inputedDigit;
-	
-	FString debugmessage = FString::Printf(TEXT("Text, %d"), inputedCode[currentCodePos]);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, debugmessage);
+	UpdateMonitor(currentCodePos);
+	UE_LOG(LogTemp, Warning, TEXT("currentCodePos %d"), currentCodePos);
 	currentCodePos++;
-
-
-	if (currentCodePos > sizeof(generatedCode))
+	UE_LOG(LogTemp, Warning, TEXT("generatedCode %d"), generatedCode.Num());
+	if (currentCodePos == generatedCode.Num()+1)
 	{
-		if (IsCodeCorrect())
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("PuzzleComplete"));
-		}
-		else
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Restart Puzzle"));
-			for (int i = 0; i < sizeof(generatedCode); i++)
-			{
-				//inputedCode[i] = 0;
-			}
-			currentCodePos = 0;
-		}
-		
-		//Puzzle Complete
-		return;
+		currentCodePos = 0;
 	}
 }
 
@@ -100,19 +74,16 @@ bool APuzzle_Keyboard::IsCodeCorrect()
 
 void APuzzle_Keyboard::UpdateMonitor(int currentCharacterIndex)
 {
-	if (currentCharacterIndex == NULL)
+	for (size_t i = 0; i < text.Num(); i++)
 	{
-		for (int i = 0; i < generatedCode.Num(); i++)
+		if (currentCharacterIndex != NULL && currentCharacterIndex == i)
 		{
-			FString debugmessage = FString::Printf(TEXT("Text, %d"), i);
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, debugmessage);
+			text[i]->SetText(TEXT("*"));
 		}
-
-		text[0]->SetText(TEXT("Text"));
-		text[1]->SetText(TEXT("Text"));
-		text[2]->SetText(TEXT("Text"));
-		text[3]->SetText(TEXT("Text"));
-		return;
+		else 
+		{
+			text[i]->SetText(TEXT("_"));
+		}
 	}
 }
 

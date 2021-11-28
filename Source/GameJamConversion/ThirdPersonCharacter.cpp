@@ -3,6 +3,7 @@
 #define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Green,text)
 #define printFString(text, fstring) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Magenta, FString::Printf(TEXT(text), fstring))
 #include "InteractableObject.h"
+#include "InteractableMachine.h"
 #include "GameFramework/Controller.h"
 #include "ThirdPersonCharacter.h"
 #include "DrawDebugHelpers.h"
@@ -47,12 +48,17 @@ AInteractableObject* AThirdPersonCharacter::PickUpObject()
 	return NULL;
 }
 
-void AThirdPersonCharacter::PickUpLogic()
+void AThirdPersonCharacter::UseObject()
 {
-	if (pickedupObject == NULL)
-		return;
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedupObject->GetActorLabel());
-	pickedupObject->PickUp(this, true);
+	FHitResult hit = CastRay(GetActorLocation(), GetActorRotation());
+	AInteractableMachine* interactableMachine = Cast<AInteractableMachine>(hit.Actor);
+	UE_LOG(LogTemp, Warning, TEXT("Use Object"));
+	if (interactableMachine != NULL)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Hit Interactable"));
+		pickedupObject->Use(interactableMachine);
+		DropObject();
+	}
 }
 
 void AThirdPersonCharacter::DropObject()
@@ -62,6 +68,14 @@ void AThirdPersonCharacter::DropObject()
 		pickedupObject->Drop();
 		pickedupObject = NULL;
 	}
+}
+
+void AThirdPersonCharacter::PickUpLogic()
+{
+	if (pickedupObject == NULL)
+		return;
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedupObject->GetActorLabel());
+	pickedupObject->PickUp(this, true);
 }
 
 FHitResult AThirdPersonCharacter::CastRay(FVector rayLocation, FRotator rayRotation)

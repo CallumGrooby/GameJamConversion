@@ -1,6 +1,6 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "InteractableMachine.h"
 #include "InteractableObject.h"
 #include "ThirdPersonCharacter.h"
 
@@ -33,6 +33,7 @@ void AInteractableObject::PickUp(AActor* pickedUpCharacter, bool doOnce)
 		objectIsPickedUp = true;
 		characterToFollow = pickedUpCharacter;
 		doOnce = false;
+		SetActorEnableCollision(false);
 		return;
 	}
 	else
@@ -46,21 +47,39 @@ void AInteractableObject::FollowPlayer()
 	if (objectIsPickedUp && characterToFollow != NULL)
 	{ 
 		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, characterToFollow->GetActorLabel());
+		FVector objPos;
+		if (carryOnBack)
+		{
+			objPos = characterToFollow->GetActorLocation()+ (characterToFollow->GetActorForwardVector() * -90.0f);
+			objPos.Z = objPos.Z + 20.0f;
+		}
+		else
+		{
+			objPos = characterToFollow->GetActorLocation() + (characterToFollow->GetActorForwardVector() * 90.0f);
+		}
 		
-		FVector handPosition = characterToFollow->GetActorLocation() + (characterToFollow->GetActorForwardVector() * 150.0f);
-		SetActorLocation(handPosition);
+		FRotator objRot = characterToFollow->GetActorRotation();
+
+		SetActorRotation(objRot);
+		SetActorLocation(objPos);
 	}
 }
 
-void AInteractableObject::Use()
+void AInteractableObject::Use(AInteractableMachine* interactableMachine)
 {
-
+	AActor* theOwner = this;
+	if (theOwner != nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("The owner is valid! Yuppie!"));
+	}
+	interactableMachine->MachineLogic(this);
 }
 
 void AInteractableObject::Drop()
 {
 	if (objectIsPickedUp)
 	{
+		SetActorEnableCollision(true);
 		objectIsPickedUp = false;
 		//Drop Logic
 		characterToFollow = NULL;

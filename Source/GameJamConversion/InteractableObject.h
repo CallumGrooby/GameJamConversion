@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "InteractableMachine.h"
 #include "ThirdPersonCharacter.h"
 #include "InteractableObject.generated.h"
 
@@ -15,13 +16,15 @@ class GAMEJAMCONVERSION_API AInteractableObject : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AInteractableObject();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableObjects");
-	bool objectIsPickedUp{ false };
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool objectIsPickedUp{ false };
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool carryOnBack{false};
 
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
-	void FollowPlayer();
-	AActor* characterToFollow;
+		void FollowPlayer();
+		AActor* characterToFollow;
+
 
 protected:
 	// Called when the game starts or when spawned
@@ -32,5 +35,5 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void PickUp(AActor* character, bool doOnce);
 	virtual void Drop();
-	virtual void Use();
+	virtual void Use(AInteractableMachine* interactableMachine);
 };
