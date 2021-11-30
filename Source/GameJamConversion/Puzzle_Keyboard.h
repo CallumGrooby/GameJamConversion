@@ -26,7 +26,8 @@ public:
 
 	void KeyboardLogic(int32 inputtedCode);
 	bool IsCodeCorrect();
-	void UpdateMonitor(int characterToInput);
+	void ShowMonitorScreen(bool codeOutcome);
+	void UpdateMonitor(int characterToInput, bool doOnce);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

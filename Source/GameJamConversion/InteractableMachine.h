@@ -18,6 +18,9 @@ public:
 		bool testFunction{ false };
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		void MachineLogic(AActor* interactableObject);
+	UFUNCTION(BlueprintImplementableEvent, Category = "InteractableObjects")
+		void RunLogic();
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
