@@ -21,9 +21,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool carryOnBack{ false };
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
+		void CalcPhysics(bool switchTo);
+	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		void FollowPlayer();
 		AActor* characterToFollow;
-		float height;
+		float convertedHeight;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
 		float rayCastRange{ 1000 };
 
@@ -38,5 +40,4 @@ public:
 	virtual void Drop();
 	virtual void Use(AInteractableMachine* interactableMachine);
 	bool CastRay(FVector rayLocation, FRotator rayRotation, float castRange);
-	void CalcPhysics(bool switchTo);
 };

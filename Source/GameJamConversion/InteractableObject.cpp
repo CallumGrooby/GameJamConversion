@@ -23,8 +23,10 @@ void AInteractableObject::BeginPlay()
 	//Get the static mesh of the object and then get the scale of that 
 	// scale / 2 + 0.01;
 
-	//FVector objScale = GetActorScale3D();
-	//height = (objScale.Z / 2) + 0.01;
+	FVector objScale = GetActorScale3D();
+	float height = (objScale.Z / 2) + 0.1;
+	convertedHeight = height * 100;
+	UE_LOG(LogTemp, Warning, TEXT("height = %f"), convertedHeight);
 }
 
 // Called every frame
@@ -32,11 +34,10 @@ void AInteractableObject::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 	
-
-	if (CastRay(GetActorLocation(), FRotator(270, 0, 0)))
+	if (CastRay(GetActorLocation(), FRotator(270, 0, 0), 60))
 	{
 		UE_LOG(LogTemp, Warning, TEXT("HitObj"));
-		CalcPhysics(false);
+		//CalcPhysics(false);
 	}
 }
 
@@ -120,12 +121,14 @@ void AInteractableObject::CalcPhysics(bool switchTo)
 	AActor* theOwner = Cast<AActor>(this);
 	if (theOwner != nullptr)
 	{
-		//Set physics
+//Set physics
 		TArray<UStaticMeshComponent*> physicObj;
 		GetComponents<UStaticMeshComponent>(physicObj);
 
 		for (int i = 0; i < physicObj.Num(); i++) {
 			physicObj[i]->SetSimulatePhysics(switchTo);
 		}
+
+		//SetActorLocation(physicObj[0]);
 	}
 }
