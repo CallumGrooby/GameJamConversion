@@ -27,28 +27,28 @@ void AInteractableMachine::Tick(float DeltaTime)
 
 void AInteractableMachine::MachineLogic(AActor* interactableObject)
 {
-	UE_LOG(LogTemp, Warning, TEXT("MachineLogic"));
-	if (!GetParentActor())
-		return;
-	//Get Parent Object
-	AActor* machineObj = GetParentActor();
+	//UE_LOG(LogTemp, Warning, TEXT("MachineLogic"));
+	//if (!GetParentActor())
+	//	return;
+	////Get Parent Object
+	//AActor* machineObj = GetParentActor();
 
-	AFuzePuzzle* fuse = Cast<AFuzePuzzle>(machineObj);
-	if (fuse == nullptr)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Machine Logic Cast failed"));
-		return;
-	}
+	//AFuzePuzzle* fuse = Cast<AFuzePuzzle>(machineObj);
+	//if (fuse == nullptr)
+	//{
+	//	UE_LOG(LogTemp, Warning, TEXT("Machine Logic Cast failed"));
+	//	return;
+	//}
 
-	UE_LOG(LogTemp, Warning, TEXT("Machine Logic Cast Successful"));
+	//UE_LOG(LogTemp, Warning, TEXT("Machine Logic Cast Successful"));
 
-	if (interactableObject != nullptr)
-	{
-		UE_LOG(LogClass, Log, TEXT("This a testing statement"));
-		interactableObject->Destroy();
-	}
+	//if (interactableObject != nullptr)
+	//{
+	//	UE_LOG(LogClass, Log, TEXT("This a testing statement"));
+	//	interactableObject->Destroy();
+	//}
 
-	fuse->RunLogic();
+	//fuse->RunLogic();
 }
 
 

@@ -14,11 +14,8 @@ class GAMEJAMCONVERSION_API AInteractableMachine : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AInteractableMachine();
-	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
-		bool testFunction{ false };
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		virtual void MachineLogic(AActor* interactableObject);
-
 
 protected:
 	// Called when the game starts or when spawned
