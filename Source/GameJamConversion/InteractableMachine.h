@@ -17,9 +17,8 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		bool testFunction{ false };
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
-		void MachineLogic(AActor* interactableObject);
-	UFUNCTION(BlueprintImplementableEvent, Category = "InteractableObjects")
-		void RunLogic();
+		virtual void MachineLogic(AActor* interactableObject);
+
 
 protected:
 	// Called when the game starts or when spawned
