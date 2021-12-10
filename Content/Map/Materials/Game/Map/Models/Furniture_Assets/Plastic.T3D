@@ -1,0 +1,81 @@
+Begin Object Class=/Script/Engine.Material Name="Plastic"
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_1"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_3"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionScalarParameter Name="MaterialExpressionScalarParameter_2"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionThinTranslucentMaterialOutput Name="MaterialExpressionThinTranslucentMaterialOutput_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_1"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_1"
+      DefaultValue=0.500000
+      ParameterName="Transparency"
+      ExpressionGUID=A9D780E44EB5A83A73DB26B425E29563
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=496
+      MaterialExpressionGuid=57D16CAA45DF17810723CABB48E82BFD
+      Material=Material'"Plastic"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_3"
+      ParameterName="Rougness"
+      ExpressionGUID=906744EF4A0E0AEAAC8654BEA99265F1
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=368
+      MaterialExpressionGuid=57D16CAA45DF17810723CABB48E82BFD
+      Material=Material'"Plastic"'
+   End Object
+   Begin Object Name="MaterialExpressionScalarParameter_2"
+      DefaultValue=1.000000
+      ParameterName="Metallic"
+      ExpressionGUID=199495EB48E654455D6DE98B839BD3B4
+      MaterialExpressionEditorX=-400
+      MaterialExpressionEditorY=256
+      MaterialExpressionGuid=57D16CAA45DF17810723CABB48E82BFD
+      Material=Material'"Plastic"'
+   End Object
+   Begin Object Name="MaterialExpressionThinTranslucentMaterialOutput_1"
+      TransmittanceColor=(Expression=MaterialExpressionVectorParameter'"Plastic:MaterialExpressionVectorParameter_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+      MaterialExpressionEditorX=-208
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=ECE56ECD417741F8B97AAE83554FE026
+      Material=Material'"Plastic"'
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_1"
+      DefaultValue=(R=0.623152,G=0.984375,B=0.776116,A=0.000000)
+      ParameterName="Param_1"
+      ExpressionGUID=5B36C81C4684BDE58826D9A142D93DBC
+      MaterialExpressionEditorX=-464
+      MaterialExpressionEditorY=-16
+      MaterialExpressionGuid=DC0D46564C1A75FCE13221ADDAB7507F
+      Material=Material'"Plastic"'
+   End Object
+   Metallic=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"')
+   Roughness=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_3"')
+   Opacity=(Expression=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"')
+   BlendMode=BLEND_Translucent
+   ShadingModel=MSM_ThinTranslucent
+   ShadingModels=(ShadingModelField=2048)
+   TranslucencyLightingMode=TLM_SurfacePerPixelLighting
+   EditorX=48
+   Expressions(0)=MaterialExpressionThinTranslucentMaterialOutput'"MaterialExpressionThinTranslucentMaterialOutput_1"'
+   Expressions(1)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_1"'
+   Expressions(2)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_1"'
+   Expressions(3)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_2"'
+   Expressions(4)=MaterialExpressionScalarParameter'"MaterialExpressionScalarParameter_3"'
+   ParameterGroupData(0)=(GroupName="None")
+   ParameterGroupData(1)=(GroupName="None")
+   ParameterGroupData(2)=(GroupName="None")
+   ParameterGroupData(3)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=E01879964C3E4CE38AE2918FA76896FB
+   CachedExpressionData=(Parameters=(RuntimeEntries[0]=(NameHashes=(3078550227877033723,5050396179162386579,18301649947186194335),ParameterInfos=((Name="Metallic"),(Name="Rougness"),(Name="Transparency")),ExpressionGuids=(199495EB48E654455D6DE98B839BD3B4,906744EF4A0E0AEAAC8654BEA99265F1,A9D780E44EB5A83A73DB26B425E29563)),RuntimeEntries[1]=(NameHashes=(5715783085211599032),ParameterInfos=((Name="Param_1")),ExpressionGuids=(5B36C81C4684BDE58826D9A142D93DBC)),ScalarValues=(1.000000,0.000000,0.500000),VectorValues=((R=0.623152,G=0.984375,B=0.776116,A=0.000000)),ScalarMinMaxValues=((X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000),(X=0.000000,Y=0.000000)),ScalarCurveValues=(None,None,None),ScalarCurveAtlasValues=(None,None,None),VectorChannelNameValues=(()),VectorUsedAsChannelMaskValues=(False)),QualityLevelsUsed=(False,False,False,False))
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=6087970145E26C961AD490826F9B67EE
+End Object
