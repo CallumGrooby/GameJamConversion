@@ -16,6 +16,8 @@ public:
 	AInteractableMachine();
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		virtual void MachineLogic(AActor* interactableObject);
+	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Ini")
+		void EventSoundCue();
 
 protected:
 	// Called when the game starts or when spawned

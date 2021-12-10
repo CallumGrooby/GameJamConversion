@@ -23,7 +23,7 @@ public:
 		bool endLogic;
 
 protected:
-
+	bool doOnce = true;
 
 public:
 	// Called every frame

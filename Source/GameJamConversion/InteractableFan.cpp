@@ -16,6 +16,11 @@ void AInteractableFan::Tick(float DeltaTime)
 	{
 		AddRotation(DeltaTime);
 	}
+	else if (endLogic && doOnce)
+	{
+		//Rotate to Currect Position
+		EventSoundCue();
+	}
 }
 
 void AInteractableFan::AddRotation(float deltaTime)

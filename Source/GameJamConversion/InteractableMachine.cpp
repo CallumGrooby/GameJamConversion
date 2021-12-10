@@ -51,4 +51,7 @@ void AInteractableMachine::MachineLogic(AActor* interactableObject)
 	//fuse->RunLogic();
 }
 
+void AInteractableMachine::EventSoundCue_Implementation() {
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("This is an on screen message!"));
+}
 

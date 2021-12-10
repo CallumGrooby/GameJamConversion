@@ -32,11 +32,15 @@ void AInteractableFuze::MachineLogic(AActor* interactableObject)
 
 	if (interactableObject != nullptr)
 	{
-		UE_LOG(LogClass, Log, TEXT("This a testing statement"));
+		if (!interactableObject->ActorHasTag("Fuze"))
+		{
+			return;
+		}
 		interactableObject->Destroy();
 	}
 
 	fuse->RunLogic();
+	EventSoundCue();
 
 	AInteractiveLeaver* leaver = Cast<AInteractiveLeaver>(machineToStop);
 	if (leaver != nullptr)

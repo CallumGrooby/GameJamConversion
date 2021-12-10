@@ -35,6 +35,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		void UseObject();
 
+	UFUNCTION(BlueprintCallable, Category = "Camera Settings")
+		void ChangeCamera(AActor* CameraToChangeTo);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -50,4 +53,17 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+	//Camera Controller
+	UPROPERTY(EditAnywhere)
+		AActor* CameraPlayer;
+
+	UPROPERTY(EditAnywhere)
+		AActor* CameraTwo;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
+	float timeToNextCameraChange;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
+	float TimeBetweenCameraChanges = 2.0f;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
+	float SmoothBlendTime = 0.75;
 };

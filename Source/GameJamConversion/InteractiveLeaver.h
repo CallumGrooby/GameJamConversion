@@ -17,7 +17,6 @@ public:
 	void MachineLogic(AActor* interactableObject) override;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	AActor* machineToStop;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		bool activateLever;
 protected:
