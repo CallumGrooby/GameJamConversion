@@ -1,0 +1,54 @@
+Begin Object Class=/Script/Engine.Material Name="wallLightMAt"
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_0"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_1"
+   End Object
+   Begin Object Class=/Script/Engine.MaterialExpressionTextureSample Name="MaterialExpressionTextureSample_2"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_0"
+      Texture=Texture2D'"/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Normal_LOD0.vgyidfpaw_4K_Normal_LOD0"'
+      SamplerType=SAMPLERTYPE_Normal
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=448
+      MaterialExpressionGuid=E6FFE6E14AE970D7C038EE8DD6DD34CD
+      Material=Material'"wallLightMAt"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_1"
+      Texture=Texture2D'"/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Roughness.vgyidfpaw_4K_Roughness"'
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=224
+      MaterialExpressionGuid=9D9FF1B54EBDEE8433F12C9D26C26221
+      Material=Material'"wallLightMAt"'
+   End Object
+   Begin Object Name="MaterialExpressionTextureSample_2"
+      Texture=Texture2D'"/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Albedo.vgyidfpaw_4K_Albedo"'
+      MaterialExpressionEditorX=-336
+      MaterialExpressionGuid=C62B912C4616C6DE3D7CDFB0CA29E0C9
+      Material=Material'"wallLightMAt"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Roughness=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   Normal=(Expression=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EditorX=-32
+   EditorY=16
+   Expressions(0)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_0"'
+   Expressions(1)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_1"'
+   Expressions(2)=MaterialExpressionTextureSample'"MaterialExpressionTextureSample_2"'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=F226A1954A5544B18147B28866D241BB
+   CachedExpressionData=(ReferencedTextures=(Texture2D'"/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Normal_LOD0.vgyidfpaw_4K_Normal_LOD0"',Texture2D'"/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Roughness.vgyidfpaw_4K_Roughness"',Texture2D'"/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Albedo.vgyidfpaw_4K_Albedo"'),QualityLevelsUsed=(False,False,False,False))
+   ReferencedTextureGuids(0)=7AFDE8AD4B3F4D395F06FD895C0BD57F
+   ReferencedTextureGuids(1)=2A599AD54EFC7756DEA86DA56906C576
+   ReferencedTextureGuids(2)=1626A922442BAB2B346A4EBBE866287C
+   TextureStreamingDataVersion=1
+   TextureStreamingData(0)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="vgyidfpaw_4K_Albedo",TextureReference=/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Albedo.vgyidfpaw_4K_Albedo)
+   TextureStreamingData(1)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="vgyidfpaw_4K_Normal_LOD0",TextureReference=/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Normal_LOD0.vgyidfpaw_4K_Normal_LOD0)
+   TextureStreamingData(2)=(SamplingScale=1.000000,UVChannelIndex=0,TextureName="vgyidfpaw_4K_Roughness",TextureReference=/Game/Map/Materials/Textures/TextureMaps/wallLight/vgyidfpaw_4K_Roughness.vgyidfpaw_4K_Roughness)
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   LightingGuid=BFC2143B433E8F1254ECAB8FB508956D
+End Object

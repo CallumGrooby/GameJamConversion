@@ -1,0 +1,27 @@
+Begin Object Class=/Script/Engine.Material Name="cablemat"
+   Begin Object Class=/Script/Engine.MaterialExpressionVectorParameter Name="MaterialExpressionVectorParameter_0"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfoWithPrimitive Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   Begin Object Name="MaterialExpressionVectorParameter_0"
+      DefaultValue=(R=1.000000,G=1.000000,B=1.000000,A=0.000000)
+      ExpressionGUID=A00AE3E94C9E34C16DA5FD81449651AC
+      MaterialExpressionEditorX=-336
+      MaterialExpressionEditorY=96
+      MaterialExpressionGuid=47A2F8904F9271A4913FF39ACCED2F65
+      Material=Material'"cablemat"'
+   End Object
+   Begin Object Name="SceneThumbnailInfoWithPrimitive_0"
+   End Object
+   BaseColor=(Expression=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"',Mask=1,MaskR=1,MaskG=1,MaskB=1)
+   EditorX=-128
+   EditorY=-48
+   Expressions(0)=MaterialExpressionVectorParameter'"MaterialExpressionVectorParameter_0"'
+   ParameterGroupData(0)=(GroupName="None")
+   bCanMaskedBeAssumedOpaque=True
+   StateId=6E66A97A4E76438ECEC1B9A22A5013C1
+   CachedExpressionData=(Parameters=(RuntimeEntries[1]=(NameHashes=(10371715421228879687),ParameterInfos=((Name="Param")),ExpressionGuids=(A00AE3E94C9E34C16DA5FD81449651AC)),VectorValues=((R=1.000000,G=1.000000,B=1.000000,A=0.000000)),VectorChannelNameValues=(()),VectorUsedAsChannelMaskValues=(False)),QualityLevelsUsed=(False,False,False,False))
+   ThumbnailInfo=SceneThumbnailInfoWithPrimitive'"SceneThumbnailInfoWithPrimitive_0"'
+   ParameterOverviewExpansion=(("-12Global", True))
+   LightingGuid=F9BD41ED4B5EBF3979DD82AADB69C75F
+End Object
