@@ -15,10 +15,6 @@ ALever::ALever()
 void ALever::BeginPlay()
 {
 	Super::BeginPlay();
-	
-	UFUNCTION(BlueprintImplementableEvent, Category = "Test")
-		void RunLogic();
-
 }
 
 // Called every frame

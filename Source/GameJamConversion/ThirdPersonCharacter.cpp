@@ -7,6 +7,7 @@
 #include "GameFramework/Controller.h"
 #include "ThirdPersonCharacter.h"
 #include "DrawDebugHelpers.h"
+#include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
@@ -26,6 +27,44 @@ void AThirdPersonCharacter::BeginPlay()
 void AThirdPersonCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	//Switching CameraLogic
+	//timeToNextCameraChange -= DeltaTime;
+	//if (timeToNextCameraChange <= 0.0f)
+	//{
+	//	timeToNextCameraChange += TimeBetweenCameraChanges;
+
+	//	APlayerController* ourPlayerController = UGameplayStatics::GetPlayerController(this,0);
+
+	//	if (ourPlayerController)
+	//	{
+	//		if (CameraTwo && (ourPlayerController->GetViewTarget()== CameraPlayer))
+	//		{
+	//			ourPlayerController->SetViewTargetWithBlend(CameraTwo, SmoothBlendTime);
+	//		}
+	//		else if (CameraPlayer)
+	//		{
+	//			ourPlayerController->SetViewTarget(CameraPlayer);
+	//		}
+	//	}
+	//}
+}
+
+void AThirdPersonCharacter::ChangeCamera(AActor* CameraToChangeTo)
+{
+	APlayerController* ourPlayerController = UGameplayStatics::GetPlayerController(this, 0);
+
+	if (ourPlayerController)
+	{
+		if (CameraToChangeTo && (ourPlayerController->GetViewTarget() == CameraPlayer))
+		{
+			ourPlayerController->SetViewTargetWithBlend(CameraToChangeTo, SmoothBlendTime);
+		}
+		else if (CameraPlayer)
+		{
+			ourPlayerController->SetViewTarget(CameraPlayer);
+		}
+	}
 }
 
 // Called to bind functionality to input
@@ -60,6 +99,8 @@ void AThirdPersonCharacter::UseObject()
 		DropObject();
 	}
 }
+
+
 
 void AThirdPersonCharacter::DropObject()
 {

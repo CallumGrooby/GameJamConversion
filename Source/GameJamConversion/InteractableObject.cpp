@@ -36,7 +36,7 @@ void AInteractableObject::Tick(float DeltaTime)
 	
 	if (CastRay(GetActorLocation(), FRotator(270, 0, 0), 60))
 	{
-		UE_LOG(LogTemp, Warning, TEXT("HitObj"));
+		//UE_LOG(LogTemp, Warning, TEXT("HitObj"));
 		//CalcPhysics(false);
 	}
 }
