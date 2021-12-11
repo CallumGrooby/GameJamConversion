@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "InteractableMachine.h"
 #include "ThirdPersonCharacter.h"
 #include "InteractableObject.generated.h"
 
@@ -11,26 +12,32 @@ UCLASS()
 class GAMEJAMCONVERSION_API AInteractableObject : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	AInteractableObject();
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "InteractableObjects");
-	bool objectIsPickedUp{ false };
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool objectIsPickedUp{ false };
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+		bool carryOnBack{ false };
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
-	void FollowPlayer();
-	AActor* characterToFollow;
+		void CalcPhysics(bool switchTo);
+	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
+		void FollowPlayer();
+		AActor* characterToFollow;
+		float convertedHeight;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
+		float rayCastRange{ 1000 };
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	virtual void PickUp(AActor* character, bool doOnce);
 	virtual void Drop();
-	virtual void Use();
+	virtual void Use(AInteractableMachine* interactableMachine);
+	bool CastRay(FVector rayLocation, FRotator rayRotation, float castRange);
 };

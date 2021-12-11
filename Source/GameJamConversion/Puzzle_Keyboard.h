@@ -17,17 +17,25 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Monitor")
 		AActor* monitor;
 
-	class UTextRenderComponent* text[4]{0,0,0,0};
 
+	void KeyboardLogic(int32 inputtedCode);
+	bool IsCodeCorrect();
+	void ShowMonitorScreen(bool codeOutcome);
+	void UpdateMonitor(int characterToInput, bool doOnce);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-
+	int currentCodePos;
+	void GenerateRandomCode();
+	void AssignTextRenders();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-	
-	void KeyboardLogic(int inputtedCode);
-	bool IsCodeCorrect();
-	void UpdateMonitor(int characterToInput);
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+	TArray<int32> generatedCode;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+	TArray<int32> inputedCode;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+		TArray<class UTextRenderComponent*>  text;
 };
