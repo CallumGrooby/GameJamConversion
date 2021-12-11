@@ -25,12 +25,13 @@ void APuzzle_KeyboardInputs::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void APuzzle_KeyboardInputs::InputNewKey(int32 characterToInput, AActor* parentObject)
+void APuzzle_KeyboardInputs::InputNewKey(int characterToInput)
 {
-	APuzzle_Keyboard* keyboardObj = Cast<APuzzle_Keyboard>(parentObject);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, keyboardObj->GetActorLabel());
-	if (keyboardObj != nullptr)
-	{
-		keyboardObj->KeyboardLogic(characterToInput);
-	}
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("INPUT KEY"));
+	APuzzle_Keyboard::KeyboardLogic(characterToInput);
+}
+
+void APuzzle_KeyboardInputs::UpdateText(AActor* parentObject)
+{
+	
 }

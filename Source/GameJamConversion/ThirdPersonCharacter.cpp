@@ -3,11 +3,9 @@
 #define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Green,text)
 #define printFString(text, fstring) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Magenta, FString::Printf(TEXT(text), fstring))
 #include "InteractableObject.h"
-#include "InteractableMachine.h"
 #include "GameFramework/Controller.h"
 #include "ThirdPersonCharacter.h"
 #include "DrawDebugHelpers.h"
-#include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
@@ -27,44 +25,6 @@ void AThirdPersonCharacter::BeginPlay()
 void AThirdPersonCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	//Switching CameraLogic
-	//timeToNextCameraChange -= DeltaTime;
-	//if (timeToNextCameraChange <= 0.0f)
-	//{
-	//	timeToNextCameraChange += TimeBetweenCameraChanges;
-
-	//	APlayerController* ourPlayerController = UGameplayStatics::GetPlayerController(this,0);
-
-	//	if (ourPlayerController)
-	//	{
-	//		if (CameraTwo && (ourPlayerController->GetViewTarget()== CameraPlayer))
-	//		{
-	//			ourPlayerController->SetViewTargetWithBlend(CameraTwo, SmoothBlendTime);
-	//		}
-	//		else if (CameraPlayer)
-	//		{
-	//			ourPlayerController->SetViewTarget(CameraPlayer);
-	//		}
-	//	}
-	//}
-}
-
-void AThirdPersonCharacter::ChangeCamera(AActor* CameraToChangeTo)
-{
-	APlayerController* ourPlayerController = UGameplayStatics::GetPlayerController(this, 0);
-
-	if (ourPlayerController)
-	{
-		if (CameraToChangeTo && (ourPlayerController->GetViewTarget() == CameraPlayer))
-		{
-			ourPlayerController->SetViewTargetWithBlend(CameraToChangeTo, SmoothBlendTime);
-		}
-		else if (CameraPlayer)
-		{
-			ourPlayerController->SetViewTarget(CameraPlayer);
-		}
-	}
 }
 
 // Called to bind functionality to input
@@ -87,20 +47,13 @@ AInteractableObject* AThirdPersonCharacter::PickUpObject()
 	return NULL;
 }
 
-void AThirdPersonCharacter::UseObject()
+void AThirdPersonCharacter::PickUpLogic()
 {
-	FHitResult hit = CastRay(GetActorLocation(), GetActorRotation());
-	AInteractableMachine* interactableMachine = Cast<AInteractableMachine>(hit.Actor);
-	UE_LOG(LogTemp, Warning, TEXT("Use Object"));
-	if (interactableMachine != NULL)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Hit Interactable"));
-		pickedupObject->Use(interactableMachine);
-		DropObject();
-	}
+	if (pickedupObject == NULL)
+		return;
+	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedupObject->GetActorLabel());
+	pickedupObject->PickUp(this, true);
 }
-
-
 
 void AThirdPersonCharacter::DropObject()
 {
@@ -109,14 +62,6 @@ void AThirdPersonCharacter::DropObject()
 		pickedupObject->Drop();
 		pickedupObject = NULL;
 	}
-}
-
-void AThirdPersonCharacter::PickUpLogic()
-{
-	if (pickedupObject == NULL)
-		return;
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedupObject->GetActorLabel());
-	pickedupObject->PickUp(this, true);
 }
 
 FHitResult AThirdPersonCharacter::CastRay(FVector rayLocation, FRotator rayRotation)
