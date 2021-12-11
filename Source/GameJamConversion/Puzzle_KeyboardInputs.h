@@ -9,7 +9,7 @@
 
 
 UCLASS()
-class GAMEJAMCONVERSION_API APuzzle_KeyboardInputs : public AActor
+class GAMEJAMCONVERSION_API APuzzle_KeyboardInputs : public APuzzle_Keyboard
 {
 	GENERATED_BODY()
 	
@@ -22,7 +22,10 @@ public:
 
 
 	UFUNCTION(BlueprintCallable, Category = "Puzzle_KeyboardInputs")
-	void InputNewKey(int32 characterToInput, AActor* parentObject);
+	void InputNewKey(int characterToInput);
+
+	UFUNCTION(BlueprintCallable, Category = "Puzzle_KeyboardInputs")
+		void UpdateText(AActor* parentObject);
 
 protected:
 	// Called when the game starts or when spawned
