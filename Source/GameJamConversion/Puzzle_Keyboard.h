@@ -16,12 +16,6 @@ public:
 	APuzzle_Keyboard();
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Monitor")
 		AActor* monitor;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
-		TArray<int32> generatedCode;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
-		TArray<int32> inputedCode;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
-		TArray<class UTextRenderComponent*>  text;
 
 
 	void KeyboardLogic(int32 inputtedCode);
@@ -32,8 +26,16 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	int currentCodePos;
+	void GenerateRandomCode();
+	void AssignTextRenders();
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+	TArray<int32> generatedCode;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+	TArray<int32> inputedCode;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
+		TArray<class UTextRenderComponent*>  text;
 };

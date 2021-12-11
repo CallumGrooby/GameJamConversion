@@ -16,39 +16,41 @@ void APuzzle_Keyboard::BeginPlay()
 {
 	Super::BeginPlay();
 	currentCodePos = 0;
-	
-	
-	
 //Need to make is so genereated code is genrated at the start of the game.
 //Currently the generated code is causing the game to crash when assigning to it, and when clicking the keyboard object in the scene
-	
-	
-	
-	
-	
-	//generatedCode.Init(1, 4);
-	for (int32 i = 0; i <= 4; i++)
+
+	GenerateRandomCode();
+	AssignTextRenders();
+}
+
+
+
+void APuzzle_Keyboard::GenerateRandomCode()
+{
+	for (int32 i = 0; i <= 3; i++)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, GetActorLabel());
-		
-		//generatedCode[i] = i;
+		generatedCode[i] = i;
+		UE_LOG(LogTemp, Warning, TEXT("Int %d"), generatedCode[i]);
 	}
+}
 
-
+void APuzzle_Keyboard::AssignTextRenders()
+{
 	if (monitor != NULL)
 	{
-		UTextRenderComponent* editableText[] = { 
-			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar1"))), 
+		UTextRenderComponent* editableText[] = {
+			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar1"))),
 			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar2"))),
 			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar3"))),
 			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar4"))),
 		};
-			
+
 		for (size_t i = 0; i <= generatedCode.Num(); i++)
 		{
 			text.Add(editableText[i]);
 		}
-		
+
 		UpdateMonitor(NULL, true);
 	}
 }
@@ -114,14 +116,14 @@ void APuzzle_Keyboard::ShowMonitorScreen(bool codeOutcome)
 
 bool APuzzle_Keyboard::IsCodeCorrect()
 {
-	for (size_t i = 0; i < 4; i++)
+	for (size_t i = 0; i < 3; i++)
 	{
+		UE_LOG(LogTemp, Warning, TEXT("Inputed Code %d   %d"), inputedCode[i], generatedCode[i]);
 		if (inputedCode[i] != generatedCode[i])
 		{
-			return false;
+			//return false;
 		}
 	}
-
 	return true;
 }
 
