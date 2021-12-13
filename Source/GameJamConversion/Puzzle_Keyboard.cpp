@@ -140,6 +140,7 @@ void APuzzle_Keyboard::KeyboardLogic(int32 inputedDigit)
 			UE_LOG(LogTemp, Warning, TEXT("Puzzle Complete"));
 			ShowMonitorScreen(true);
 			puzzleIsComplete = true;
+			//Cast the fuze puzzle to fuze puzzle
 
 			if (fuzePuzzle != nullptr)
 			{
@@ -179,7 +180,7 @@ void APuzzle_Keyboard::ShowMonitorScreen(bool codeOutcome)
 			outputText->SetText(TEXT("Incorrect"));
 		}
 
-		HideText(outputText);
+		HideText(outputText, codeOutcome);
 	}
 
 }

@@ -26,6 +26,5 @@ void AInteractableFan::Tick(float DeltaTime)
 void AInteractableFan::AddRotation(float deltaTime)
 {
 	//if lever has been pulled
-
 	AddActorLocalRotation(FRotator(0, deltaTime * rotationSpeed, 0));
 }

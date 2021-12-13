@@ -16,7 +16,6 @@ public:
 	AFuzePuzzle();
 	UFUNCTION(BlueprintImplementableEvent, Category = "Test")
 		void RunLogic();
-	UFUNCTION(BlueprintImplementableEvent, Category = "Events")
 		void StartPuzzle();
 
 protected:

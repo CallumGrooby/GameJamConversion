@@ -21,6 +21,7 @@ AThirdPersonCharacter::AThirdPersonCharacter()
 void AThirdPersonCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+
 	APlayerController* ourPlayerController = UGameplayStatics::GetPlayerController(this, 0);
 	PlayersCamera = ourPlayerController->GetViewTarget();
 }
@@ -55,13 +56,16 @@ void AThirdPersonCharacter::Tick(float DeltaTime)
 void AThirdPersonCharacter::ChangeCamera(AActor* CameraToChangeTo)
 {
 	APlayerController* ourPlayerController = UGameplayStatics::GetPlayerController(this, 0);
-	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("is working"));
 	if (ourPlayerController)
 	{
-		if (CameraToChangeTo && (ourPlayerController->GetViewTarget() == PlayersCamera))
+		if (CameraToChangeTo)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("change to non character"));
-			ourPlayerController->SetViewTargetWithBlend(CameraToChangeTo, SmoothBlendTime);
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("camera to change to worked"));
+			if ((ourPlayerController->GetViewTarget() == PlayersCamera))
+			{
+				//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("change to non character"));
+				ourPlayerController->SetViewTargetWithBlend(CameraToChangeTo, SmoothBlendTime);
+			}
 		}
 		else if (PlayersCamera)
 		{

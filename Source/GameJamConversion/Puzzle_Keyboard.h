@@ -21,7 +21,9 @@ public:
 	void ShowMonitorScreen(bool codeOutcome);
 	void UpdateMonitor(int characterToInput, bool doOnce);
 	UFUNCTION(BlueprintImplementableEvent, Category = "Events")
-		void HideText(UTextRenderComponent* outputText);
+		void HideText(UTextRenderComponent* outputText, bool isPuzzleComplete);
+	UFUNCTION(BlueprintImplementableEvent, Category = "Events")
+		void EndPuzzle();
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
