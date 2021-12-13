@@ -12,23 +12,25 @@ UCLASS()
 class GAMEJAMCONVERSION_API APuzzle_KeyboardInputs : public AActor
 {
 	GENERATED_BODY()
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	APuzzle_KeyboardInputs();
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Puzzle_KeyboardInputs")
-		FString inputCharacter;
+		int32 inputCharacter;
 
 
 	UFUNCTION(BlueprintCallable, Category = "Puzzle_KeyboardInputs")
-	void InputNewKey(int32 characterToInput, AActor* parentObject);
+		void InputNewKey(int32 characterToInput, AActor* parentObject);
 
+	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
+		void LateStart();
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 };

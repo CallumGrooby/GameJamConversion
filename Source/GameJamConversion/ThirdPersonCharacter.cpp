@@ -13,7 +13,7 @@
 // Sets default values
 AThirdPersonCharacter::AThirdPersonCharacter()
 {
- 	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
 
@@ -21,6 +21,8 @@ AThirdPersonCharacter::AThirdPersonCharacter()
 void AThirdPersonCharacter::BeginPlay()
 {
 	Super::BeginPlay();
+	APlayerController* ourPlayerController = UGameplayStatics::GetPlayerController(this, 0);
+	PlayersCamera = ourPlayerController->GetViewTarget();
 }
 
 // Called every frame
@@ -53,17 +55,23 @@ void AThirdPersonCharacter::Tick(float DeltaTime)
 void AThirdPersonCharacter::ChangeCamera(AActor* CameraToChangeTo)
 {
 	APlayerController* ourPlayerController = UGameplayStatics::GetPlayerController(this, 0);
-
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("is working"));
 	if (ourPlayerController)
 	{
-		if (CameraToChangeTo && (ourPlayerController->GetViewTarget() == CameraPlayer))
+		if (CameraToChangeTo && (ourPlayerController->GetViewTarget() == PlayersCamera))
 		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("change to non character"));
 			ourPlayerController->SetViewTargetWithBlend(CameraToChangeTo, SmoothBlendTime);
 		}
-		else if (CameraPlayer)
+		else if (PlayersCamera)
 		{
-			ourPlayerController->SetViewTarget(CameraPlayer);
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("player camera"));
+			ourPlayerController->SetViewTarget(PlayersCamera);
 		}
+	}
+	else
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("failed to get character"));
 	}
 }
 
@@ -75,7 +83,11 @@ void AThirdPersonCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 AInteractableObject* AThirdPersonCharacter::PickUpObject()
 {
-	FHitResult hit = CastRay(GetActorLocation(), GetActorRotation());
+	APlayerCameraManager* camManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
+	FVector camLocation = camManager->GetCameraLocation();
+	FRotator camForward = camManager->GetCameraRotation();
+
+	FHitResult hit = CastRay(camLocation, camForward);
 	AInteractableObject* interactableObject = Cast<AInteractableObject>(hit.Actor);
 
 	if (interactableObject)
@@ -89,7 +101,12 @@ AInteractableObject* AThirdPersonCharacter::PickUpObject()
 
 void AThirdPersonCharacter::UseObject()
 {
-	FHitResult hit = CastRay(GetActorLocation(), GetActorRotation());
+	APlayerCameraManager* camManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
+	FVector camLocation = camManager->GetCameraLocation();
+	FRotator camForward = camManager->GetCameraRotation();
+
+	FHitResult hit = CastRay(camLocation, camForward);
+
 	AInteractableMachine* interactableMachine = Cast<AInteractableMachine>(hit.Actor);
 	UE_LOG(LogTemp, Warning, TEXT("Use Object"));
 	if (interactableMachine != NULL)
