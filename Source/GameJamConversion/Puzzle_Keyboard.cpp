@@ -39,7 +39,6 @@ void APuzzle_Keyboard::AssignInputs()
 
 		////UE_LOG(LogTemp, Warning, TEXT("This a testing statement. %s"), this->GetOwner()->GetActorLabel());
 
-
 		//for (size_t i = 0; i < 3; i++)
 		//{
 		//	if (inputtedCharacters[i] != nullptr)
@@ -73,9 +72,7 @@ void APuzzle_Keyboard::GenerateRandomCode()
 		generatedCode[i] = FMath::RandRange(0, 3);
 		UE_LOG(LogTemp, Warning, TEXT("Int %d"), generatedCode[i]);
 	}
-
 	//Display Code on note
-
 	if (stickyNote != nullptr)
 	{
 		UTextRenderComponent* stickyNoteCode = Cast<UTextRenderComponent>(stickyNote->GetDefaultSubobjectByName(TEXT("txtCode")));
@@ -86,13 +83,11 @@ void APuzzle_Keyboard::GenerateRandomCode()
 			FString IntAsString2 = FString::FromInt(generatedCode[2]);
 			FString IntAsString3 = FString::FromInt(generatedCode[3]);
 			stickyNoteCode->SetText(IntAsString + " " + IntAsString1 + " " + IntAsString2 + " " + IntAsString3);
-
 		}
 		else
 		{
 			UE_LOG(LogTemp, Warning, TEXT("failed to cast to Textrender"));
 		}
-
 	}
 }
 
@@ -106,12 +101,10 @@ void APuzzle_Keyboard::AssignTextRenders()
 			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar3"))),
 			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar4"))),
 		};
-
 		for (size_t i = 0; i <= generatedCode.Num(); i++)
 		{
 			text.Add(editableText[i]);
 		}
-
 		UpdateMonitor(NULL, true);
 	}
 }
@@ -131,7 +124,6 @@ void APuzzle_Keyboard::KeyboardLogic(int32 inputedDigit)
 	inputedCode[currentCodePos] = inputedDigit;
 	UpdateMonitor(currentCodePos, false);
 	currentCodePos++;
-
 	if (currentCodePos == generatedCode.Num())
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Checking if code is correct"));
@@ -141,7 +133,6 @@ void APuzzle_Keyboard::KeyboardLogic(int32 inputedDigit)
 			ShowMonitorScreen(true);
 			puzzleIsComplete = true;
 			//Cast the fuze puzzle to fuze puzzle
-
 			if (fuzePuzzle != nullptr)
 			{
 				AFuzePuzzle* tmp = Cast<AFuzePuzzle>(fuzePuzzle);
@@ -150,7 +141,6 @@ void APuzzle_Keyboard::KeyboardLogic(int32 inputedDigit)
 					tmp->StartPuzzle();
 				}
 			}
-
 		}
 		else
 		{
@@ -165,7 +155,6 @@ void APuzzle_Keyboard::KeyboardLogic(int32 inputedDigit)
 void APuzzle_Keyboard::ShowMonitorScreen(bool codeOutcome)
 {
 	UTextRenderComponent* outputText = Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("txtError")));
-
 	if (outputText != nullptr)
 	{
 		outputText->SetVisibility(true);
@@ -173,16 +162,15 @@ void APuzzle_Keyboard::ShowMonitorScreen(bool codeOutcome)
 		if (codeOutcome)
 		{
 			//Puzzle Complete
-			outputText->SetText(TEXT("Correct"));
+			outputText->SetText(FString(TEXT("Correct")));
 		}
 		else
 		{
-			outputText->SetText(TEXT("Incorrect"));
+			
+			outputText->SetText(FString(TEXT("Incorrect")));
 		}
-
 		HideText(outputText, codeOutcome);
 	}
-
 }
 
 
@@ -199,25 +187,22 @@ bool APuzzle_Keyboard::IsCodeCorrect()
 	return true;
 }
 
-
-
 void APuzzle_Keyboard::UpdateMonitor(int currentCharacterIndex, bool doOnce)
 {
 	if (doOnce)
 	{
-		text[0]->SetText(TEXT("_"));
-		text[1]->SetText(TEXT("_"));
-		text[2]->SetText(TEXT("_"));
-		text[3]->SetText(TEXT("_"));
+		text[0]->SetText(FString(TEXT("_")));
+		text[1]->SetText(FString(TEXT("_")));
+		text[2]->SetText(FString(TEXT("_")));
+		text[3]->SetText(FString(TEXT("_")));
 		return;
 	}
-
 	for (int i = 0; i < 4; i++)
 	{
 		if (currentCharacterIndex == i)
 		{
 			UE_LOG(LogTemp, Warning, TEXT("currentCharacter %d"), i);
-			text[i]->SetText(TEXT("*"));
+			text[i]->SetText(FString(TEXT("*")));
 		}
 	}
 }
