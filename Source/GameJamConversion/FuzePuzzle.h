@@ -16,6 +16,8 @@ public:
 	AFuzePuzzle();
 	UFUNCTION(BlueprintImplementableEvent, Category = "Test")
 		void RunLogic();
+	UFUNCTION(BlueprintImplementableEvent, Category = "Test")
+		void StartPuzzle();
 
 protected:
 	// Called when the game starts or when spawned

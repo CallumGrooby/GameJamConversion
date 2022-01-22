@@ -19,13 +19,13 @@ public:
 	// Sets default values for this character's properties
 	AThirdPersonCharacter();
 
-//Variables
+	//Variables
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Movement")
-		float rayCastRange{1000};
+		float rayCastRange{ 1000 };
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		AInteractableObject* pickedupObject;
 
-//Functions
+	//Functions
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		AInteractableObject* PickUpObject();
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
@@ -46,7 +46,7 @@ protected:
 	FVector LocationOne{ 10, 0, 0 };
 	FVector LocationTwo{ 0, 10, 0 };
 
-public:	
+public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
@@ -54,16 +54,14 @@ public:
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
 	//Camera Controller
-	UPROPERTY(EditAnywhere)
-		AActor* CameraPlayer;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
+		AActor* PlayersCamera;
 
-	UPROPERTY(EditAnywhere)
-		AActor* CameraTwo;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
-	float timeToNextCameraChange;
+		float timeToNextCameraChange;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
-	float TimeBetweenCameraChanges = 2.0f;
+		float TimeBetweenCameraChanges = 2.0f;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
-	float SmoothBlendTime = 0.75;
+		float SmoothBlendTime = 0.75;
 };

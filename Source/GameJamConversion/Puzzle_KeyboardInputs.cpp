@@ -7,7 +7,7 @@
 // Sets default values
 APuzzle_KeyboardInputs::APuzzle_KeyboardInputs()
 {
- 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 }
@@ -16,7 +16,7 @@ APuzzle_KeyboardInputs::APuzzle_KeyboardInputs()
 void APuzzle_KeyboardInputs::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
