@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/TextRenderComponent.h"
 #include "Puzzle_Keyboard.generated.h"
 
 UCLASS()
@@ -16,47 +17,44 @@ public:
 	APuzzle_Keyboard();
 
 
-	void KeyboardLogic(int32 inputtedCode);
+	//void KeyboardLogic(int32 inputtedCode);
+	
+	//void ShowMonitorScreen(bool codeOutcome);
+	UFUNCTION(BlueprintImplementableEvent, Category = "Events")
+	void UpdateMonitor(int characterToInput);
+	//UFUNCTION(BlueprintImplementableEvent, Category = "Events")
+	//	void HideText(UTextRenderComponent* outputText, bool isPuzzleComplete);
+	//UFUNCTION(BlueprintImplementableEvent, Category = "Events")
+	//	void EndPuzzle();
+
 	bool IsCodeCorrect();
-	void ShowMonitorScreen(bool codeOutcome);
-	void UpdateMonitor(int characterToInput, bool doOnce);
-	UFUNCTION(BlueprintImplementableEvent, Category = "Events")
-		void HideText(UTextRenderComponent* outputText, bool isPuzzleComplete);
-	UFUNCTION(BlueprintImplementableEvent, Category = "Events")
-		void EndPuzzle();
+	void InputNewKey(int32 characterToInput);
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	int currentCodePos;
-	void AssignInputs();
 	void GenerateRandomCode();
-	void AssignTextRenders();
+	//void AssignTextRenders();
+
 public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	bool puzzleIsComplete = false;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
+		TArray<UTextRenderComponent*> textRenders;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
 		AActor* monitor;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
 		AActor* fuzePuzzle;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
 		AActor* stickyNote;
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
-	//	int32 codeToInputFromMesh1 = 0;
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
-	//	int32 codeToInputFromMesh2 = 1;
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
-	//	int32 codeToInputFromMesh3 = 2;
-	//UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Code")
-	//	int32 codeToInputFromMesh4 = 3;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
 		TArray<AActor*> inputSlots;
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
 		TArray<int32> generatedCode;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
 		TArray<int32> inputedCode;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
-		TArray<class UTextRenderComponent*>  text;
+
 };

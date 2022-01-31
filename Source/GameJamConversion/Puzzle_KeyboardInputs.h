@@ -19,16 +19,14 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Puzzle_KeyboardInputs")
 		int32 inputCharacter;
-
-
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Puzzle_KeyboardInputs")
+		AActor* monitorActor;
 	UFUNCTION(BlueprintCallable, Category = "Puzzle_KeyboardInputs")
-		void InputNewKey(int32 characterToInput, AActor* parentObject);
-
-	UFUNCTION(BlueprintImplementableEvent, BlueprintCallable, Category = "Events")
-		void LateStart();
+		void InputNewKey(int32 characterToInput);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	APuzzle_Keyboard* monitorScript;
 
 public:
 	// Called every frame

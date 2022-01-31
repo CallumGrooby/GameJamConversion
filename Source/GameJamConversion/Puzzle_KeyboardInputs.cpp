@@ -17,6 +17,11 @@ void APuzzle_KeyboardInputs::BeginPlay()
 {
 	Super::BeginPlay();
 
+	if (monitorActor != nullptr)
+	{
+		monitorScript = Cast<APuzzle_Keyboard>(monitorActor);
+	}
+
 }
 
 // Called every frame
@@ -25,12 +30,21 @@ void APuzzle_KeyboardInputs::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void APuzzle_KeyboardInputs::InputNewKey(int32 characterToInput, AActor* parentObject)
+void APuzzle_KeyboardInputs::InputNewKey(const int32 characterToInput)
 {
-	APuzzle_Keyboard* keyboardObj = Cast<APuzzle_Keyboard>(parentObject);
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, keyboardObj->GetActorLabel());
-	if (keyboardObj != nullptr)
+	//Check if the main puzzleComponent is Assigned 
+	// then if true input a new code into the keyboard;
+
+	if (monitorScript != nullptr)
 	{
-		keyboardObj->KeyboardLogic(characterToInput);
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Input Character"));
+		monitorScript->InputNewKey(characterToInput);
 	}
+
+	//APuzzle_Keyboard* keyboardObj = Cast<APuzzle_Keyboard>(parentObject);
+	////GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, keyboardObj->GetActorLabel());
+	//if (keyboardObj != nullptr)
+	//{
+	//	keyboardObj->KeyboardLogic(characterToInput);
+	//}
 }

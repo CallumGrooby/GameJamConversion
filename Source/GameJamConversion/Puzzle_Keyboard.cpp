@@ -14,61 +14,67 @@ APuzzle_Keyboard::APuzzle_Keyboard()
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 }
+
 // Called when the game starts or when spawned
 void APuzzle_Keyboard::BeginPlay()
 {
 	Super::BeginPlay();
 	currentCodePos = 0;
-	//Need to make is so genereated code is genrated at the start of the game.
-	//Currently the generated code is causing the game to crash when assigning to it, and when clicking the keyboard object in the scene
-		//AssignInputs();
 	GenerateRandomCode();
-	AssignTextRenders();
+	////Need to make is so genereated code is genrated at the start of the game.
+	////Currently the generated code is causing the game to crash when assigning to it, and when clicking the keyboard object in the scene
+	//	//AssignInputs();
+	//GenerateRandomCode();
+	//AssignTextRenders();
 }
 
-void APuzzle_Keyboard::AssignInputs()
+void APuzzle_Keyboard::Tick(float DeltaTime)
 {
-	//Doesnt work | Done in blue print now
-		////Get All child components
-		//AActor* inputtedCharacters[] = {
-		//Cast<AActor>(this->GetOwner()->GetDefaultSubobjectByName(TEXT("KeyboardInput1"))),
-		//Cast<AActor>(this->GetOwner()->GetDefaultSubobjectByName(TEXT("KeyboardInput2"))),
-		//Cast<AActor>(this->GetOwner()->GetDefaultSubobjectByName(TEXT("KeyboardInput3"))),
-		//Cast<AActor>(this->GetOwner()->GetDefaultSubobjectByName(TEXT("KeyboardInput4"))),
-		//};
-
-		////UE_LOG(LogTemp, Warning, TEXT("This a testing statement. %s"), this->GetOwner()->GetActorLabel());
-
-		//for (size_t i = 0; i < 3; i++)
-		//{
-		//	if (inputtedCharacters[i] != nullptr)
-		//	{
-		//		APuzzle_KeyboardInputs* tmp = Cast<APuzzle_KeyboardInputs>(inputtedCharacters[i]);
-		//		if (tmp != nullptr)
-		//		{
-		//			UE_LOG(LogTemp, Warning, TEXT("Casted to input"));
-		//			tmp->inputCharacter = i;
-		//			tmp->LateStart();
-		//		}
-		//		else
-		//		{
-		//			UE_LOG(LogTemp, Warning, TEXT("failed to cast to input"));
-		//		}
-		//	}
-		//	else
-		//	{
-		//		UE_LOG(LogTemp, Warning, TEXT("failed to cast to actor"));
-		//	}
-		//	//inputtedCharacters[i]->inputCharacter = i;
-		//	//inputtedCharacters[i]->LateStart();
-		//}
+	Super::Tick(DeltaTime);
 }
+
+//void APuzzle_Keyboard::AssignInputs()
+//{
+//	//Doesnt work | Done in blue print now
+//		////Get All child components
+//		//AActor* inputtedCharacters[] = {
+//		//Cast<AActor>(this->GetOwner()->GetDefaultSubobjectByName(TEXT("KeyboardInput1"))),
+//		//Cast<AActor>(this->GetOwner()->GetDefaultSubobjectByName(TEXT("KeyboardInput2"))),
+//		//Cast<AActor>(this->GetOwner()->GetDefaultSubobjectByName(TEXT("KeyboardInput3"))),
+//		//Cast<AActor>(this->GetOwner()->GetDefaultSubobjectByName(TEXT("KeyboardInput4"))),
+//		//};
+//
+//		////UE_LOG(LogTemp, Warning, TEXT("This a testing statement. %s"), this->GetOwner()->GetActorLabel());
+//
+//		//for (size_t i = 0; i < 3; i++)
+//		//{
+//		//	if (inputtedCharacters[i] != nullptr)
+//		//	{
+//		//		APuzzle_KeyboardInputs* tmp = Cast<APuzzle_KeyboardInputs>(inputtedCharacters[i]);
+//		//		if (tmp != nullptr)
+//		//		{
+//		//			UE_LOG(LogTemp, Warning, TEXT("Casted to input"));
+//		//			tmp->inputCharacter = i;
+//		//			tmp->LateStart();
+//		//		}
+//		//		else
+//		//		{
+//		//			UE_LOG(LogTemp, Warning, TEXT("failed to cast to input"));
+//		//		}
+//		//	}
+//		//	else
+//		//	{
+//		//		UE_LOG(LogTemp, Warning, TEXT("failed to cast to actor"));
+//		//	}
+//		//	//inputtedCharacters[i]->inputCharacter = i;
+//		//	//inputtedCharacters[i]->LateStart();
+//		//}
+//}
 
 void APuzzle_Keyboard::GenerateRandomCode()
 {
 	for (int32 i = 0; i <= 3; i++)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, GetActorLabel());
 		generatedCode[i] = FMath::RandRange(0, 3);
 		UE_LOG(LogTemp, Warning, TEXT("Int %d"), generatedCode[i]);
 	}
@@ -91,94 +97,94 @@ void APuzzle_Keyboard::GenerateRandomCode()
 	}
 }
 
-void APuzzle_Keyboard::AssignTextRenders()
-{
-	if (monitor != NULL)
-	{
-		UTextRenderComponent* editableText[] = {
-			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar1"))),
-			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar2"))),
-			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar3"))),
-			Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar4"))),
-		};
-		for (size_t i = 0; i <= generatedCode.Num(); i++)
-		{
-			text.Add(editableText[i]);
-		}
-		UpdateMonitor(NULL, true);
-	}
-}
+//void APuzzle_Keyboard::AssignTextRenders()
+//{
+//	//if (monitor != NULL)
+//	//{
+//	//	UTextRenderComponent* editableText[] = {
+//	//		Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar1"))),
+//	//		Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar2"))),
+//	//		Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar3"))),
+//	//		Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("InputChar4"))),
+//	//	};
+//	//	for (size_t i = 0; i <= generatedCode.Num(); i++)
+//	//	{
+//	//		text.Add(editableText[i]);
+//	//	}
+//	//	UpdateMonitor(NULL, true);
+//	//}
+//}
+//
+//// Called every frame
+//void APuzzle_Keyboard::Tick(float DeltaTime)
+//{
+//	Super::Tick(DeltaTime);
+//}
 
-// Called every frame
-void APuzzle_Keyboard::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-}
-
-void APuzzle_Keyboard::KeyboardLogic(int32 inputedDigit)
-{
-	if (puzzleIsComplete)
-	{
-		return;
-	}
-	inputedCode[currentCodePos] = inputedDigit;
-	UpdateMonitor(currentCodePos, false);
-	currentCodePos++;
-	if (currentCodePos == generatedCode.Num())
-	{
-		UE_LOG(LogTemp, Warning, TEXT("Checking if code is correct"));
-		if (IsCodeCorrect())
-		{
-			UE_LOG(LogTemp, Warning, TEXT("Puzzle Complete"));
-			ShowMonitorScreen(true);
-			puzzleIsComplete = true;
-			//Cast the fuze puzzle to fuze puzzle
-			if (fuzePuzzle != nullptr)
-			{
-				AFuzePuzzle* tmp = Cast<AFuzePuzzle>(fuzePuzzle);
-				if (tmp != nullptr)
-				{
-					tmp->StartPuzzle();
-				}
-			}
-		}
-		else
-		{
-			//Restart Puzzle;
-			UE_LOG(LogTemp, Warning, TEXT("Restart Puzzle"));
-			currentCodePos = 0;
-			ShowMonitorScreen(false);
-			UpdateMonitor(NULL, true);
-		}
-	}
-}
-void APuzzle_Keyboard::ShowMonitorScreen(bool codeOutcome)
-{
-	UTextRenderComponent* outputText = Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("txtError")));
-	if (outputText != nullptr)
-	{
-		outputText->SetVisibility(true);
-		//Wait for X seconds
-		if (codeOutcome)
-		{
-			//Puzzle Complete
-			outputText->SetText(FString(TEXT("Correct")));
-		}
-		else
-		{
-			
-			outputText->SetText(FString(TEXT("Incorrect")));
-		}
-		HideText(outputText, codeOutcome);
-	}
-}
+//void APuzzle_Keyboard::KeyboardLogic(int32 inputedDigit)
+//{
+//	//if (puzzleIsComplete)
+//	//{
+//	//	return;
+//	//}
+//	//inputedCode[currentCodePos] = inputedDigit;
+//	//UpdateMonitor(currentCodePos, false);
+//	//currentCodePos++;
+//	//if (currentCodePos == generatedCode.Num())
+//	//{
+//	//	UE_LOG(LogTemp, Warning, TEXT("Checking if code is correct"));
+//	//	if (IsCodeCorrect())
+//	//	{
+//	//		UE_LOG(LogTemp, Warning, TEXT("Puzzle Complete"));
+//	//		ShowMonitorScreen(true);
+//	//		puzzleIsComplete = true;
+//	//		//Cast the fuze puzzle to fuze puzzle
+//	//		if (fuzePuzzle != nullptr)
+//	//		{
+//	//			AFuzePuzzle* tmp = Cast<AFuzePuzzle>(fuzePuzzle);
+//	//			if (tmp != nullptr)
+//	//			{
+//	//				tmp->StartPuzzle();
+//	//			}
+//	//		}
+//	//	}
+//	//	else
+//	//	{
+//	//		//Restart Puzzle;
+//	//		UE_LOG(LogTemp, Warning, TEXT("Restart Puzzle"));
+//	//		currentCodePos = 0;
+//	//		ShowMonitorScreen(false);
+//	//		UpdateMonitor(NULL, true);
+//	//	}
+//	//}
+//}
+//void APuzzle_Keyboard::ShowMonitorScreen(bool codeOutcome)
+//{
+//	//UTextRenderComponent* outputText = Cast<UTextRenderComponent>(monitor->GetDefaultSubobjectByName(TEXT("txtError")));
+//	//if (outputText != nullptr)
+//	//{
+//	//	outputText->SetVisibility(true);
+//	//	//Wait for X seconds
+//	//	if (codeOutcome)
+//	//	{
+//	//		//Puzzle Complete
+//	//		outputText->SetText(FString(TEXT("Correct")));
+//	//	}
+//	//	else
+//	//	{
+//	//		
+//	//		outputText->SetText(FString(TEXT("Incorrect")));
+//	//	}
+//	//	HideText(outputText, codeOutcome);
+//	//}
+//}
 
 
 bool APuzzle_Keyboard::IsCodeCorrect()
 {
 	for (size_t i = 0; i < 3; i++)
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Inputed Code %d   %d"), inputedCode[i], generatedCode[i]);
+		//UE_LOG(LogTemp, Warning, TEXT("Inputed Code %d   %d"), inputedCode[i], generatedCode[i]);
 		if (inputedCode[i] != generatedCode[i])
 		{
 			return false;
@@ -187,24 +193,37 @@ bool APuzzle_Keyboard::IsCodeCorrect()
 	return true;
 }
 
-void APuzzle_Keyboard::UpdateMonitor(int currentCharacterIndex, bool doOnce)
+//void APuzzle_Keyboard::UpdateMonitor(int currentCharacterIndex)
+//{
+//	
+//}
+
+void APuzzle_Keyboard::InputNewKey(const int32 characterToInput)
 {
-	if (doOnce)
-	{
-		text[0]->SetText(FString(TEXT("_")));
-		text[1]->SetText(FString(TEXT("_")));
-		text[2]->SetText(FString(TEXT("_")));
-		text[3]->SetText(FString(TEXT("_")));
+	if (puzzleIsComplete)
 		return;
-	}
-	for (int i = 0; i < 4; i++)
+
+	inputedCode[currentCodePos] = characterToInput;
+	UpdateMonitor(currentCodePos);
+	currentCodePos++;
+	UE_LOG(LogTemp, Warning, TEXT("Inputed Code %d"), currentCodePos);
+
+	if (currentCodePos == generatedCode.Num())
 	{
-		if (currentCharacterIndex == i)
+		if (IsCodeCorrect())
 		{
-			UE_LOG(LogTemp, Warning, TEXT("currentCharacter %d"), i);
-			text[i]->SetText(FString(TEXT("*")));
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Puzzle Complete"));
+			UE_LOG(LogTemp, Warning, TEXT("Puzzle Complete"));
+
+			puzzleIsComplete = true;
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Puzzle Restart"));
+			UE_LOG(LogTemp, Warning, TEXT("Puzzle Restart"));
+			UE_LOG(LogTemp, Warning, TEXT("Inputted Code Was %d %d %d %d"), inputedCode[0], inputedCode[1], inputedCode[2], inputedCode[3]);
+			//Restart Puzzle;
+			currentCodePos = 0;
 		}
 	}
 }
-
-
