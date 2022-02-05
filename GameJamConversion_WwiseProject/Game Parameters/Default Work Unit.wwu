@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}" SchemaVersion="103">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="TensionLevelRTPC" ID="{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}"/>
+				<GameParameter Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VoiceInputPitchRTPC" ID="{12360441-A3D1-4156-A2D0-4307E45398E3}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-48"/>
+						<Property Name="Max" Type="Real64" Value="0"/>
+						<Property Name="Min" Type="Real64" Value="-48"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>

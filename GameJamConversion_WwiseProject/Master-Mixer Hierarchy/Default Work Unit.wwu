@@ -4,11 +4,258 @@
 		<WorkUnit Name="Default Work Unit" ID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}" PersistMode="Standalone">
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{F5678A2A-E76D-4A2E-A3FF-2383A840D090}" WorkUnitID="{E3CB45B1-BFC6-41CA-A39D-AC57C8D4811F}"/>
 						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="AkAuxRoomReverb" ID="{119002DB-9C8A-4531-B154-3411F50C9042}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="25"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+									<ObjectRef Name="Room_Medium_Tiled" ID="{0C0A3A92-A571-4FDB-AB40-ACFED04E0217}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</AuxBus>
+						<Bus Name="AmbienceAB" ID="{4166661A-8C73-4FD2-B042-44F5EC3ACDE4}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<AuxBus Name="AkAuxVentReverb" ID="{3F0173E8-8210-4EDC-A9F2-AE4C607FF0AC}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="25"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{B5719071-C58D-49FA-8766-B1D986D017EC}">
+										<Effect Name="Vent System Reverb" ID="{03DA0F48-A4ED-4C84-A68F-D8CBB5035E03}" ShortID="230178728" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="DecayTime" Type="Real32" Value="1"/>
+												<Property Name="Density" Type="Real32" Value="7"/>
+												<Property Name="ERLevel" Type="Real32" Value="-16"/>
+												<Property Name="ERPattern" Type="int32" Value="27"/>
+												<Property Name="Filter1Freq" Type="Real32" Value="590"/>
+												<Property Name="Filter1Gain" Type="Real32" Value="-5"/>
+												<Property Name="Filter2Freq" Type="Real32" Value="7020"/>
+												<Property Name="Filter2Gain" Type="Real32" Value="-6"/>
+												<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
+												<Property Name="Filter3Gain" Type="Real32" Value="1"/>
+												<Property Name="HFDamping" Type="Real32" Value="0.9"/>
+												<Property Name="PreDelay" Type="Real32" Value="8"/>
+												<Property Name="Quality" Type="int32" Value="6"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-15"/>
+												<Property Name="RoomShape" Type="Real32" Value="7"/>
+												<Property Name="RoomSize" Type="Real32" Value="-7"/>
+												<Property Name="StereoWidth" Type="Real32" Value="90"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</AuxBus>
+						<Bus Name="MusicAB" ID="{32268A2C-9AB9-40B1-AAA7-0B27EAD2B71F}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="PlayerSignifiersAB" ID="{693C7D12-559D-409B-A243-0C04BADC024E}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="VoiceChatMeter" ID="{B9BA030A-2C4D-4EAD-BD16-6647F19777DB}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OutputBusHighpass" Type="int16">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OutputBusLowpass" Type="int16">
+									<ValueList>
+										<Value>100</Value>
+									</ValueList>
+								</Property>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise Meter (Custom)" ID="{F8743070-D00A-4600-8012-AD60A7603BD6}" ShortID="846110202" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+											<PropertyList>
+												<Property Name="AttackTime" Type="Real32" Value="0.05"/>
+												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+											</PropertyList>
+											<PluginData>
+	<GameParameter Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}"/>
+</PluginData>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="Effect1" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="VoiceChatPitchMeter" ID="{35CB98AA-D6B9-4C8E-A347-7EC962EA5359}" WorkUnitID="{C05AB40E-B871-4EB8-A409-6D565A99BAD6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="VoiceChatRobotAB" ID="{9B06998E-3ED0-4823-9109-93C029420BB9}">
+							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{6FB5114C-2809-4E47-A97A-69D9F42B25EA}" ShortID="188023915">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}" WorkUnitID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{6065239F-C150-414E-B778-44B7D103C4C3}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-47.3271</XPos>
+														<YPos>0.02915</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Color" Type="int16" Value="17"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<RTPCList>
+										<RTPC Name="" ID="{922AABD9-FE02-4C4F-A8E2-D6EFF4787641}" ShortID="306752506">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="VoiceInputPitchRTPC" ID="{12360441-A3D1-4156-A2D0-4307E45398E3}" WorkUnitID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{5E42B51F-C53D-4892-AD8B-745E887F5B1A}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>3216</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-45</XPos>
+														<YPos>2352</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-44.999</XPos>
+														<YPos>1008</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-40</XPos>
+														<YPos>1008</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-39.999</XPos>
+														<YPos>-1296</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-35</XPos>
+														<YPos>-1296</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Log1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-31.23364</XPos>
+														<YPos>528</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>Exp1</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-26.74766</XPos>
+														<YPos>-3168</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-20.29907</XPos>
+														<YPos>2112</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-12.4486</XPos>
+														<YPos>-1344</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-7.23364</XPos>
+														<YPos>-2784</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-3.19626</XPos>
+														<YPos>1728</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-1008</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+							</PropertyList>
+							<ObjectLists/>
+						</Bus>
+						<Bus Name="Microphone" ID="{1C4AF053-46F4-42CE-9D44-F4C6998816C2}">
+							<ObjectLists/>
+						</Bus>
+					</ChildrenList>
 					<ObjectLists/>
 				</Bus>
 			</ChildrenList>

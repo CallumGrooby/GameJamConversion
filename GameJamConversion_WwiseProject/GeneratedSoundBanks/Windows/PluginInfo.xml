@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginInfo Project="GameJamConversion_WwiseProject" Platform="Windows" BasePlatform="Windows">
+	<Plugins>
+		<Plugin Name="Wwise Sine" ID="6553602" DLL="AkSineTone" StaticLib="AkSineSource"/>
+		<Plugin Name="Wwise RoomVerb" ID="7733251" DLL="AkRoomVerb" StaticLib="AkRoomVerbFX"/>
+		<Plugin Name="Wwise Meter" ID="8454147" DLL="AkSoundEngineDLL" StaticLib="AkMeterFX"/>
+		<Plugin Name="System" ID="11403271"/>
+		<Plugin Name="No Output" ID="11862023"/>
+		<Plugin Name="Wwise Audio Input" ID="13107202" DLL="AkAudioInput" StaticLib="AkAudioInputSource"/>
+	</Plugins>
+</PluginInfo>

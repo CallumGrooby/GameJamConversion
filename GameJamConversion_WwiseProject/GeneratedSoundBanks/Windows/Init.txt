@@ -1,0 +1,27 @@
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	65187906	VoiceInputPitchRTPC			\Default Work Unit\VoiceInputPitchRTPC	
+	795691508	VoiceInputVolumeRTPC			\Default Work Unit\VoiceInputVolumeRTPC	
+
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	949771458	PlayerSignifiersAB			\Default Work Unit\Master Audio Bus\PlayerSignifiersAB	
+	1457808204	AmbienceAB			\Default Work Unit\Master Audio Bus\AmbienceAB	
+	2443701598	VoiceChatMeter			\Default Work Unit\Master Audio Bus\VoiceChatMeter	
+	2872041301	Microphone			\Default Work Unit\Master Audio Bus\Microphone	
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+	3830703195	MusicAB			\Default Work Unit\Master Audio Bus\MusicAB	
+	4187370224	VoiceChatRobotAB			\Default Work Unit\Master Audio Bus\VoiceChatRobotAB	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2105880920	AkAuxVentReverb			\Default Work Unit\Master Audio Bus\AkAuxVentReverb	
+	2281518896	AkAuxRoomReverb			\Default Work Unit\Master Audio Bus\AkAuxRoomReverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	230178728	Vent System Reverb	Wwise RoomVerb			
+	846110202	Wwise Meter (Custom)	Wwise Meter			
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	2982318458	VoiceChatPitchMeter	Wwise Meter			
+
+Audio Devices	ID	Name	Type				Notes
+	2317455096	No_Output	No Output			
+	3859886410	System	System			
+

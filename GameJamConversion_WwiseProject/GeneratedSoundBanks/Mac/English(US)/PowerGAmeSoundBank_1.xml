@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\GeneratedSoundBanks\Mac\English(US)\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="1356937397" GUID="{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}" Language="English(US)" Hash="945539294">
+			<ObjectPath>\SoundBanks\Default Work Unit\PowerGAmeSoundBank_1</ObjectPath>
+			<ShortName>PowerGAmeSoundBank_1</ShortName>
+			<Path>English(US)\PowerGAmeSoundBank_1.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3945654895" Name="OnAkClueFound" ObjectPath="\Events\Default Work Unit\PlayerSignifiers\OnAkClueFound" GUID="{6719E299-51DB-4510-BE64-E5F06763DA7A}" DurationType="OneShot" DurationMin="3.125011" DurationMax="3.125011">
+					<IncludedMemoryFiles>
+						<File Id="1065198573" Language="SFX">
+							<ShortName>Somethings happened.wav</ShortName>
+							<Path>SFX\Somethings happened_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="821630361" Name="OnAkLightOn" ObjectPath="\Events\Default Work Unit\SFX\OnAkLightOn" GUID="{81ABE9CF-6459-403C-9DC1-FB9779F48E69}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="148762542" Language="SFX">
+							<ShortName>Light Buzz Loop.wav</ShortName>
+							<Path>SFX\Light Buzz Loop_D79FB2B7.wem</Path>
+						</File>
+						<File Id="691755703" Language="SFX">
+							<ShortName>Lights Flicker.wav</ShortName>
+							<Path>SFX\Lights Flicker_7F94A3C3.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3193235074" Name="OnAkMusicRandomAmbience" ObjectPath="\Events\Default Work Unit\Music\OnAkMusicRandomAmbience" GUID="{3D1079A2-1C3C-40E3-ACA2-AC74FC8F2ED0}" MaxAttenuation="0." DurationType="OneShot" DurationMin="0." DurationMax="0."/>
+				<Event Id="3639757708" Name="OnAkPlayButton" ObjectPath="\Events\Default Work Unit\SFX\OnAkPlayButton" GUID="{06C4EC02-6E3E-4425-8E86-674384068B3E}" DurationType="OneShot" DurationMin="0.744638" DurationMax="0.835828">
+					<IncludedMemoryFiles>
+						<File Id="677254040" Language="SFX">
+							<ShortName>ButtonSwitch.wav</ShortName>
+							<Path>SFX\ButtonSwitch_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1529552610" Name="OnAkPlayFootstep" ObjectPath="\Events\Default Work Unit\Footsteps\OnAkPlayFootstep" GUID="{4C18AE4F-5B53-46BF-921C-7FDF447F7699}" DurationType="OneShot" DurationMin="0.341283" DurationMax="0.581863">
+					<IncludedMemoryFiles>
+						<File Id="133840935" Language="SFX">
+							<ShortName>MetalFoostepLeft1.wav</ShortName>
+							<Path>SFX\MetalFoostepLeft1_10C4C929.wem</Path>
+						</File>
+						<File Id="159813921" Language="SFX">
+							<ShortName>MetalFoostepRight2.wav</ShortName>
+							<Path>SFX\MetalFoostepRight2_10C4C929.wem</Path>
+						</File>
+						<File Id="453755115" Language="SFX">
+							<ShortName>MetalFoostepRight1.wav</ShortName>
+							<Path>SFX\MetalFoostepRight1_10C4C929.wem</Path>
+						</File>
+						<File Id="497366133" Language="SFX">
+							<ShortName>StoneFoostep2.wav</ShortName>
+							<Path>SFX\StoneFoostep2_10C4C929.wem</Path>
+						</File>
+						<File Id="733372758" Language="SFX">
+							<ShortName>MetalFoostepLeft2.wav</ShortName>
+							<Path>SFX\MetalFoostepLeft2_10C4C929.wem</Path>
+						</File>
+						<File Id="739210481" Language="SFX">
+							<ShortName>StoneFoostep1.wav</ShortName>
+							<Path>SFX\StoneFoostep1_10C4C929.wem</Path>
+						</File>
+						<File Id="787973230" Language="SFX">
+							<ShortName>StoneFoostep3.wav</ShortName>
+							<Path>SFX\StoneFoostep3_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{7CB5294A-A6ED-40DF-A1AE-C29A88363C43}">
+							<Media>
+								<File Id="497366133"/>
+								<File Id="739210481"/>
+								<File Id="787973230"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{30D730B0-0086-4960-8124-F7EBC78C2603}">
+							<Media>
+								<File Id="133840935"/>
+								<File Id="159813921"/>
+								<File Id="453755115"/>
+								<File Id="733372758"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
+				</Event>
+				<Event Id="770596265" Name="OnAkRecollection" ObjectPath="\Events\Default Work Unit\PlayerSignifiers\OnAkRecollection" GUID="{04A90816-C827-48AC-A6CD-231AE2E7B067}" DurationType="OneShot" DurationMin="8.633855" DurationMax="8.633855">
+					<IncludedMemoryFiles>
+						<File Id="116097053" Language="SFX">
+							<ShortName>PlayerRecollection.wav</ShortName>
+							<Path>SFX\PlayerRecollection_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3366796165" Name="OnAkSpotted" ObjectPath="\Events\Default Work Unit\PlayerSignifiers\OnAkSpotted" GUID="{DA0B2ECA-438D-45A4-8048-D750DC1E5644}" DurationType="OneShot" DurationMin="8.115375" DurationMax="8.115375">
+					<IncludedMemoryFiles>
+						<File Id="794933088" Language="SFX">
+							<ShortName>You've been spotted.wav</ShortName>
+							<Path>SFX\You've been spotted_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="212463386" Name="OnAkStartMainAmbienceMusic" ObjectPath="\Events\Default Work Unit\Music\OnAkStartMainAmbienceMusic" GUID="{867D8A90-D77E-43C2-8628-B3DC49333403}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="311468022" Language="SFX">
+							<ShortName>Dronescape.wav</ShortName>
+							<Path>SFX\Dronescape_D79FB2B7.wem</Path>
+						</File>
+						<File Id="546232237" Language="SFX">
+							<ShortName>Dronescape-Wine.wav</ShortName>
+							<Path>SFX\Dronescape-Wine_D79FB2B7.wem</Path>
+						</File>
+						<File Id="882218781" Language="SFX">
+							<ShortName>Dronescape-Highlight.wav</ShortName>
+							<Path>SFX\Dronescape-Highlight_D79FB2B7.wem</Path>
+						</File>
+						<File Id="949250171" Language="SFX">
+							<ShortName>DroneScape - Dings.wav</ShortName>
+							<Path>SFX\DroneScape - Dings_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2575151591" Name="PeterVoiceEvent" ObjectPath="\Events\Default Work Unit\VoiceInput\PeterVoiceEvent" GUID="{95DFDDEE-8848-43D6-B062-B203C79C77A8}" DurationType="Unknown"/>
+				<Event Id="1324678662" Name="Play_Microphone" ObjectPath="\Events\Default Work Unit\VoiceInput\Play_Microphone" GUID="{5444DEFF-875D-4EE8-BAA8-B817126392A0}" DurationType="Unknown"/>
+				<Event Id="713831046" Name="Play_MyVoiceTest" ObjectPath="\Events\Default Work Unit\VoiceInput\Play_MyVoiceTest" GUID="{F4E1AB8A-DE9B-476E-8DD5-8418FB5CFBB1}" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="685711333" Language="SFX">
+							<ShortName>MeLotsofSpeech.wav</ShortName>
+							<Path>SFX\MeLotsofSpeech_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="1674421668" Name="TensionLevelRTPC" ObjectPath="\Game Parameters\Default Work Unit\TensionLevelRTPC" GUID="{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}"/>
+			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="80709880" Name="FootsepMaterialSwitch" ObjectPath="\Switches\Default Work Unit\FootsepMaterialSwitch" GUID="{74C49FE6-F7DB-40ED-AAEC-2A96A633F1D4}">
+					<Switches>
+						<Switch Id="2473969246" Name="Metal" ObjectPath="\Switches\Default Work Unit\FootsepMaterialSwitch\Metal" GUID="{30D730B0-0086-4960-8124-F7EBC78C2603}"/>
+						<Switch Id="1216965916" Name="Stone" ObjectPath="\Switches\Default Work Unit\FootsepMaterialSwitch\Stone" GUID="{7CB5294A-A6ED-40DF-A1AE-C29A88363C43}"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

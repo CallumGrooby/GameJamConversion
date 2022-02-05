@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C05AB40E-B871-4EB8-A409-6D565A99BAD6}" SchemaVersion="103">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{C05AB40E-B871-4EB8-A409-6D565A99BAD6}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C05AB40E-B871-4EB8-A409-6D565A99BAD6}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Mute" ID="{66E9A5BF-1AF9-4690-B63E-61FF55598A63}" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+					<PropertyList>
+						<Property Name="FullBandGain" Type="Real32" Value="-96.3"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="VoiceChatPitchMeter" ID="{35CB98AA-D6B9-4C8E-A347-7EC962EA5359}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="19"/>
+						<Property Name="Hold" Type="Real32" Value="0.15"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+					</PropertyList>
+					<PluginData>
+	<GameParameter Name="VoiceInputPitchRTPC" ID="{12360441-A3D1-4156-A2D0-4307E45398E3}"/>
+</PluginData>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

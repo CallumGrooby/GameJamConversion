@@ -1,0 +1,48 @@
+Event	ID	Name			Wwise Object Path	Notes
+	212463386	OnAkStartMainAmbienceMusic			\Default Work Unit\Music\OnAkStartMainAmbienceMusic	
+	713831046	Play_MyVoiceTest			\Default Work Unit\VoiceInput\Play_MyVoiceTest	
+	770596265	OnAkRecollection			\Default Work Unit\PlayerSignifiers\OnAkRecollection	
+	821630361	OnAkLightOn			\Default Work Unit\SFX\OnAkLightOn	
+	1324678662	Play_Microphone			\Default Work Unit\VoiceInput\Play_Microphone	
+	1529552610	OnAkPlayFootstep			\Default Work Unit\Footsteps\OnAkPlayFootstep	
+	2575151591	PeterVoiceEvent			\Default Work Unit\VoiceInput\PeterVoiceEvent	
+	3193235074	OnAkMusicRandomAmbience			\Default Work Unit\Music\OnAkMusicRandomAmbience	Plays random noise at a point in the music
+	3366796165	OnAkSpotted			\Default Work Unit\PlayerSignifiers\OnAkSpotted	
+	3639757708	OnAkPlayButton			\Default Work Unit\SFX\OnAkPlayButton	
+	3945654895	OnAkClueFound			\Default Work Unit\PlayerSignifiers\OnAkClueFound	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	80709880	FootsepMaterialSwitch			\Default Work Unit\FootsepMaterialSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	FootsepMaterialSwitch			
+	2473969246	Metal	FootsepMaterialSwitch			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	286787007	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\SingleToneTest\Wwise Sine	
+	694097643	PeterVoiceInput	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\VoiceInput\PeterVoiceInput	
+	884492634	Wwise Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\Microphone\Wwise Audio Input	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	116097053	PlayerRecollection	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\PlayerRecollection_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerRecollection\PlayerRecollection		1523076
+	133840935	MetalFoostepLeft1	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\MetalFoostepLeft1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepLeft1		38652
+	148762542	Light Buzz Loop	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\Light Buzz Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Light Buzz Loop		214476
+	159813921	MetalFoostepRight2	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\MetalFoostepRight2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepRight2		58676
+	311468022	Dronescape	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\Dronescape_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape		13888840
+	453755115	MetalFoostepRight1	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\MetalFoostepRight1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepRight1		52066
+	497366133	StoneFoostep2	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\StoneFoostep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\StoneMaterialFootstep\StoneFoostep2		45918
+	546232237	Dronescape-Highlight_01	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\Dronescape-Wine_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape-Highlight_01		5273044
+	677254040	ButtonSwitch	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\ButtonSwitch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ButtonSwitch		75800
+	685711333	MeLotsofSpeech	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\MeLotsofSpeech_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\MeLotsofSpeech		2401396
+	691755703	Lights Flicker	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\Lights Flicker_7F94A3C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Lights Flicker		151970
+	733372758	MetalFoostepLeft2	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\MetalFoostepLeft2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepLeft2		53336
+	739210481	StoneFoostep1	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\StoneFoostep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\StoneMaterialFootstep\StoneFoostep1		39140
+	787973230	StoneFoostep3	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\StoneFoostep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\StoneMaterialFootstep\StoneFoostep3		42042
+	794933088	You've been spotted	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\You've been spotted_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerRecollection\You've been spotted		1431680
+	882218781	Dronescape-Highlight	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\Dronescape-Highlight_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape-Highlight		1900608
+	949250171	DroneScape - Dings	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\DroneScape - Dings_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\DroneScape - Dings		9824720
+	1065198573	ClueFound	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\SFX\Somethings happened_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerRecollection\ClueFound		551316
+

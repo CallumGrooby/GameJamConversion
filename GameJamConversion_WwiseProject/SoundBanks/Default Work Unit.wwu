@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{83CB451B-4BCD-40B3-BB5A-C4A6EE46CD1B}" SchemaVersion="103">
 	<SoundBanks>
-		<WorkUnit Name="Default Work Unit" ID="{83CB451B-4BCD-40B3-BB5A-C4A6EE46CD1B}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{83CB451B-4BCD-40B3-BB5A-C4A6EE46CD1B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="PowerGAmeSoundBank_1" ID="{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}">
+					<ObjectInclusionList>
+						<ObjectRef Name="PeterVoiceEvent" ID="{95DFDDEE-8848-43D6-B062-B203C79C77A8}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="PlayerSignifiers" ID="{755F0C1C-4433-4469-A2DC-F62613B7ED54}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Play_MyVoiceTest" ID="{F4E1AB8A-DE9B-476E-8DD5-8418FB5CFBB1}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Footsteps" ID="{9403172C-0076-492C-B89F-226D9C994103}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SFX" ID="{46671DE5-C672-4BE6-AD1F-07BED02A4F30}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Music" ID="{F36602AE-2758-4E52-9EF0-3A031C53B102}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="VoiceInput" ID="{DF75A625-D517-4E9D-8EEB-10BBDA89F791}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundBanks>
 </WwiseDocument>

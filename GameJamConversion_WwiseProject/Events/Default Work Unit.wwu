@@ -1,6 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" SchemaVersion="103">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="PlayerSignifiers" ID="{755F0C1C-4433-4469-A2DC-F62613B7ED54}" ShortID="97657399">
+					<ChildrenList>
+						<Event Name="OnAkRecollection" ID="{04A90816-C827-48AC-A6CD-231AE2E7B067}">
+							<ChildrenList>
+								<Action Name="" ID="{ADCD78EA-D3FE-40C2-BFF8-8728CE01BB23}" ShortID="485263005">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PlayerRecollection" ID="{9D654C1A-3985-4E94-A72D-A6355C1091A9}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OnAkSpotted" ID="{DA0B2ECA-438D-45A4-8048-D750DC1E5644}">
+							<ChildrenList>
+								<Action Name="" ID="{A8AAABF2-94EC-414D-9FB6-B0441AF44683}" ShortID="930706141">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="You've been spotted" ID="{C0F38463-2FC7-47F2-9EA1-33ED10D6DEE5}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OnAkClueFound" ID="{6719E299-51DB-4510-BE64-E5F06763DA7A}">
+							<ChildrenList>
+								<Action Name="" ID="{A394F600-F7C3-46AD-8260-612486FC7F16}" ShortID="257977425">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ClueFound" ID="{35FBCA01-2C58-42F4-ACD6-806C631E797C}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="SFX" ID="{46671DE5-C672-4BE6-AD1F-07BED02A4F30}" ShortID="636421356">
+					<ChildrenList>
+						<Event Name="OnAkPlayButton" ID="{06C4EC02-6E3E-4425-8E86-674384068B3E}">
+							<ChildrenList>
+								<Action Name="" ID="{CB3E2E5D-4068-480A-908C-54A835C7D225}" ShortID="934002005">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="ButtonSwitch" ID="{842645A1-50BF-4D17-81E0-B77336B8EE94}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OnAkLightOn" ID="{81ABE9CF-6459-403C-9DC1-FB9779F48E69}">
+							<ChildrenList>
+								<Action Name="" ID="{31046D37-2626-4E6B-AC85-D01518AC23E9}" ShortID="270752670">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Lights Flicker" ID="{23BEC209-EDEF-48D7-B067-FD1F49BEBF96}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{58069E7C-20EF-48D0-89D2-D8E8115CDD41}" ShortID="113030519">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1.5"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Light Buzz Loop" ID="{6C88ABBE-DBFC-4DE1-8861-3525D9E457E0}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{F36602AE-2758-4E52-9EF0-3A031C53B102}" ShortID="834683054">
+					<ChildrenList>
+						<Event Name="OnAkMusicRandomAmbience" ID="{3D1079A2-1C3C-40E3-ACA2-AC74FC8F2ED0}">
+							<Comment>Plays random noise at a point in the music</Comment>
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+						</Event>
+						<Event Name="OnAkStartMainAmbienceMusic" ID="{867D8A90-D77E-43C2-8628-B3DC49333403}">
+							<ChildrenList>
+								<Action Name="" ID="{A8B2544A-DD02-48BE-83FF-47DF98281F92}" ShortID="784944610">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MainAmbienceLoop" ID="{9E922609-3197-46DB-88B9-E024FBE1283F}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Footsteps" ID="{9403172C-0076-492C-B89F-226D9C994103}" ShortID="1022634132">
+					<ChildrenList>
+						<Event Name="OnAkPlayFootstep" ID="{4C18AE4F-5B53-46BF-921C-7FDF447F7699}">
+							<ChildrenList>
+								<Action Name="" ID="{63AD99CE-B8D2-429A-909A-4E2A0B411A73}" ShortID="478604601">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepMaterialSwitch" ID="{35BBD474-92BF-4A22-979A-847045389B1F}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="VoiceInput" ID="{DF75A625-D517-4E9D-8EEB-10BBDA89F791}" ShortID="530680674">
+					<ChildrenList>
+						<Event Name="Play_MyVoiceTest" ID="{F4E1AB8A-DE9B-476E-8DD5-8418FB5CFBB1}">
+							<ChildrenList>
+								<Action Name="" ID="{58E52A6B-C3E3-456F-8B7B-2A1EF9CF44C8}" ShortID="825266758">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MeLotsofSpeech" ID="{06B10E6A-7466-4B7F-80B9-3BD33AD84DF8}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{68CDCF86-325C-4C78-881D-9380301461EA}" ShortID="287106957">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SingleToneTest" ID="{536BED1B-F440-4C0D-B3AC-9109A47AD947}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Play_Microphone" ID="{5444DEFF-875D-4EE8-BAA8-B817126392A0}">
+							<ChildrenList>
+								<Action Name="" ID="{4B3C49A2-7C38-4ECB-96E7-9B41C313A1F7}" ShortID="367933998">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Microphone" ID="{EEE28C7D-9381-411B-BC70-359D12FF3154}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="PeterVoiceEvent" ID="{95DFDDEE-8848-43D6-B062-B203C79C77A8}">
+							<ChildrenList>
+								<Action Name="" ID="{7984F20E-B6C1-4AF3-94EE-FC5B2D796FE7}" ShortID="519781539">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="VoiceInput" ID="{953EBB14-1536-4931-87C8-48BFCEB356B3}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>

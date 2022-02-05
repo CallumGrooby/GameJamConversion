@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="140">
+	<RootPaths>
+		<ProjectRoot>D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Windows\</SourceFilesRoot>
+		<SoundBanksRoot>D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\GeneratedSoundBanks\Windows\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\GeneratedSoundBanks\Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<SoundBanks>
+		<SoundBank Id="1355168291" GUID="{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}" Language="SFX" Hash="1609917505">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="2105880920" Name="AkAuxVentReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AkAuxVentReverb" GUID="{3F0173E8-8210-4EDC-A9F2-AE4C607FF0AC}"/>
+				<AuxBus Id="2281518896" Name="AkAuxRoomReverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\AkAuxRoomReverb" GUID="{119002DB-9C8A-4531-B154-3411F50C9042}"/>
+			</IncludedAuxBusses>
+			<GameParameters>
+				<GameParameter Id="65187906" Name="VoiceInputPitchRTPC" ObjectPath="\Game Parameters\Default Work Unit\VoiceInputPitchRTPC" GUID="{12360441-A3D1-4156-A2D0-4307E45398E3}"/>
+				<GameParameter Id="795691508" Name="VoiceInputVolumeRTPC" ObjectPath="\Game Parameters\Default Work Unit\VoiceInputVolumeRTPC" GUID="{A4491F90-B31E-4C0B-B71C-489543E26134}"/>
+			</GameParameters>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

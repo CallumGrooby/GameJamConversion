@@ -1,6 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{98C9C6F2-FEB3-475E-B878-C16D331CF364}" SchemaVersion="103">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{98C9C6F2-FEB3-475E-B878-C16D331CF364}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{98C9C6F2-FEB3-475E-B878-C16D331CF364}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="Event Test" ID="{58D09FEA-F562-4F24-9DE3-72BE6DBF3F16}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="OnAkPlayFootstep" ID="{4C18AE4F-5B53-46BF-921C-7FDF447F7699}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OnAkLightOn" ID="{81ABE9CF-6459-403C-9DC1-FB9779F48E69}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OnAkPlayButton" ID="{06C4EC02-6E3E-4425-8E86-674384068B3E}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_MyVoiceTest" ID="{F4E1AB8A-DE9B-476E-8DD5-8418FB5CFBB1}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OnAkRecollection" ID="{04A90816-C827-48AC-A6CD-231AE2E7B067}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OnAkClueFound" ID="{6719E299-51DB-4510-BE64-E5F06763DA7A}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OnAkSpotted" ID="{DA0B2ECA-438D-45A4-8048-D750DC1E5644}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Microphone" ID="{EEE28C7D-9381-411B-BC70-359D12FF3154}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OnAkStartMainAmbienceMusic" ID="{867D8A90-D77E-43C2-8628-B3DC49333403}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="VoiceInputPitchRTPC" ID="{12360441-A3D1-4156-A2D0-4307E45398E3}"/>
+							<Value>-26.6355140186916</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TensionLevelRTPC" ID="{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}"/>
+							<Value>47.717</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}"/>
+							<Value>-45.0280373831776</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Metal" ID="{30D730B0-0086-4960-8124-F7EBC78C2603}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

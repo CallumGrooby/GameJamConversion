@@ -1,0 +1,41 @@
+{
+ "PluginInfo": {
+  "Project": "GameJamConversion_WwiseProject",
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "Plugins": [
+   {
+    "Name": "Wwise Sine",
+    "ID": "6553602",
+    "DLL": "AkSineTone",
+    "StaticLib": "AkSineSource"
+   },
+   {
+    "Name": "Wwise RoomVerb",
+    "ID": "7733251",
+    "DLL": "AkRoomVerb",
+    "StaticLib": "AkRoomVerbFX"
+   },
+   {
+    "Name": "Wwise Meter",
+    "ID": "8454147",
+    "DLL": "AkSoundEngineDLL",
+    "StaticLib": "AkMeterFX"
+   },
+   {
+    "Name": "System",
+    "ID": "11403271"
+   },
+   {
+    "Name": "No Output",
+    "ID": "11862023"
+   },
+   {
+    "Name": "Wwise Audio Input",
+    "ID": "13107202",
+    "DLL": "AkAudioInput",
+    "StaticLib": "AkAudioInputSource"
+   }
+  ]
+ }
+}
