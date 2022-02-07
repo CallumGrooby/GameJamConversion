@@ -42,9 +42,9 @@ void AInteractableFuze::MachineLogic(AActor* interactableObject)
 	fuse->RunLogic();
 	EventSoundCue();
 
-	AInteractiveLeaver* leaver = Cast<AInteractiveLeaver>(machineToStop);
-	if (leaver != nullptr)
-	{
-		leaver->activateLever = true;
-	}
+	//AInteractiveLeaver* leaver = Cast<AInteractiveLeaver>(machineToStop);
+	//if (leaver != nullptr)
+	//{
+	//	leaver->activateLever = true;
+	//}
 }

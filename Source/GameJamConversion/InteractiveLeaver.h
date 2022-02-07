@@ -14,13 +14,12 @@ class GAMEJAMCONVERSION_API AInteractiveLeaver : public AInteractableMachine
 
 public:
 	AInteractiveLeaver();
-	void MachineLogic(AActor* interactableObject) override;
+		void MachineLogic(AActor* interactableObject) override;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	AActor* machineToStop;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-		bool activateLever;
-protected:
+		AActor* lightToToggle;
 
+protected:
+	virtual void BeginPlay() override;
 
 public:
 	// Called every frame
