@@ -26,7 +26,6 @@ Copyright (c) 2021 Audiokinetic Inc.
 
 #include "AkInclude.h"
 #include <AK/SoundEngine/Common/AkTypes.h>
-#include <AK/Plugin/AkAudioInputSource.h>
 #include "AkBankManager.h"
 #include "AkGameplayTypes.h"
 #include "Engine/EngineBaseTypes.h"

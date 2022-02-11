@@ -24,7 +24,6 @@ Copyright (c) 2021 Audiokinetic Inc.
 #include "AkAudioDevice.h"
 
 #include "AkAcousticPortal.h"
-#include "AkAudioInputComponent.h"
 #include "AkAudioBank.h"
 #include "AkAudioEvent.h"
 #include "AkAudioModule.h"
