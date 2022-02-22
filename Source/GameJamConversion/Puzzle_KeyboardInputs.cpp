@@ -30,7 +30,7 @@ void APuzzle_KeyboardInputs::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 }
 
-void APuzzle_KeyboardInputs::InputNewKey(const int32 characterToInput)
+void APuzzle_KeyboardInputs::InputNewKey(const int32 characterToInput, AActor* playerActor)
 {
 	//Check if the main puzzleComponent is Assigned 
 	// then if true input a new code into the keyboard;
@@ -38,7 +38,7 @@ void APuzzle_KeyboardInputs::InputNewKey(const int32 characterToInput)
 	if (monitorScript != nullptr)
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Input Character"));
-		monitorScript->InputNewKey(characterToInput);
+		monitorScript->InputNewKey(characterToInput, playerActor);
 	}
 
 	//APuzzle_Keyboard* keyboardObj = Cast<APuzzle_Keyboard>(parentObject);

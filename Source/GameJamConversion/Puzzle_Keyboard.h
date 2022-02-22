@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "ThirdPersonCharacter.h"
 #include "Components/TextRenderComponent.h"
+#include <string>
 #include "Puzzle_Keyboard.generated.h"
 
 UCLASS()
@@ -21,19 +23,20 @@ public:
 	
 	//void ShowMonitorScreen(bool codeOutcome);
 	UFUNCTION(BlueprintImplementableEvent, Category = "Events")
-	void UpdateMonitor(int characterToInput);
+	void UpdateMonitor(const FString& s, int characterToInput);
 	//UFUNCTION(BlueprintImplementableEvent, Category = "Events")
 	//	void HideText(UTextRenderComponent* outputText, bool isPuzzleComplete);
 	//UFUNCTION(BlueprintImplementableEvent, Category = "Events")
 	//	void EndPuzzle();
 
 	bool IsCodeCorrect();
-	void InputNewKey(int32 characterToInput);
+	void InputNewKey(int32 characterToInput, AActor* characterThatHasInteracted);
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 	int currentCodePos;
+	//UFUNCTION()
 	void GenerateRandomCode();
 	//void AssignTextRenders();
 
@@ -47,13 +50,15 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
 		AActor* monitor;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
-		AActor* fuzePuzzle;
+		AActor* cameraToChangeTo;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
 		AActor* stickyNote;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
 		TArray<AActor*> inputSlots;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
 		TArray<int32> generatedCode;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
 		TArray<int32> inputedCode;
 

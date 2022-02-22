@@ -5,6 +5,9 @@
 #include "Containers/Array.h"
 #include "Puzzle_Keyboard.h"
 #include "Puzzle_KeyboardInputs.h"
+#include "ThirdPersonCharacter.h"
+#include "Net/UnrealNetwork.h"
+#include "Engine/Engine.h"
 #include <GameJamConversion/FuzePuzzle.h>
 #include <string> 
 
@@ -13,7 +16,13 @@ APuzzle_Keyboard::APuzzle_Keyboard()
 {
 	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
+	bReplicates = true;
 }
+
+//void APuzzle_Keyboard::GetLifetimeReplicatedProps(TArray< FLifetimeProperty >& OutLifetimeProps) const
+//{
+//	//DOREPLIFETIME(APuzzle_Keyboard, generatedCode);
+//}
 
 // Called when the game starts or when spawned
 void APuzzle_Keyboard::BeginPlay()
@@ -31,6 +40,7 @@ void APuzzle_Keyboard::BeginPlay()
 void APuzzle_Keyboard::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//UE_LOG(LogTemp, Warning, TEXT("Generated Code Is %d %d %d %d"), generatedCode[0], generatedCode[1], generatedCode[2], generatedCode[3]);
 }
 
 //void APuzzle_Keyboard::AssignInputs()
@@ -89,6 +99,10 @@ void APuzzle_Keyboard::GenerateRandomCode()
 			FString IntAsString2 = FString::FromInt(generatedCode[2]);
 			FString IntAsString3 = FString::FromInt(generatedCode[3]);
 			stickyNoteCode->SetText(IntAsString + " " + IntAsString1 + " " + IntAsString2 + " " + IntAsString3);
+
+			FString objName = GetName();
+			UE_LOG(LogTemp, Warning, TEXT("Generated Code Is %d %d %d %d"), generatedCode[0], generatedCode[1], generatedCode[2], generatedCode[3]);
+			UE_LOG(LogTemp, Warning, TEXT("%s"), *objName);
 		}
 		else
 		{
@@ -182,9 +196,9 @@ void APuzzle_Keyboard::GenerateRandomCode()
 
 bool APuzzle_Keyboard::IsCodeCorrect()
 {
-	for (size_t i = 0; i < 3; i++)
+	for (size_t i = 0; i < 4; i++)
 	{
-		//UE_LOG(LogTemp, Warning, TEXT("Inputed Code %d   %d"), inputedCode[i], generatedCode[i]);
+		UE_LOG(LogTemp, Warning, TEXT("Inputed Code %d   %d"), inputedCode[i], generatedCode[i]);
 		if (inputedCode[i] != generatedCode[i])
 		{
 			return false;
@@ -198,31 +212,41 @@ bool APuzzle_Keyboard::IsCodeCorrect()
 //	
 //}
 
-void APuzzle_Keyboard::InputNewKey(const int32 characterToInput)
+void APuzzle_Keyboard::InputNewKey(const int32 characterToInput, AActor* characterThatHasInteracted)
 {
 	if (puzzleIsComplete)
 		return;
 
 	inputedCode[currentCodePos] = characterToInput;
-	UpdateMonitor(currentCodePos);
+	UE_LOG(LogTemp, Warning, TEXT("Inputed Code %d"), inputedCode[currentCodePos]);
+	UpdateMonitor("*", currentCodePos);
 	currentCodePos++;
-	UE_LOG(LogTemp, Warning, TEXT("Inputed Code %d"), currentCodePos);
 
 	if (currentCodePos == generatedCode.Num())
 	{
-		if (IsCodeCorrect())
+		if (IsCodeCorrect() == true)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Puzzle Complete"));
 			UE_LOG(LogTemp, Warning, TEXT("Puzzle Complete"));
-
 			puzzleIsComplete = true;
+
+			AThirdPersonCharacter* player = Cast<AThirdPersonCharacter>(characterThatHasInteracted);
+			if (player != nullptr && cameraToChangeTo != nullptr)
+			{
+				player->ChangeCamera(cameraToChangeTo);
+			}
 		}
-		else
+		else if (IsCodeCorrect() == false)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Puzzle Restart"));
 			UE_LOG(LogTemp, Warning, TEXT("Puzzle Restart"));
 			UE_LOG(LogTemp, Warning, TEXT("Inputted Code Was %d %d %d %d"), inputedCode[0], inputedCode[1], inputedCode[2], inputedCode[3]);
+			UE_LOG(LogTemp, Warning, TEXT("Generated Code Was %d %d %d %d"), generatedCode[0], generatedCode[1], generatedCode[2], generatedCode[3]);
 			//Restart Puzzle;
+			for (size_t i = 0; i < 4; i++)
+			{
+				UpdateMonitor("_", i);
+			}
+			//FText::FromString(TEXT("*"))
 			currentCodePos = 0;
 		}
 	}

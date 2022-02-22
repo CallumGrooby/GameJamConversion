@@ -22,7 +22,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Puzzle_KeyboardInputs")
 		AActor* monitorActor;
 	UFUNCTION(BlueprintCallable, Category = "Puzzle_KeyboardInputs")
-		void InputNewKey(int32 characterToInput);
+		void InputNewKey(int32 characterToInput, AActor* playerActor);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
