@@ -7,10 +7,11 @@
 #include "ThirdPersonCharacter.h"
 #include "Components/TextRenderComponent.h"
 #include <string>
+#include "StaticObjects.h"
 #include "Puzzle_Keyboard.generated.h"
 
 UCLASS()
-class GAMEJAMCONVERSION_API APuzzle_Keyboard : public AActor
+class GAMEJAMCONVERSION_API APuzzle_Keyboard : public AStaticObjects
 {
 	GENERATED_BODY()
 
@@ -20,7 +21,8 @@ public:
 
 
 	//void KeyboardLogic(int32 inputtedCode);
-	
+	virtual void UnlockObject() override;
+	virtual void LockObject() override;
 	//void ShowMonitorScreen(bool codeOutcome);
 	UFUNCTION(BlueprintImplementableEvent, Category = "Events")
 	void UpdateMonitor(const FString& s, int characterToInput);
@@ -31,6 +33,9 @@ public:
 
 	bool IsCodeCorrect();
 	void InputNewKey(int32 characterToInput, AActor* characterThatHasInteracted);
+	
+	//UFUNCTION(BlueprintImplementableEvent, Category = "Events")
+		void PuzzleIsComplete(AActor* characterThatHasInteracted);
 
 protected:
 	// Called when the game starts or when spawned
@@ -48,11 +53,14 @@ public:
 		TArray<UTextRenderComponent*> textRenders;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
-		AActor* monitor;
+		AActor* puzzleToUnlock;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
 		AActor* cameraToChangeTo;
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
 		AActor* stickyNote;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
 		TArray<AActor*> inputSlots;
 

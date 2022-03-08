@@ -22,6 +22,3 @@ void AFuzePuzzle::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
-
-
-

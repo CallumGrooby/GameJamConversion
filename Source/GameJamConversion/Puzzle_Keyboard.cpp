@@ -8,6 +8,7 @@
 #include "ThirdPersonCharacter.h"
 #include "Net/UnrealNetwork.h"
 #include "Engine/Engine.h"
+#include "StaticObjects.h"
 #include <GameJamConversion/FuzePuzzle.h>
 #include <string> 
 
@@ -83,11 +84,17 @@ void APuzzle_Keyboard::Tick(float DeltaTime)
 
 void APuzzle_Keyboard::GenerateRandomCode()
 {
-	for (int32 i = 0; i <= 3; i++)
-	{
-		generatedCode[i] = FMath::RandRange(0, 3);
-		UE_LOG(LogTemp, Warning, TEXT("Int %d"), generatedCode[i]);
-	}
+	//for (int32 i = 0; i <= 3; i++)
+	//{
+	//	generatedCode[i] = FMath::RandRange(0, 3);
+	//	UE_LOG(LogTemp, Warning, TEXT("Int %d"), generatedCode[i]);
+	//}
+
+	//generatedCode[0] = 0;
+	//generatedCode[1]= 3;
+	//generatedCode[2] = 1;
+	//generatedCode[3] = 2;
+
 	//Display Code on note
 	if (stickyNote != nullptr)
 	{
@@ -109,6 +116,16 @@ void APuzzle_Keyboard::GenerateRandomCode()
 			UE_LOG(LogTemp, Warning, TEXT("failed to cast to Textrender"));
 		}
 	}
+}
+
+
+void APuzzle_Keyboard::UnlockObject()
+{
+
+}
+void APuzzle_Keyboard::LockObject()
+{
+
 }
 
 //void APuzzle_Keyboard::AssignTextRenders()
@@ -193,7 +210,6 @@ void APuzzle_Keyboard::GenerateRandomCode()
 //	//}
 //}
 
-
 bool APuzzle_Keyboard::IsCodeCorrect()
 {
 	for (size_t i = 0; i < 4; i++)
@@ -229,12 +245,7 @@ void APuzzle_Keyboard::InputNewKey(const int32 characterToInput, AActor* charact
 			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, TEXT("Puzzle Complete"));
 			UE_LOG(LogTemp, Warning, TEXT("Puzzle Complete"));
 			puzzleIsComplete = true;
-
-			AThirdPersonCharacter* player = Cast<AThirdPersonCharacter>(characterThatHasInteracted);
-			if (player != nullptr && cameraToChangeTo != nullptr)
-			{
-				player->ChangeCamera(cameraToChangeTo);
-			}
+			PuzzleIsComplete(characterThatHasInteracted);
 		}
 		else if (IsCodeCorrect() == false)
 		{
@@ -250,4 +261,33 @@ void APuzzle_Keyboard::InputNewKey(const int32 characterToInput, AActor* charact
 			currentCodePos = 0;
 		}
 	}
+}
+
+void APuzzle_Keyboard::PuzzleIsComplete(AActor* characterThatHasInteracted)
+{
+	AThirdPersonCharacter* character = Cast<AThirdPersonCharacter>(characterThatHasInteracted);
+	if (character!=nullptr)
+	{
+		APlayerController* playerController = Cast<APlayerController>(character->GetController());
+		if (playerController != nullptr && cameraToChangeTo != nullptr)
+		{
+			playerController->SetViewTargetWithBlend(cameraToChangeTo, 1.0f);
+		}
+	}
+
+
+
+	if (puzzleToUnlock == nullptr)
+		return;
+
+	AStaticObjects* puzzleToTrigger = Cast<AStaticObjects>(puzzleToUnlock);
+	if (puzzleToTrigger != nullptr)
+	{
+		UE_LOG(LogTemp, Warning, TEXT("Open Door"));
+		puzzleToTrigger->UnlockObject();
+	}
+
+
+	//UTextRenderComponent* stickyNoteCode = Cast<UTextRenderComponent>(stickyNote->GetDefaultSubobjectByName(TEXT("txtCode")));
+	//puzzleToUnlock 
 }

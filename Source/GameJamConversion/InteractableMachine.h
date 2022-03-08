@@ -16,6 +16,7 @@ public:
 	AInteractableMachine();
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		virtual void MachineLogic(AActor* interactableObject);
+
 	UFUNCTION(BlueprintNativeEvent, BlueprintCallable, Category = "Ini")
 		void EventSoundCue();
 
