@@ -1,0 +1,9 @@
+Audio Bus	ID	Name			Wwise Object Path	Notes
+	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	2105880920	AkAuxVentReverb			\Default Work Unit\Master Audio Bus\AkAuxVentReverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	230178728	Vent System Reverb	Wwise RoomVerb			
+

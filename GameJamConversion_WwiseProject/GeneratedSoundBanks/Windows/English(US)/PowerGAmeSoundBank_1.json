@@ -16,7 +16,7 @@
     "Id": "1356937397",
     "GUID": "{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}",
     "Language": "English(US)",
-    "Hash": "945539294",
+    "Hash": "3970564767",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\PowerGAmeSoundBank_1",
     "ShortName": "PowerGAmeSoundBank_1",
     "Path": "English(US)\\PowerGAmeSoundBank_1.bnk",
@@ -138,6 +138,7 @@
         "Path": "SFX\\StoneFoostep3_10C4C929.wem"
        }
       ],
+      "DefaultSwitchValue": "{30D730B0-0086-4960-8124-F7EBC78C2603}",
       "SwitchContainers": [
        {
         "SwitchValue": "{7CB5294A-A6ED-40DF-A1AE-C29A88363C43}",

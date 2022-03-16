@@ -1,0 +1,38 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "4031717000",
+    "GUID": "{F04F1E88-1E88-1E88-8888-888888888888}",
+    "Language": "SFX",
+    "Hash": "2843674024",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_3D1079A21C3C40E3ACA2AC74FC8F2ED0",
+    "ShortName": "SB_3D1079A21C3C40E3ACA2AC74FC8F2ED0",
+    "Path": "SB_3D1079A21C3C40E3ACA2AC74FC8F2ED0.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3193235074",
+      "Name": "OnAkMusicRandomAmbience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OnAkMusicRandomAmbience",
+      "GUID": "{3D1079A2-1C3C-40E3-ACA2-AC74FC8F2ED0}",
+      "MaxAttenuation": "0.",
+      "DurationType": "OneShot",
+      "DurationMin": "0.",
+      "DurationMax": "0."
+     }
+    ]
+   }
+  ]
+ }
+}

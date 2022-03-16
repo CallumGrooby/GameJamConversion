@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "2098284816",
+    "GUID": "{7D114910-4910-1910-1010-101010101010}",
+    "Language": "SFX",
+    "Hash": "1801858699",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_DA0B2ECA438D45A48048D750DC1E5644",
+    "ShortName": "SB_DA0B2ECA438D45A48048D750DC1E5644",
+    "Path": "SB_DA0B2ECA438D45A48048D750DC1E5644.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3366796165",
+      "Name": "OnAkSpotted",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSignifiers\\OnAkSpotted",
+      "GUID": "{DA0B2ECA-438D-45A4-8048-D750DC1E5644}",
+      "DurationType": "OneShot",
+      "DurationMin": "8.115375",
+      "DurationMax": "8.115375",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "794933088",
+        "Language": "SFX",
+        "ShortName": "You've been spotted.wav",
+        "Path": "SFX\\You've been spotted_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

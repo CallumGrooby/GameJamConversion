@@ -1,0 +1,34 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1665702773",
+    "GUID": "{63489B75-9B75-1B75-7575-757575757575}",
+    "Language": "SFX",
+    "Hash": "1836275250",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_3F0173E882104EDCA9F2AE4C607FF0AC",
+    "ShortName": "SB_3F0173E882104EDCA9F2AE4C607FF0AC",
+    "Path": "SB_3F0173E882104EDCA9F2AE4C607FF0AC.bnk",
+    "IncludedAuxBusses": [
+     {
+      "Id": "2105880920",
+      "Name": "AkAuxVentReverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AkAuxVentReverb",
+      "GUID": "{3F0173E8-8210-4EDC-A9F2-AE4C607FF0AC}"
+     }
+    ]
+   }
+  ]
+ }
+}

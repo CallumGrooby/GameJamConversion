@@ -1,0 +1,79 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "208095984",
+    "GUID": "{0C674AF0-4AF0-1AF0-F0F0-F0F0F0F0F0F0}",
+    "Language": "SFX",
+    "Hash": "1033161948",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_867D8A90D77E43C28628B3DC49333403",
+    "ShortName": "SB_867D8A90D77E43C28628B3DC49333403",
+    "Path": "SB_867D8A90D77E43C28628B3DC49333403.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3193235074",
+      "Name": "OnAkMusicRandomAmbience",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OnAkMusicRandomAmbience",
+      "GUID": "{3D1079A2-1C3C-40E3-ACA2-AC74FC8F2ED0}",
+      "MaxAttenuation": "0.",
+      "DurationType": "OneShot",
+      "DurationMin": "0.",
+      "DurationMax": "0."
+     },
+     {
+      "Id": "212463386",
+      "Name": "OnAkStartMainAmbienceMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OnAkStartMainAmbienceMusic",
+      "GUID": "{867D8A90-D77E-43C2-8628-B3DC49333403}",
+      "DurationType": "Infinite",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "311468022",
+        "Language": "SFX",
+        "ShortName": "Dronescape.wav",
+        "Path": "SFX\\Dronescape_D79FB2B7.wem"
+       },
+       {
+        "Id": "546232237",
+        "Language": "SFX",
+        "ShortName": "Dronescape-Wine.wav",
+        "Path": "SFX\\Dronescape-Wine_D79FB2B7.wem"
+       },
+       {
+        "Id": "882218781",
+        "Language": "SFX",
+        "ShortName": "Dronescape-Highlight.wav",
+        "Path": "SFX\\Dronescape-Highlight_D79FB2B7.wem"
+       },
+       {
+        "Id": "949250171",
+        "Language": "SFX",
+        "ShortName": "DroneScape - Dings.wav",
+        "Path": "SFX\\DroneScape - Dings_D79FB2B7.wem"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1674421668",
+      "Name": "TensionLevelRTPC",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\TensionLevelRTPC",
+      "GUID": "{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}"
+     }
+    ]
+   }
+  ]
+ }
+}

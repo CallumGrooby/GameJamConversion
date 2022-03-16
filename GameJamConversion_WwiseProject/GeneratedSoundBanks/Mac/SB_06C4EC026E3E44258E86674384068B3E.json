@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1850035609",
+    "GUID": "{6E454D99-4D99-1D99-9999-999999999999}",
+    "Language": "SFX",
+    "Hash": "291692432",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_06C4EC026E3E44258E86674384068B3E",
+    "ShortName": "SB_06C4EC026E3E44258E86674384068B3E",
+    "Path": "SB_06C4EC026E3E44258E86674384068B3E.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3639757708",
+      "Name": "OnAkPlayButton",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\OnAkPlayButton",
+      "GUID": "{06C4EC02-6E3E-4425-8E86-674384068B3E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.744638",
+      "DurationMax": "0.835828",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "677254040",
+        "Language": "SFX",
+        "ShortName": "ButtonSwitch.wav",
+        "Path": "SFX\\ButtonSwitch_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac\\English(US)\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1245391260",
+    "GUID": "{4A3B299C-299C-199C-9C9C-9C9C9C9C9C9C}",
+    "Language": "English(US)",
+    "Hash": "1716261137",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_F4E1AB8ADE9B476E8DD58418FB5CFBB1",
+    "ShortName": "SB_F4E1AB8ADE9B476E8DD58418FB5CFBB1",
+    "Path": "English(US)\\SB_F4E1AB8ADE9B476E8DD58418FB5CFBB1.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "713831046",
+      "Name": "Play_MyVoiceTest",
+      "ObjectPath": "\\Events\\Default Work Unit\\VoiceInput\\Play_MyVoiceTest",
+      "GUID": "{F4E1AB8A-DE9B-476E-8DD5-8418FB5CFBB1}",
+      "DurationType": "Infinite",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "685711333",
+        "Language": "SFX",
+        "ShortName": "MeLotsofSpeech.wav",
+        "Path": "SFX\\MeLotsofSpeech_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

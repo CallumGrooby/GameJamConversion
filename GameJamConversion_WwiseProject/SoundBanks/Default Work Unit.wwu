@@ -3,7 +3,7 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{83CB451B-4BCD-40B3-BB5A-C4A6EE46CD1B}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="PowerGAmeSoundBank_1" ID="{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}">
+				<SoundBank Name="Soundbank_1" ID="{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}">
 					<ObjectInclusionList>
 						<ObjectRef Name="PeterVoiceEvent" ID="{95DFDDEE-8848-43D6-B062-B203C79C77A8}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="PlayerSignifiers" ID="{755F0C1C-4433-4469-A2DC-F62613B7ED54}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}" Origin="Manual" Filter="7"/>

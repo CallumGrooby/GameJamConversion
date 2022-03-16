@@ -1,0 +1,20 @@
+Event	ID	Name			Wwise Object Path	Notes
+	212463386	OnAkStartMainAmbienceMusic			\Default Work Unit\Music\OnAkStartMainAmbienceMusic	
+	770596265	OnAkRecollection			\Default Work Unit\PlayerSignifiers\OnAkRecollection	
+	821630361	OnAkLightOn			\Default Work Unit\SFX\OnAkLightOn	
+	1529552610	OnAkPlayFootstep			\Default Work Unit\Footsteps\OnAkPlayFootstep	
+	3193235074	OnAkMusicRandomAmbience			\Default Work Unit\Music\OnAkMusicRandomAmbience	Plays random noise at a point in the music
+	3366796165	OnAkSpotted			\Default Work Unit\PlayerSignifiers\OnAkSpotted	
+	3639757708	OnAkPlayButton			\Default Work Unit\SFX\OnAkPlayButton	
+	3945654895	OnAkClueFound			\Default Work Unit\PlayerSignifiers\OnAkClueFound	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	80709880	FootsepMaterialSwitch			\Default Work Unit\FootsepMaterialSwitch	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	FootsepMaterialSwitch			
+	2473969246	Metal	FootsepMaterialSwitch			
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
+

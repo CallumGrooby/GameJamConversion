@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	212463386	OnAkStartMainAmbienceMusic			\Default Work Unit\Music\OnAkStartMainAmbienceMusic	
+	3193235074	OnAkMusicRandomAmbience			\Default Work Unit\Music\OnAkMusicRandomAmbience	Plays random noise at a point in the music
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
+

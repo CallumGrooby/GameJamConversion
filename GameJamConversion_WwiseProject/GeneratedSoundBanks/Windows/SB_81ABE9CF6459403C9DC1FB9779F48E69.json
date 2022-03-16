@@ -1,0 +1,49 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "3709799809",
+    "GUID": "{DD1F0D81-0D81-1D81-8181-818181818181}",
+    "Language": "SFX",
+    "Hash": "127281837",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_81ABE9CF6459403C9DC1FB9779F48E69",
+    "ShortName": "SB_81ABE9CF6459403C9DC1FB9779F48E69",
+    "Path": "SB_81ABE9CF6459403C9DC1FB9779F48E69.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "821630361",
+      "Name": "OnAkLightOn",
+      "ObjectPath": "\\Events\\Default Work Unit\\SFX\\OnAkLightOn",
+      "GUID": "{81ABE9CF-6459-403C-9DC1-FB9779F48E69}",
+      "DurationType": "Infinite",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "148762542",
+        "Language": "SFX",
+        "ShortName": "Light Buzz Loop.wav",
+        "Path": "SFX\\Light Buzz Loop_D79FB2B7.wem"
+       },
+       {
+        "Id": "691755703",
+        "Language": "SFX",
+        "ShortName": "Lights Flicker.wav",
+        "Path": "SFX\\Lights Flicker_7F94A3C3.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

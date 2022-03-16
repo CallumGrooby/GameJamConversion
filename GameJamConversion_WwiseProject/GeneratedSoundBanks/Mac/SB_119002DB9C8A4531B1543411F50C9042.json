@@ -1,0 +1,34 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "908862726",
+    "GUID": "{362C2506-2506-1506-0606-060606060606}",
+    "Language": "SFX",
+    "Hash": "2659217271",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_119002DB9C8A4531B1543411F50C9042",
+    "ShortName": "SB_119002DB9C8A4531B1543411F50C9042",
+    "Path": "SB_119002DB9C8A4531B1543411F50C9042.bnk",
+    "IncludedAuxBusses": [
+     {
+      "Id": "2281518896",
+      "Name": "AkAuxRoomReverb",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AkAuxRoomReverb",
+      "GUID": "{119002DB-9C8A-4531-B154-3411F50C9042}"
+     }
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2575151591	PeterVoiceEvent			\Default Work Unit\VoiceInput\PeterVoiceEvent	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	694097643	PeterVoiceInput	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\VoiceInput\PeterVoiceInput	
+

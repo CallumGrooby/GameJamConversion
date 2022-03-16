@@ -1,0 +1,35 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "667330156",
+    "GUID": "{27C6A66C-A66C-166C-6C6C-6C6C6C6C6C6C}",
+    "Language": "SFX",
+    "Hash": "294371717",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_95DFDDEE884843D6B062B203C79C77A8",
+    "ShortName": "SB_95DFDDEE884843D6B062B203C79C77A8",
+    "Path": "SB_95DFDDEE884843D6B062B203C79C77A8.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "2575151591",
+      "Name": "PeterVoiceEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\VoiceInput\\PeterVoiceEvent",
+      "GUID": "{95DFDDEE-8848-43D6-B062-B203C79C77A8}",
+      "DurationType": "Unknown"
+     }
+    ]
+   }
+  ]
+ }
+}

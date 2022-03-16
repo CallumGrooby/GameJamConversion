@@ -1,0 +1,35 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Mac\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Mac"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1337696289",
+    "GUID": "{4FBBA021-A021-1021-2121-212121212121}",
+    "Language": "SFX",
+    "Hash": "3058936544",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_5444DEFF875D4EE8BAA8B817126392A0",
+    "ShortName": "SB_5444DEFF875D4EE8BAA8B817126392A0",
+    "Path": "SB_5444DEFF875D4EE8BAA8B817126392A0.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "1324678662",
+      "Name": "Play_Microphone",
+      "ObjectPath": "\\Events\\Default Work Unit\\VoiceInput\\Play_Microphone",
+      "GUID": "{5444DEFF-875D-4EE8-BAA8-B817126392A0}",
+      "DurationType": "Unknown"
+     }
+    ]
+   }
+  ]
+ }
+}

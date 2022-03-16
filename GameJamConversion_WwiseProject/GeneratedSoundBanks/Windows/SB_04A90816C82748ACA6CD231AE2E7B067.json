@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "2937503479",
+    "GUID": "{AF16BEF7-BEF7-1EF7-F7F7-F7F7F7F7F7F7}",
+    "Language": "SFX",
+    "Hash": "2806282028",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_04A90816C82748ACA6CD231AE2E7B067",
+    "ShortName": "SB_04A90816C82748ACA6CD231AE2E7B067",
+    "Path": "SB_04A90816C82748ACA6CD231AE2E7B067.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "770596265",
+      "Name": "OnAkRecollection",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSignifiers\\OnAkRecollection",
+      "GUID": "{04A90816-C827-48AC-A6CD-231AE2E7B067}",
+      "DurationType": "OneShot",
+      "DurationMin": "8.633855",
+      "DurationMax": "8.633855",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "116097053",
+        "Language": "SFX",
+        "ShortName": "PlayerRecollection.wav",
+        "Path": "SFX\\PlayerRecollection_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}

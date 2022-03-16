@@ -1,0 +1,45 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "12",
+  "SoundbankVersion": "140",
+  "RootPaths": {
+   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows\\",
+   "ExternalSourcesInputFile": "",
+   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows"
+  },
+  "SoundBanks": [
+   {
+    "Id": "1660075019",
+    "GUID": "{62F2BC0B-BC0B-1C0B-0B0B-0B0B0B0B0B0B}",
+    "Language": "SFX",
+    "Hash": "336298971",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_6719E29951DB4510BE64E5F06763DA7A",
+    "ShortName": "SB_6719E29951DB4510BE64E5F06763DA7A",
+    "Path": "SB_6719E29951DB4510BE64E5F06763DA7A.bnk",
+    "IncludedEvents": [
+     {
+      "Id": "3945654895",
+      "Name": "OnAkClueFound",
+      "ObjectPath": "\\Events\\Default Work Unit\\PlayerSignifiers\\OnAkClueFound",
+      "GUID": "{6719E299-51DB-4510-BE64-E5F06763DA7A}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.125011",
+      "DurationMax": "3.125011",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "1065198573",
+        "Language": "SFX",
+        "ShortName": "Somethings happened.wav",
+        "Path": "SFX\\Somethings happened_10C4C929.wem"
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+}
