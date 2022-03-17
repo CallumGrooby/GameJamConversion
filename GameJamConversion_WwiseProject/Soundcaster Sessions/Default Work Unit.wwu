@@ -52,6 +52,10 @@
 							<Value>47.717</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="FootstepVolumeRTPC" ID="{3D21B2E8-069A-49E7-ACD3-A5538798FCA6}"/>
+							<Value>250</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}"/>
 							<Value>-45.0280373831776</Value>
 						</RTPCValue>

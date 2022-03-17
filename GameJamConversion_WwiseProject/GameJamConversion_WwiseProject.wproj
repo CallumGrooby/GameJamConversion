@@ -21,12 +21,18 @@
 				</Property>
 				<Property Name="ExternalSourcesOutputPath" Type="string">
 					<ValueList>
-						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
-						<Value Platform="Windows">GeneratedSoundBanks\Windows\</Value>
+						<Value Platform="Mac">GeneratedSoundBanks\Mac</Value>
+						<Value Platform="Windows">GeneratedSoundBanks\Windows</Value>
+					</ValueList>
+				</Property>
+				<Property Name="GlobalVoiceInstancesLimit" Type="int16">
+					<ValueList>
+						<Value Platform="Mac">256</Value>
+						<Value Platform="Windows">256</Value>
 					</ValueList>
 				</Property>
 				<Property Name="OverrideColor" Type="bool" Value="True"/>
-				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks\"/>
+				<Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks"/>
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>
@@ -57,8 +63,18 @@
 						<Value Platform="Windows"></Value>
 					</ValueList>
 				</Property>
+				<Property Name="VolumeThreshold" Type="Real64">
+					<ValueList>
+						<Value Platform="Mac">-80</Value>
+						<Value Platform="Windows">-80</Value>
+					</ValueList>
+				</Property>
 				<Property Name="WwiseVersionWhenCreated" Type="string" Value="Branch=wwise_v2021.1|Build=7774|VersionName=v2021.1.6|Config=Release"/>
 			</PropertyList>
+			<MiscSettings>
+				<MiscSettingEntry Name="Cache"><![CDATA[.cache]]></MiscSettingEntry>
+				<MiscSettingEntry Name="Originals"><![CDATA[Originals]]></MiscSettingEntry>
+			</MiscSettings>
 			<SharedValues>
 				<SharedPropertyList ClassName="AudioSource" PluginType="0" CompanyID="1" PluginID="0">
 					<PropertyList>
@@ -11768,10 +11784,11 @@
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
+										<SegmentShape>SCurve</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>-200</YPos>
+										<YPos>-6</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -11792,7 +11809,7 @@
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>100</YPos>
+										<YPos>50</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -11831,10 +11848,11 @@
 										<XPos>0</XPos>
 										<YPos>0</YPos>
 										<Flags>5</Flags>
+										<SegmentShape>SCurve</SegmentShape>
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>-200</YPos>
+										<YPos>-6</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -11855,7 +11873,7 @@
 									</Point>
 									<Point>
 										<XPos>100</XPos>
-										<YPos>100</YPos>
+										<YPos>50</YPos>
 										<Flags>37</Flags>
 									</Point>
 								</PointList>
@@ -11886,8 +11904,8 @@
 				</ObsOccCurves>
 			</EnvironmentalSettings>
 			<LogCentralIgnoreList>
-				<IgnoreItem MessageId="MediaDuplicated"/>
 				<IgnoreItem MessageId="MediaNotFound"/>
+				<IgnoreItem MessageId="MediaDuplicated"/>
 			</LogCentralIgnoreList>
 			<DefaultConversion Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}"/>
 			<PhysicalFolderList>

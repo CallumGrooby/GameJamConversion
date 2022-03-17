@@ -16,7 +16,7 @@
     "Id": "2878262188",
     "GUID": "{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}",
     "Language": "English(US)",
-    "Hash": "710572676",
+    "Hash": "289623914",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Soundbank_1",
     "ShortName": "Soundbank_1",
     "Path": "English(US)\\Soundbank_1.bnk",
@@ -43,6 +43,7 @@
       "Name": "OnAkLightOn",
       "ObjectPath": "\\Events\\Default Work Unit\\SFX\\OnAkLightOn",
       "GUID": "{81ABE9CF-6459-403C-9DC1-FB9779F48E69}",
+      "MaxAttenuation": "3000.",
       "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
@@ -91,6 +92,7 @@
       "Name": "OnAkPlayFootstep",
       "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\OnAkPlayFootstep",
       "GUID": "{4C18AE4F-5B53-46BF-921C-7FDF447F7699}",
+      "MaxAttenuation": "3000.",
       "DurationType": "OneShot",
       "DurationMin": "0.341283",
       "DurationMax": "0.581863",
@@ -276,6 +278,12 @@
       "Name": "TensionLevelRTPC",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\TensionLevelRTPC",
       "GUID": "{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}"
+     },
+     {
+      "Id": "2332704296",
+      "Name": "FootstepVolumeRTPC",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\FootstepVolumeRTPC",
+      "GUID": "{3D21B2E8-069A-49E7-ACD3-A5538798FCA6}"
      }
     ],
     "SwitchGroups": [

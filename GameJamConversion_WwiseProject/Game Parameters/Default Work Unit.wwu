@@ -18,6 +18,13 @@
 						<Property Name="Min" Type="Real64" Value="-48"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="FootstepVolumeRTPC" ID="{3D21B2E8-069A-49E7-ACD3-A5538798FCA6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="400"/>
+						<Property Name="Max" Type="Real64" Value="650"/>
+						<Property Name="Min" Type="Real64" Value="250"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -17,4 +17,5 @@ Switch	ID	Name	Switch Group			Notes
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
+	2332704296	FootstepVolumeRTPC			\Default Work Unit\FootstepVolumeRTPC	
 
