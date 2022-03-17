@@ -3,6 +3,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 	795691508	VoiceInputVolumeRTPC			\Default Work Unit\VoiceInputVolumeRTPC	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	577952488	Unreal_InputAB			\Default Work Unit\Master Audio Bus\Unreal_InputAB	
 	949771458	PlayerSignifiersAB			\Default Work Unit\Master Audio Bus\PlayerSignifiersAB	
 	1457808204	AmbienceAB			\Default Work Unit\Master Audio Bus\AmbienceAB	
 	2443701598	VoiceChatMeter			\Default Work Unit\Master Audio Bus\VoiceChatMeter	

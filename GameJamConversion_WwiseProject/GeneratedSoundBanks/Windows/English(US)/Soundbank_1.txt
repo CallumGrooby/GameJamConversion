@@ -6,6 +6,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1324678662	Play_Microphone			\Default Work Unit\VoiceInput\Play_Microphone	
 	1529552610	OnAkPlayFootstep			\Default Work Unit\Footsteps\OnAkPlayFootstep	
 	2575151591	PeterVoiceEvent			\Default Work Unit\VoiceInput\PeterVoiceEvent	
+	2969285732	OnAkPlayUnrealToWiseVoice			\Default Work Unit\VoiceInput\OnAkPlayUnrealToWiseVoice	
 	3193235074	OnAkMusicRandomAmbience			\Default Work Unit\Music\OnAkMusicRandomAmbience	Plays random noise at a point in the music
 	3366796165	OnAkSpotted			\Default Work Unit\PlayerSignifiers\OnAkSpotted	
 	3639757708	OnAkPlayButton			\Default Work Unit\SFX\OnAkPlayButton	
@@ -24,6 +25,7 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	286787007	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\SingleToneTest\Wwise Sine	
+	479148246	Wwise Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\Unreal_VoiceInput\Wwise Audio Input	
 	694097643	PeterVoiceInput	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\VoiceInput\PeterVoiceInput	
 	884492634	Wwise Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\Microphone\Wwise Audio Input	
 

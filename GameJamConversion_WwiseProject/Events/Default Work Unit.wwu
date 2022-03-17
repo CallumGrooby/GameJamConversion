@@ -155,6 +155,21 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="OnAkPlayUnrealToWiseVoice" ID="{F1FDE0E8-E3DA-4DC4-A0EE-DD918F1D9121}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{B1027492-CF50-4050-817F-641AA9C5265B}" ShortID="582229306">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Unreal_VoiceInput" ID="{78A4229B-A838-4935-B2F6-A90A422B2FBD}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>
