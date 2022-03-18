@@ -16,7 +16,7 @@
     "Id": "2878262188",
     "GUID": "{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}",
     "Language": "English(US)",
-    "Hash": "4154529557",
+    "Hash": "1108527890",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Soundbank_1",
     "ShortName": "Soundbank_1",
     "Path": "English(US)\\Soundbank_1.bnk",
@@ -181,6 +181,13 @@
       "ObjectPath": "\\Events\\Default Work Unit\\VoiceInput\\OnAkPlayUnrealToWiseVoice",
       "GUID": "{F1FDE0E8-E3DA-4DC4-A0EE-DD918F1D9121}",
       "DurationType": "Unknown"
+     },
+     {
+      "Id": "2066799478",
+      "Name": "OnAkPlayVoiceTone",
+      "ObjectPath": "\\Events\\Default Work Unit\\VoiceInput\\OnAkPlayVoiceTone",
+      "GUID": "{B41E7758-2BB6-4555-BC43-27E9ED2ADBE9}",
+      "DurationType": "Infinite"
      },
      {
       "Id": "770596265",

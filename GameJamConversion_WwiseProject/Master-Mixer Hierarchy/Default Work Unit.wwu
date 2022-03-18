@@ -88,15 +88,20 @@
 						</Bus>
 						<Bus Name="VoiceChatMeter" ID="{B9BA030A-2C4D-4EAD-BD16-6647F19777DB}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<ValueList>
+										<Value>5</Value>
+									</ValueList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="19"/>
 								<Property Name="OutputBusHighpass" Type="int16">
 									<ValueList>
-										<Value>6</Value>
+										<Value>100</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OutputBusLowpass" Type="int16">
 									<ValueList>
-										<Value>7</Value>
+										<Value>100</Value>
 									</ValueList>
 								</Property>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
@@ -107,7 +112,7 @@
 										<Effect Name="Wwise Meter (Custom)" ID="{F8743070-D00A-4600-8012-AD60A7603BD6}" ShortID="846110202" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
 											<PropertyList>
 												<Property Name="AttackTime" Type="Real32" Value="0.05"/>
-												<Property Name="ReleaseTime" Type="Real32" Value="0"/>
+												<Property Name="ReleaseTime" Type="Real32" Value="0.2"/>
 											</PropertyList>
 											<PluginData>
 	<GameParameter Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}"/>
@@ -142,8 +147,8 @@
 														<Flags>5</Flags>
 													</Point>
 													<Point>
-														<XPos>-47.3271</XPos>
-														<YPos>0.02915</YPos>
+														<XPos>-47.999</XPos>
+														<YPos>0.20089</YPos>
 														<Flags>0</Flags>
 													</Point>
 													<Point>
@@ -173,75 +178,97 @@
 												<PointList>
 													<Point>
 														<XPos>-48</XPos>
-														<YPos>3216</YPos>
+														<YPos>-2475</YPos>
 														<Flags>5</Flags>
 														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-45</XPos>
-														<YPos>2352</YPos>
+														<XPos>-46.41458</XPos>
+														<YPos>-699</YPos>
 														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-44.999</XPos>
-														<YPos>1008</YPos>
+														<XPos>-41.87699</XPos>
+														<YPos>398</YPos>
 														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-40</XPos>
-														<YPos>1008</YPos>
+														<XPos>-40.18224</XPos>
+														<YPos>-3457</YPos>
 														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-39.999</XPos>
-														<YPos>-1296</YPos>
+														<XPos>-37.1754</XPos>
+														<YPos>-648</YPos>
 														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-35</XPos>
-														<YPos>-1296</YPos>
+														<XPos>-35.64464</XPos>
+														<YPos>1590</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Log1</SegmentShape>
+														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-31.23364</XPos>
-														<YPos>528</YPos>
+														<XPos>-30.34169</XPos>
+														<YPos>545</YPos>
 														<Flags>0</Flags>
-														<SegmentShape>Exp1</SegmentShape>
+														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
-														<XPos>-26.74766</XPos>
-														<YPos>-3168</YPos>
+														<XPos>-25.03872</XPos>
+														<YPos>1760</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-24.10934</XPos>
+														<YPos>-3433</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-21.26651</XPos>
+														<YPos>-2789</YPos>
+														<Flags>0</Flags>
+														<SegmentShape>SCurve</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>-20.62465</XPos>
+														<YPos>2804</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>-20.29907</XPos>
-														<YPos>2112</YPos>
+														<YPos>1011</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>-12.4486</XPos>
-														<YPos>-1344</YPos>
+														<YPos>-2445</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>-7.23364</XPos>
-														<YPos>-2784</YPos>
+														<YPos>-3885</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>-3.19626</XPos>
-														<YPos>1728</YPos>
+														<YPos>627</YPos>
 														<Flags>0</Flags>
 														<SegmentShape>SCurve</SegmentShape>
 													</Point>
 													<Point>
 														<XPos>0</XPos>
-														<YPos>-1008</YPos>
+														<YPos>-2109</YPos>
 														<Flags>37</Flags>
 													</Point>
 												</PointList>

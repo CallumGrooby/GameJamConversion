@@ -857,8 +857,10 @@
 						</Sound>
 						<Sound Name="SingleToneTest" ID="{536BED1B-F440-4C0D-B3AC-9109A47AD947}" ShortID="437279371">
 							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
 								<Property Name="IsVoice" Type="bool" Value="True"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -872,7 +874,7 @@
 								<SourcePlugin Name="Wwise Sine" ID="{02311D8E-23B0-460B-94A4-D5E7BD9B8D3A}" ShortID="286787007" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
 									<PropertyList>
 										<Property Name="SineDuration" Type="Real32" Value="10"/>
-										<Property Name="SineFrequency" Type="Real32" Value="620"/>
+										<Property Name="SineFrequency" Type="Real32" Value="3081"/>
 										<Property Name="SineGain" Type="Real32" Value="-24"/>
 									</PropertyList>
 									<Language>English(US)</Language>
@@ -938,7 +940,7 @@
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-19</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -947,7 +949,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Unreal_InputAB" ID="{8865EBEB-E11A-4E5B-963C-1BA1DD907EEE}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+									<ObjectRef Name="VoiceChatMeter" ID="{B9BA030A-2C4D-4EAD-BD16-6647F19777DB}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>

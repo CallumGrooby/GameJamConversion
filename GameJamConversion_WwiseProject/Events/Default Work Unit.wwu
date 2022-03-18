@@ -81,7 +81,7 @@
 						<Event Name="OnAkMusicRandomAmbience" ID="{3D1079A2-1C3C-40E3-ACA2-AC74FC8F2ED0}">
 							<Comment>Plays random noise at a point in the music</Comment>
 							<PropertyList>
-								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="Color" Type="int16" Value="4"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
 						</Event>
@@ -165,6 +165,21 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Unreal_VoiceInput" ID="{78A4229B-A838-4935-B2F6-A90A422B2FBD}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OnAkPlayVoiceTone" ID="{B41E7758-2BB6-4555-BC43-27E9ED2ADBE9}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ChildrenList>
+								<Action Name="" ID="{CC554901-1829-4B61-AE9F-04C2D8A30FDE}" ShortID="842213368">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SingleToneTest" ID="{536BED1B-F440-4C0D-B3AC-9109A47AD947}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

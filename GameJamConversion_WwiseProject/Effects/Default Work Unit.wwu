@@ -12,6 +12,7 @@
 					<PropertyList>
 						<Property Name="Color" Type="int16" Value="19"/>
 						<Property Name="Hold" Type="Real32" Value="0.15"/>
+						<Property Name="MeterMode" Type="int32" Value="1"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="ReleaseTime" Type="Real32" Value="0"/>
 					</PropertyList>

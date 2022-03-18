@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	770596265	OnAkRecollection			\Default Work Unit\PlayerSignifiers\OnAkRecollection	
 	821630361	OnAkLightOn			\Default Work Unit\SFX\OnAkLightOn	
 	1529552610	OnAkPlayFootstep			\Default Work Unit\Footsteps\OnAkPlayFootstep	
+	2066799478	OnAkPlayVoiceTone			\Default Work Unit\VoiceInput\OnAkPlayVoiceTone	
 	2969285732	OnAkPlayUnrealToWiseVoice			\Default Work Unit\VoiceInput\OnAkPlayUnrealToWiseVoice	
 	3193235074	OnAkMusicRandomAmbience			\Default Work Unit\Music\OnAkMusicRandomAmbience	Plays random noise at a point in the music
 	3366796165	OnAkSpotted			\Default Work Unit\PlayerSignifiers\OnAkSpotted	
