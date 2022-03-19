@@ -15,6 +15,9 @@ public:
 	// Sets default values for this actor's properties
 	ASplineWalker();
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Editable Variables")
+	bool isFinished;
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

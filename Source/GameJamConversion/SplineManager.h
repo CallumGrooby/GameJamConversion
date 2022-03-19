@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "SplineWalker.h"
+#include "StaticObjects.h"
 #include "SplineManager.generated.h"
 
 UCLASS()
@@ -14,10 +16,11 @@ class GAMEJAMCONVERSION_API ASplineManager : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ASplineManager();
+	UFUNCTION(BlueprintCallable, Category = "Events")
+	bool CheckIfPuzzleIsComplete();
 
 	UFUNCTION(BlueprintCallable, Category = "Events")
-	bool CheckIfPuzzleIsComplete(TArray<AActor*> splineWalkers);
-
+		void UnlockDoor();
 
 protected:
 	// Called when the game starts or when spawned
@@ -26,5 +29,13 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Editable Variables")
+	TArray<AActor*> splineWalkers;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
+	AActor* puzzleToUnlock;
+
+
 
 };
