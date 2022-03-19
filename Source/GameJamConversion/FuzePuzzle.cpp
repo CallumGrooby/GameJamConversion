@@ -14,7 +14,7 @@ AFuzePuzzle::AFuzePuzzle()
 void AFuzePuzzle::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame

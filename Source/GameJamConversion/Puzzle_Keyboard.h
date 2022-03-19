@@ -37,6 +37,8 @@ public:
 	//UFUNCTION(BlueprintImplementableEvent, Category = "Events")
 		void PuzzleIsComplete(AActor* characterThatHasInteracted);
 
+		UFUNCTION(BlueprintImplementableEvent, Category = "Events")
+			void ChangeCameraAfterDelay(AActor* characterThatHasInteracted);
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
@@ -70,4 +72,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Arrays")
 		TArray<int32> inputedCode;
 
+	UPROPERTY(EditAnywhere)
+	float loopTime;
 };

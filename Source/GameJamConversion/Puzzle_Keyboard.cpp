@@ -265,17 +265,19 @@ void APuzzle_Keyboard::InputNewKey(const int32 characterToInput, AActor* charact
 
 void APuzzle_Keyboard::PuzzleIsComplete(AActor* characterThatHasInteracted)
 {
+	//Change The View of the player to the door
 	AThirdPersonCharacter* character = Cast<AThirdPersonCharacter>(characterThatHasInteracted);
 	if (character!=nullptr)
 	{
 		APlayerController* playerController = Cast<APlayerController>(character->GetController());
 		if (playerController != nullptr && cameraToChangeTo != nullptr)
 		{
-			playerController->SetViewTargetWithBlend(cameraToChangeTo, 1.0f);
+			playerController->SetViewTarget(cameraToChangeTo);
+			ChangeCameraAfterDelay(characterThatHasInteracted);
+			//FTimerHandle TimerHandle;
+			//GetWorld()->GetTimerManager().SetTimer(TimerHandle,[&]() { this->ChangeCameraAfterDelay(playerController, character); },2.f,false,1.f);
 		}
 	}
-
-
 
 	if (puzzleToUnlock == nullptr)
 		return;
@@ -291,3 +293,16 @@ void APuzzle_Keyboard::PuzzleIsComplete(AActor* characterThatHasInteracted)
 	//UTextRenderComponent* stickyNoteCode = Cast<UTextRenderComponent>(stickyNote->GetDefaultSubobjectByName(TEXT("txtCode")));
 	//puzzleToUnlock 
 }
+
+//void APuzzle_Keyboard::ChangeCameraAfterDelay(APlayerController* playerController, AThirdPersonCharacter* character)
+//{
+//	//UE_LOG(LogTemp, Warning, TEXT("CHANGE VIEW"));
+//
+//	//AActor* characterAsActor = Cast<AActor>(character);
+//	//if (characterAsActor != nullptr)
+//	//{
+//	//	playerController->SetViewTargetWithBlend(characterAsActor,0.1f);
+//	//}
+//}
+
+
