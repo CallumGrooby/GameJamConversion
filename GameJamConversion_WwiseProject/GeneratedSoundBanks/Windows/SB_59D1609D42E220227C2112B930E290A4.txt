@@ -3,6 +3,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	770596265	OnAkRecollection			\Default Work Unit\PlayerSignifiers\OnAkRecollection	
 	821630361	OnAkLightOn			\Default Work Unit\SFX\OnAkLightOn	
 	1529552610	OnAkPlayFootstep			\Default Work Unit\Footsteps\OnAkPlayFootstep	
+	2969285732	OnAkPlayUnrealToWiseVoice			\Default Work Unit\VoiceInput\OnAkPlayUnrealToWiseVoice	
 	3193235074	OnAkMusicRandomAmbience			\Default Work Unit\Music\OnAkMusicRandomAmbience	Plays random noise at a point in the music
 	3366796165	OnAkSpotted			\Default Work Unit\PlayerSignifiers\OnAkSpotted	
 	3639757708	OnAkPlayButton			\Default Work Unit\SFX\OnAkPlayButton	
@@ -18,4 +19,7 @@ Switch	ID	Name	Switch Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
 	2332704296	FootstepVolumeRTPC			\Default Work Unit\FootstepVolumeRTPC	
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	479148246	Wwise Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\Unreal_VoiceInput\Wwise Audio Input	
 

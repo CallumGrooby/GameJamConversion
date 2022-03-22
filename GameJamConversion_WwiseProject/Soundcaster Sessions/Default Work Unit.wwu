@@ -10,7 +10,7 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
-							<ObjectRef Name="OnAkLightOn" ID="{81ABE9CF-6459-403C-9DC1-FB9779F48E69}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<ObjectRef Name="OnAkPlayJumpLanding" ID="{123E9B20-6023-4B2F-8E4A-F9BAAA68996A}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
 							<Position X="0" Y="1"/>
 						</Module>
 						<Module>
@@ -20,6 +20,10 @@
 						<Module>
 							<ObjectRef Name="Play_MyVoiceTest" ID="{F4E1AB8A-DE9B-476E-8DD5-8418FB5CFBB1}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="OnAkLightOn" ID="{81ABE9CF-6459-403C-9DC1-FB9779F48E69}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+							<Position X="1" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="OnAkRecollection" ID="{04A90816-C827-48AC-A6CD-231AE2E7B067}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
@@ -45,11 +49,11 @@
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="VoiceInputPitchRTPC" ID="{12360441-A3D1-4156-A2D0-4307E45398E3}"/>
-							<Value>-26.6355140186916</Value>
+							<Value>-41.9863325740319</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TensionLevelRTPC" ID="{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}"/>
-							<Value>47.717</Value>
+							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="FootstepVolumeRTPC" ID="{3D21B2E8-069A-49E7-ACD3-A5538798FCA6}"/>
@@ -57,12 +61,12 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}"/>
-							<Value>-45.0280373831776</Value>
+							<Value>-45.9225512528474</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Metal" ID="{30D730B0-0086-4960-8124-F7EBC78C2603}"/>
+						<CurrentSwitchRef Name="Stone" ID="{7CB5294A-A6ED-40DF-A1AE-C29A88363C43}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
