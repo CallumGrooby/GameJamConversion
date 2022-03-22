@@ -1,5 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
 	212463386	OnAkStartMainAmbienceMusic			\Default Work Unit\Music\OnAkStartMainAmbienceMusic	
+	311487021	OnAkPlayJumpLanding			\Default Work Unit\Footsteps\OnAkPlayJumpLanding	
 	770596265	OnAkRecollection			\Default Work Unit\PlayerSignifiers\OnAkRecollection	
 	821630361	OnAkLightOn			\Default Work Unit\SFX\OnAkLightOn	
 	1529552610	OnAkPlayFootstep			\Default Work Unit\Footsteps\OnAkPlayFootstep	

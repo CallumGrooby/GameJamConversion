@@ -109,6 +109,70 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{8E4341D1-B778-4F05-8113-38C99C19952E}" ShortID="331497873">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="27"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepMaterialSwitch" ID="{35BBD474-92BF-4A22-979A-847045389B1F}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OnAkPlayJumpLanding" ID="{123E9B20-6023-4B2F-8E4A-F9BAAA68996A}">
+							<ChildrenList>
+								<Action Name="" ID="{8564C87D-5734-487D-9056-875365584BE9}" ShortID="631613446">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="38"/>
+										<Property Name="GameParameterValue" Type="Real64" Value="600"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepVolumeRTPC" ID="{3D21B2E8-069A-49E7-ACD3-A5538798FCA6}" WorkUnitID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BC61EE47-3395-4FEB-8052-F93866B46BE8}" ShortID="745334514">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="26"/>
+										<Property Name="Lowpass" Type="int16" Value="40">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{6DDD6F4A-8D1A-482B-9C78-570C4A5DF833}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepMaterialSwitch" ID="{35BBD474-92BF-4A22-979A-847045389B1F}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{680E2C28-E7E8-4E51-B9EE-75523AF051E4}" ShortID="45650364">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.1"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepMaterialSwitch" ID="{35BBD474-92BF-4A22-979A-847045389B1F}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6970F02A-19EC-4A3E-AFC7-8C89CAB8706D}" ShortID="585926717">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="FootstepMaterialSwitch" ID="{35BBD474-92BF-4A22-979A-847045389B1F}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 					</ChildrenList>

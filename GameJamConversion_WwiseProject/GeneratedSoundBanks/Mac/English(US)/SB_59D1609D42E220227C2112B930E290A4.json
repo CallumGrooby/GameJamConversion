@@ -16,7 +16,7 @@
     "Id": "187141609",
     "GUID": "{0B278DE9-8DE9-1DE9-E9E9-E9E9E9E9E9E9}",
     "Language": "English(US)",
-    "Hash": "1146040565",
+    "Hash": "2795074298",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_59D1609D42E220227C2112B930E290A4",
     "ShortName": "SB_59D1609D42E220227C2112B930E290A4",
     "Path": "English(US)\\SB_59D1609D42E220227C2112B930E290A4.bnk",
@@ -172,6 +172,60 @@
           "Id": "733372758"
          }
         ]
+       }
+      ]
+     },
+     {
+      "Id": "311487021",
+      "Name": "OnAkPlayJumpLanding",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\OnAkPlayJumpLanding",
+      "GUID": "{123E9B20-6023-4B2F-8E4A-F9BAAA68996A}",
+      "MaxAttenuation": "3000.",
+      "DurationType": "OneShot",
+      "DurationMin": "0.441283",
+      "DurationMax": "0.681863",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "133840935",
+        "Language": "SFX",
+        "ShortName": "MetalFoostepLeft1.wav",
+        "Path": "SFX\\MetalFoostepLeft1_10C4C929.wem"
+       },
+       {
+        "Id": "159813921",
+        "Language": "SFX",
+        "ShortName": "MetalFoostepRight2.wav",
+        "Path": "SFX\\MetalFoostepRight2_10C4C929.wem"
+       },
+       {
+        "Id": "453755115",
+        "Language": "SFX",
+        "ShortName": "MetalFoostepRight1.wav",
+        "Path": "SFX\\MetalFoostepRight1_10C4C929.wem"
+       },
+       {
+        "Id": "497366133",
+        "Language": "SFX",
+        "ShortName": "StoneFoostep2.wav",
+        "Path": "SFX\\StoneFoostep2_10C4C929.wem"
+       },
+       {
+        "Id": "733372758",
+        "Language": "SFX",
+        "ShortName": "MetalFoostepLeft2.wav",
+        "Path": "SFX\\MetalFoostepLeft2_10C4C929.wem"
+       },
+       {
+        "Id": "739210481",
+        "Language": "SFX",
+        "ShortName": "StoneFoostep1.wav",
+        "Path": "SFX\\StoneFoostep1_10C4C929.wem"
+       },
+       {
+        "Id": "787973230",
+        "Language": "SFX",
+        "ShortName": "StoneFoostep3.wav",
+        "Path": "SFX\\StoneFoostep3_10C4C929.wem"
        }
       ]
      },

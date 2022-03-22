@@ -16,7 +16,7 @@
     "Id": "2878262188",
     "GUID": "{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}",
     "Language": "English(US)",
-    "Hash": "1108527890",
+    "Hash": "1593325865",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Soundbank_1",
     "ShortName": "Soundbank_1",
     "Path": "English(US)\\Soundbank_1.bnk",
@@ -172,6 +172,60 @@
           "Id": "733372758"
          }
         ]
+       }
+      ]
+     },
+     {
+      "Id": "311487021",
+      "Name": "OnAkPlayJumpLanding",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps\\OnAkPlayJumpLanding",
+      "GUID": "{123E9B20-6023-4B2F-8E4A-F9BAAA68996A}",
+      "MaxAttenuation": "3000.",
+      "DurationType": "OneShot",
+      "DurationMin": "0.441283",
+      "DurationMax": "0.681863",
+      "IncludedMemoryFiles": [
+       {
+        "Id": "133840935",
+        "Language": "SFX",
+        "ShortName": "MetalFoostepLeft1.wav",
+        "Path": "SFX\\MetalFoostepLeft1_10C4C929.wem"
+       },
+       {
+        "Id": "159813921",
+        "Language": "SFX",
+        "ShortName": "MetalFoostepRight2.wav",
+        "Path": "SFX\\MetalFoostepRight2_10C4C929.wem"
+       },
+       {
+        "Id": "453755115",
+        "Language": "SFX",
+        "ShortName": "MetalFoostepRight1.wav",
+        "Path": "SFX\\MetalFoostepRight1_10C4C929.wem"
+       },
+       {
+        "Id": "497366133",
+        "Language": "SFX",
+        "ShortName": "StoneFoostep2.wav",
+        "Path": "SFX\\StoneFoostep2_10C4C929.wem"
+       },
+       {
+        "Id": "733372758",
+        "Language": "SFX",
+        "ShortName": "MetalFoostepLeft2.wav",
+        "Path": "SFX\\MetalFoostepLeft2_10C4C929.wem"
+       },
+       {
+        "Id": "739210481",
+        "Language": "SFX",
+        "ShortName": "StoneFoostep1.wav",
+        "Path": "SFX\\StoneFoostep1_10C4C929.wem"
+       },
+       {
+        "Id": "787973230",
+        "Language": "SFX",
+        "ShortName": "StoneFoostep3.wav",
+        "Path": "SFX\\StoneFoostep3_10C4C929.wem"
        }
       ]
      },
