@@ -16,7 +16,7 @@
     "Id": "187141609",
     "GUID": "{0B278DE9-8DE9-1DE9-E9E9-E9E9E9E9E9E9}",
     "Language": "English(US)",
-    "Hash": "3262123653",
+    "Hash": "2064060054",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_59D1609D42E220227C2112B930E290A4",
     "ShortName": "SB_59D1609D42E220227C2112B930E290A4",
     "Path": "English(US)\\SB_59D1609D42E220227C2112B930E290A4.bnk",
@@ -95,8 +95,20 @@
       "MaxAttenuation": "3000.",
       "DurationType": "OneShot",
       "DurationMin": "0.341283",
-      "DurationMax": "0.581863",
+      "DurationMax": "0.907715",
       "ExcludedMemoryFiles": [
+       {
+        "Id": "38125380",
+        "Language": "SFX",
+        "ShortName": "CardboardFootstep3.wav",
+        "Path": "SFX\\CardboardFootstep3_10C4C929.wem"
+       },
+       {
+        "Id": "96356462",
+        "Language": "SFX",
+        "ShortName": "CardboardFootstep1.wav",
+        "Path": "SFX\\CardboardFootstep1_10C4C929.wem"
+       },
        {
         "Id": "133840935",
         "Language": "SFX",
@@ -122,6 +134,12 @@
         "Path": "SFX\\StoneFoostep2_10C4C929.wem"
        },
        {
+        "Id": "667544809",
+        "Language": "SFX",
+        "ShortName": "CardboardFootstep2.wav",
+        "Path": "SFX\\CardboardFootstep2_10C4C929.wem"
+       },
+       {
         "Id": "733372758",
         "Language": "SFX",
         "ShortName": "MetalFoostepLeft2.wav",
@@ -142,6 +160,23 @@
       ],
       "DefaultSwitchValue": "{30D730B0-0086-4960-8124-F7EBC78C2603}",
       "SwitchContainers": [
+       {
+        "SwitchValue": "{84328938-73AE-41AB-B075-C0991AB0F094}",
+        "Media": [
+         {
+          "Id": "38125380"
+         },
+         {
+          "Id": "96356462"
+         },
+         {
+          "Id": "667544809"
+         },
+         {
+          "Id": "739210481"
+         }
+        ]
+       },
        {
         "SwitchValue": "{7CB5294A-A6ED-40DF-A1AE-C29A88363C43}",
         "Media": [
@@ -183,8 +218,20 @@
       "MaxAttenuation": "3000.",
       "DurationType": "OneShot",
       "DurationMin": "0.441283",
-      "DurationMax": "0.681863",
+      "DurationMax": "1.007715",
       "ExcludedMemoryFiles": [
+       {
+        "Id": "38125380",
+        "Language": "SFX",
+        "ShortName": "CardboardFootstep3.wav",
+        "Path": "SFX\\CardboardFootstep3_10C4C929.wem"
+       },
+       {
+        "Id": "96356462",
+        "Language": "SFX",
+        "ShortName": "CardboardFootstep1.wav",
+        "Path": "SFX\\CardboardFootstep1_10C4C929.wem"
+       },
        {
         "Id": "133840935",
         "Language": "SFX",
@@ -208,6 +255,12 @@
         "Language": "SFX",
         "ShortName": "StoneFoostep2.wav",
         "Path": "SFX\\StoneFoostep2_10C4C929.wem"
+       },
+       {
+        "Id": "667544809",
+        "Language": "SFX",
+        "ShortName": "CardboardFootstep2.wav",
+        "Path": "SFX\\CardboardFootstep2_10C4C929.wem"
        },
        {
         "Id": "733372758",
@@ -365,6 +418,12 @@
         "Name": "Stone",
         "ObjectPath": "\\Switches\\Default Work Unit\\FootsepMaterialSwitch\\Stone",
         "GUID": "{7CB5294A-A6ED-40DF-A1AE-C29A88363C43}"
+       },
+       {
+        "Id": "1229756253",
+        "Name": "Cardboard",
+        "ObjectPath": "\\Switches\\Default Work Unit\\FootsepMaterialSwitch\\Cardboard",
+        "GUID": "{84328938-73AE-41AB-B075-C0991AB0F094}"
        }
       ]
      }

@@ -20,6 +20,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 
 Switch	ID	Name	Switch Group			Notes
 	1216965916	Stone	FootsepMaterialSwitch			
+	1229756253	Cardboard	FootsepMaterialSwitch			
 	2473969246	Metal	FootsepMaterialSwitch			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
@@ -34,6 +35,8 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	884492634	Wwise Audio Input	Wwise Audio Input		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\Microphone\Wwise Audio Input	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	38125380	CardboardFootstep3	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\CardboardFootstep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\CardTest\CardboardMaterialFootstep\CardboardFootstep3		55958
+	96356462	CardboardFootstep1	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\CardboardFootstep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\CardTest\CardboardMaterialFootstep\CardboardFootstep1		66230
 	116097053	PlayerRecollection	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\PlayerRecollection_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerRecollection\PlayerRecollection		1523076
 	133840935	MetalFoostepLeft1	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MetalFoostepLeft1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepLeft1		38652
 	148762542	Light Buzz Loop	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Light Buzz Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Light Buzz Loop		214476
@@ -43,6 +46,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	453755115	MetalFoostepRight1	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MetalFoostepRight1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepRight1		52066
 	497366133	StoneFoostep2	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\StoneFoostep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\StoneMaterialFootstep\StoneFoostep2		45918
 	546232237	Dronescape-Highlight_01	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape-Wine_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape-Highlight_01		5273044
+	667544809	CardboardFootstep2	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\CardboardFootstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\CardTest\CardboardMaterialFootstep\CardboardFootstep2		59382
 	677254040	ButtonSwitch	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\ButtonSwitch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ButtonSwitch		75800
 	685711333	MeLotsofSpeech	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MeLotsofSpeech_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\MeLotsofSpeech		2401396
 	691755703	Lights Flicker	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Lights Flicker_7F94A3C3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Lights Flicker		151970

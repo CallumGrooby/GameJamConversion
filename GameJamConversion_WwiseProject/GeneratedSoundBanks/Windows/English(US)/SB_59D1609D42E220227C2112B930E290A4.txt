@@ -17,6 +17,7 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 
 Switch	ID	Name	Switch Group			Notes
 	1216965916	Stone	FootsepMaterialSwitch			
+	1229756253	Cardboard	FootsepMaterialSwitch			
 	2473969246	Metal	FootsepMaterialSwitch			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes

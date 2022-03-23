@@ -70,7 +70,7 @@
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Metal" ID="{30D730B0-0086-4960-8124-F7EBC78C2603}"/>
+						<CurrentSwitchRef Name="Cardboard" ID="{84328938-73AE-41AB-B075-C0991AB0F094}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
