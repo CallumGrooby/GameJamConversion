@@ -16,7 +16,7 @@
     "Id": "187141609",
     "GUID": "{0B278DE9-8DE9-1DE9-E9E9-E9E9E9E9E9E9}",
     "Language": "English(US)",
-    "Hash": "2795074298",
+    "Hash": "3262123653",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\SB_59D1609D42E220227C2112B930E290A4",
     "ShortName": "SB_59D1609D42E220227C2112B930E290A4",
     "Path": "English(US)\\SB_59D1609D42E220227C2112B930E290A4.bnk",
@@ -230,6 +230,22 @@
       ]
      },
      {
+      "Id": "2455776213",
+      "Name": "OnAkPlayTestMusic",
+      "ObjectPath": "\\Events\\Default Work Unit\\Music\\OnAkPlayTestMusic",
+      "GUID": "{BE2D35F7-DDB8-43D0-AC56-1A0FCCFD5241}",
+      "MaxAttenuation": "3000.",
+      "DurationType": "Infinite",
+      "ExcludedMemoryFiles": [
+       {
+        "Id": "343731245",
+        "Language": "SFX",
+        "ShortName": "Scott Holmes Music - Epic Trailer.wav",
+        "Path": "SFX\\Scott Holmes Music - Epic Trailer_D79FB2B7.wem"
+       }
+      ]
+     },
+     {
       "Id": "2969285732",
       "Name": "OnAkPlayUnrealToWiseVoice",
       "ObjectPath": "\\Events\\Default Work Unit\\VoiceInput\\OnAkPlayUnrealToWiseVoice",
@@ -323,6 +339,12 @@
       "Name": "FootstepVolumeRTPC",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\FootstepVolumeRTPC",
       "GUID": "{3D21B2E8-069A-49E7-ACD3-A5538798FCA6}"
+     },
+     {
+      "Id": "3988132655",
+      "Name": "CustomOcclusionValueRTPC",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\CustomOcclusionValueRTPC",
+      "GUID": "{8C4BFCEA-32B2-48CD-AAEE-C5C7B7A6E9F6}"
      }
     ],
     "SwitchGroups": [

@@ -277,6 +277,7 @@
 									</RTPCList>
 								</Property>
 							</PropertyList>
+							<ReferenceList/>
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Microphone" ID="{1C4AF053-46F4-42CE-9D44-F4C6998816C2}">

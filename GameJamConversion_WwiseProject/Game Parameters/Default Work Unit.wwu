@@ -25,6 +25,12 @@
 						<Property Name="Min" Type="Real64" Value="250"/>
 					</PropertyList>
 				</GameParameter>
+				<GameParameter Name="CustomOcclusionValueRTPC" ID="{8C4BFCEA-32B2-48CD-AAEE-C5C7B7A6E9F6}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="1"/>
+					</PropertyList>
+				</GameParameter>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>

@@ -874,7 +874,7 @@
 								<SourcePlugin Name="Wwise Sine" ID="{02311D8E-23B0-460B-94A4-D5E7BD9B8D3A}" ShortID="286787007" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
 									<PropertyList>
 										<Property Name="SineDuration" Type="Real32" Value="10"/>
-										<Property Name="SineFrequency" Type="Real32" Value="3081"/>
+										<Property Name="SineFrequency" Type="Real32" Value="1300"/>
 										<Property Name="SineGain" Type="Real32" Value="-24"/>
 									</PropertyList>
 									<Language>English(US)</Language>

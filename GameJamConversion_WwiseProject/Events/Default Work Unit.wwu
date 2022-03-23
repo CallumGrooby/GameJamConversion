@@ -96,6 +96,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="OnAkPlayTestMusic" ID="{BE2D35F7-DDB8-43D0-AC56-1A0FCCFD5241}">
+							<ChildrenList>
+								<Action Name="" ID="{B8CA63D8-7569-4F11-A42D-DBB810718D8D}" ShortID="683109442">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TestPlaylist" ID="{9EFB7EA3-EE81-4855-AD3F-A2E6F43AC620}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Footsteps" ID="{9403172C-0076-492C-B89F-226D9C994103}" ShortID="1022634132">

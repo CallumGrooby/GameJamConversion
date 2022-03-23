@@ -7,6 +7,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1324678662	Play_Microphone			\Default Work Unit\VoiceInput\Play_Microphone	
 	1529552610	OnAkPlayFootstep			\Default Work Unit\Footsteps\OnAkPlayFootstep	
 	2066799478	OnAkPlayVoiceTone			\Default Work Unit\VoiceInput\OnAkPlayVoiceTone	
+	2455776213	OnAkPlayTestMusic			\Default Work Unit\Music\OnAkPlayTestMusic	
 	2575151591	PeterVoiceEvent			\Default Work Unit\VoiceInput\PeterVoiceEvent	
 	2969285732	OnAkPlayUnrealToWiseVoice			\Default Work Unit\VoiceInput\OnAkPlayUnrealToWiseVoice	
 	3193235074	OnAkMusicRandomAmbience			\Default Work Unit\Music\OnAkMusicRandomAmbience	Plays random noise at a point in the music
@@ -24,6 +25,7 @@ Switch	ID	Name	Switch Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
 	2332704296	FootstepVolumeRTPC			\Default Work Unit\FootstepVolumeRTPC	
+	3988132655	CustomOcclusionValueRTPC			\Default Work Unit\CustomOcclusionValueRTPC	
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	286787007	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\SingleToneTest\Wwise Sine	
@@ -37,6 +39,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	148762542	Light Buzz Loop	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Light Buzz Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Light Buzz Loop		214476
 	159813921	MetalFoostepRight2	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MetalFoostepRight2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepRight2		58676
 	311468022	Dronescape	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape		13888840
+	343731245	Scott Holmes Music - Epic Trailer	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Scott Holmes Music - Epic Trailer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TestMusic\TestPlaylist\Scott Holmes Music - Epic Trailer\Scott Holmes Music - Epic Trailer		20828224
 	453755115	MetalFoostepRight1	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MetalFoostepRight1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepRight1		52066
 	497366133	StoneFoostep2	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\StoneFoostep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\StoneMaterialFootstep\StoneFoostep2		45918
 	546232237	Dronescape-Highlight_01	D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape-Wine_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape-Highlight_01		5273044
