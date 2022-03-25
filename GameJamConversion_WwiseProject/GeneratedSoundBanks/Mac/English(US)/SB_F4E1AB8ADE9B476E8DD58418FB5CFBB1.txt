@@ -1,6 +1,9 @@
 Event	ID	Name			Wwise Object Path	Notes
 	713831046	Play_MyVoiceTest			\Default Work Unit\VoiceInput\Play_MyVoiceTest	
 
+Effect plug-ins	ID	Name	Type				Notes
+	2755291684	Pumping_and_Breathing_1	Wwise Compressor			
+
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	286787007	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\SingleToneTest\Wwise Sine	
 

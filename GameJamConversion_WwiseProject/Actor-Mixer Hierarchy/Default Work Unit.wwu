@@ -1173,6 +1173,9 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
 								</Reference>
+								<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+									<ObjectRef Name="Pumping_and_Breathing_1" ID="{87BE3270-3D27-45BB-9E46-7F2D9380F523}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="VoiceChatRobotAB" ID="{9B06998E-3ED0-4823-9109-93C029420BB9}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
 								</Reference>
@@ -1181,7 +1184,7 @@
 								<SourcePlugin Name="Wwise Sine" ID="{02311D8E-23B0-460B-94A4-D5E7BD9B8D3A}" ShortID="286787007" PluginName="Wwise Sine" CompanyID="0" PluginID="100">
 									<PropertyList>
 										<Property Name="SineDuration" Type="Real32" Value="10"/>
-										<Property Name="SineFrequency" Type="Real32" Value="1300"/>
+										<Property Name="SineFrequency" Type="Real32" Value="663"/>
 										<Property Name="SineGain" Type="Real32" Value="-24"/>
 									</PropertyList>
 									<Language>English(US)</Language>

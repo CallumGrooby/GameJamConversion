@@ -11,6 +11,12 @@
     "StaticLib": "AkSineSource"
    },
    {
+    "Name": "Wwise Compressor",
+    "ID": "7077891",
+    "DLL": "AkCompressor",
+    "StaticLib": "AkCompressorFX"
+   },
+   {
     "Name": "Wwise RoomVerb",
     "ID": "7733251",
     "DLL": "AkRoomVerb",

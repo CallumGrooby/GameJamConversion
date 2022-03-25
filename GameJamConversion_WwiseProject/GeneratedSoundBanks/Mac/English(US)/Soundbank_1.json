@@ -16,7 +16,7 @@
     "Id": "2878262188",
     "GUID": "{C806ED9A-B8C7-4312-A14A-5FA1627D1A0E}",
     "Language": "English(US)",
-    "Hash": "2362040593",
+    "Hash": "3245419204",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\Soundbank_1",
     "ShortName": "Soundbank_1",
     "Path": "English(US)\\Soundbank_1.bnk",
@@ -287,7 +287,7 @@
       "Name": "OnAkPlayTestMusic",
       "ObjectPath": "\\Events\\Default Work Unit\\Music\\OnAkPlayTestMusic",
       "GUID": "{BE2D35F7-DDB8-43D0-AC56-1A0FCCFD5241}",
-      "MaxAttenuation": "3000.",
+      "MaxAttenuation": "5000.",
       "DurationType": "Infinite",
       "IncludedMemoryFiles": [
        {
