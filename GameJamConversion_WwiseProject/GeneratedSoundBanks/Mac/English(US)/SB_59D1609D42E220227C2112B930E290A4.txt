@@ -5,6 +5,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	821630361	OnAkLightOn			\Default Work Unit\SFX\OnAkLightOn	
 	1529552610	OnAkPlayFootstep			\Default Work Unit\Footsteps\OnAkPlayFootstep	
 	2066799478	OnAkPlayVoiceTone			\Default Work Unit\VoiceInput\OnAkPlayVoiceTone	
+	2455776213	OnAkPlayTestMusic			\Default Work Unit\Music\OnAkPlayTestMusic	
 	2969285732	OnAkPlayUnrealToWiseVoice			\Default Work Unit\VoiceInput\OnAkPlayUnrealToWiseVoice	
 	3193235074	OnAkMusicRandomAmbience			\Default Work Unit\Music\OnAkMusicRandomAmbience	Plays random noise at a point in the music
 	3366796165	OnAkSpotted			\Default Work Unit\PlayerSignifiers\OnAkSpotted	
@@ -16,11 +17,16 @@ Switch Group	ID	Name			Wwise Object Path	Notes
 
 Switch	ID	Name	Switch Group			Notes
 	1216965916	Stone	FootsepMaterialSwitch			
+	1229756253	Cardboard	FootsepMaterialSwitch			
 	2473969246	Metal	FootsepMaterialSwitch			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
 	2332704296	FootstepVolumeRTPC			\Default Work Unit\FootstepVolumeRTPC	
+	3988132655	CustomOcclusionValueRTPC			\Default Work Unit\CustomOcclusionValueRTPC	
+
+Effect plug-ins	ID	Name	Type				Notes
+	2755291684	Pumping_and_Breathing_1	Wwise Compressor			
 
 Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	286787007	Wwise Sine	Wwise Sine		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\SingleToneTest\Wwise Sine	

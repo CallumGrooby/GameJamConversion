@@ -1603,6 +1603,7 @@
 								<Property Name="ModDepth" Type="Real32" Value="10"/>
 								<Property Name="ModFrequency" Type="Real32" Value="5.5"/>
 								<Property Name="ModPWM" Type="Real32" Value="0"/>
+								<Property Name="OutputLevel" Type="Real32" Value="-7"/>
 							</PropertyList>
 						</Effect>
 						<Effect Name="Special_Effect_1" ID="{83317D8A-9D4C-438E-BE8C-BC7D27CAD1B0}" PluginName="Wwise Flanger" CompanyID="0" PluginID="125" PluginType="3">

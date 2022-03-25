@@ -7,6 +7,7 @@
 					<ChildrenList>
 						<Switch Name="Metal" ID="{30D730B0-0086-4960-8124-F7EBC78C2603}"/>
 						<Switch Name="Stone" ID="{7CB5294A-A6ED-40DF-A1AE-C29A88363C43}"/>
+						<Switch Name="Cardboard" ID="{84328938-73AE-41AB-B075-C0991AB0F094}"/>
 					</ChildrenList>
 				</SwitchGroup>
 			</ChildrenList>

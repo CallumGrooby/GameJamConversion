@@ -56,17 +56,21 @@
 							<Value>50</Value>
 						</RTPCValue>
 						<RTPCValue>
+							<GameParameterRef Name="CustomOcclusionValueRTPC" ID="{8C4BFCEA-32B2-48CD-AAEE-C5C7B7A6E9F6}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
 							<GameParameterRef Name="FootstepVolumeRTPC" ID="{3D21B2E8-069A-49E7-ACD3-A5538798FCA6}"/>
 							<Value>250</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}"/>
-							<Value>-45.9225512528474</Value>
+							<Value>-48</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
-						<CurrentSwitchRef Name="Stone" ID="{7CB5294A-A6ED-40DF-A1AE-C29A88363C43}"/>
+						<CurrentSwitchRef Name="Cardboard" ID="{84328938-73AE-41AB-B075-C0991AB0F094}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
