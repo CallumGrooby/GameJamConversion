@@ -87,16 +87,34 @@ void AThirdPersonCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInp
 
 AInteractableObject* AThirdPersonCharacter::PickUpObject()
 {
+	//APlayerCameraManager* camManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
+	//FVector camLocation = camManager->GetCameraLocation();
+	//FRotator camForward = camManager->GetCameraRotation();
+
+	//FHitResult hit = CastRay(camLocation, camForward);
+
+	AInteractableObject* interactableObject = Cast<AInteractableObject>(ExecuteLogic());
+
+	if (interactableObject)
+	{
+		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Interactable Object"));
+		return interactableObject;
+	}
+
+	return NULL;
+}
+
+AActor* AThirdPersonCharacter::ExecuteLogic()
+{
 	APlayerCameraManager* camManager = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
 	FVector camLocation = camManager->GetCameraLocation();
 	FRotator camForward = camManager->GetCameraRotation();
 
 	FHitResult hit = CastRay(camLocation, camForward);
-	AInteractableObject* interactableObject = Cast<AInteractableObject>(hit.Actor);
+	AActor* interactableObject = Cast<AActor>(hit.Actor);
 
 	if (interactableObject)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Interactable Object"));
 		return interactableObject;
 	}
 

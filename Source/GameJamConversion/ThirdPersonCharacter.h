@@ -29,6 +29,8 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		AInteractableObject* PickUpObject();
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
+		AActor* ExecuteLogic();
+	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		void PickUpLogic();
 	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
 		void DropObject();
@@ -41,7 +43,8 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
-	FHitResult CastRay(FVector rayLocation, FRotator rayRotation);
+	UFUNCTION(BlueprintCallable, Category = "InteractableObjects")
+		FHitResult CastRay(FVector rayLocation, FRotator rayRotation);
 
 	FVector LocationOne{ 10, 0, 0 };
 	FVector LocationTwo{ 0, 10, 0 };
@@ -56,8 +59,6 @@ public:
 	//Camera Controller
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
 		AActor* PlayersCamera;
-
-
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
 		float timeToNextCameraChange;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Camera Settings")
