@@ -5,19 +5,23 @@
 
 AInteractiveLeaver::AInteractiveLeaver()
 {
-
+	//targetRotation = GetActorRotation();
+	doOnce = true;
 }
+
 void AInteractiveLeaver::BeginPlay()
 {
 	Super::BeginPlay();
-	targetRotation = FRotator(0, 0, 0);
-
+	//targetRotation = FRotator(0, 0, 0);
+	targetRotation = GetActorRotation();
 }
+
 
 void AInteractiveLeaver::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 }
+
 
 void AInteractiveLeaver::MachineLogic(AActor* interactableObject)
 {
@@ -32,18 +36,6 @@ void AInteractiveLeaver::rotateLever(UStaticMeshComponent* Lever, float DeltaTim
 	Lever->SetWorldRotation(rotation);
 
 	FRotator currentleverRotation = Lever->GetComponentRotation();
-	//if (currentleverRotation.Pitch >= 55.0 && doOnce)
-	//{
-	//	doOnce = false;
-	//	if (lightToToggle != nullptr)
-	//	{
-
-	//	}
-	//}
-	//else
-	//{
-	//	doOnce = true;
-	//}
 }
 
 void AInteractiveLeaver::moveHitbox(UBoxComponent* hitBox, float DeltaTime)
