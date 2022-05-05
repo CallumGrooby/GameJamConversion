@@ -34,5 +34,5 @@ public:
 		TArray<AActor*> splineWalkers;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Unasigned Actors")
-		AActor* puzzleToUnlock;
+		TArray<AActor*> puzzleToUnlock;
 };
