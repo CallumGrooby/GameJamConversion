@@ -5,7 +5,7 @@
 			<ChildrenList>
 				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="Color" Type="int16" Value="2"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
@@ -28,6 +28,49 @@
 						</AuxBus>
 						<Bus Name="AmbienceAB" ID="{4166661A-8C73-4FD2-B042-44F5EC3ACDE4}">
 							<PropertyList>
+								<Property Name="BusVolume" Type="Real64">
+									<RTPCList>
+										<RTPC Name="" ID="{2A667E6C-353B-48C5-8E7F-A6D5782D19CC}" ShortID="207108579">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="TensionMeterOutputRTPC" ID="{6BC8BDC8-36A4-4CE7-AC54-FCE93599EF89}" WorkUnitID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{18019C49-344E-498B-921E-912539530C06}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>-48</XPos>
+														<YPos>0</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>-46.52392</XPos>
+														<YPos>0.00366</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-45.0478359908884</XPos>
+														<YPos>-0.450926509253646</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>-20.05063</XPos>
+														<YPos>-21.35677</YPos>
+														<Flags>0</Flags>
+													</Point>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-18.38771</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
 								<Property Name="Color" Type="int16" Value="17"/>
 								<Property Name="OverrideColor" Type="bool" Value="True"/>
 							</PropertyList>
@@ -280,6 +323,10 @@
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Microphone" ID="{1C4AF053-46F4-42CE-9D44-F4C6998816C2}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="2"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
 							<ObjectLists/>
 						</Bus>
 						<Bus Name="Unreal_InputAB" ID="{8865EBEB-E11A-4E5B-963C-1BA1DD907EEE}">
@@ -289,6 +336,18 @@
 							</PropertyList>
 							<ObjectLists/>
 						</Bus>
+						<AuxBus Name="AkAuxTensionMeter" ID="{9766695C-EB7A-4F56-9135-305CC8DFC827}">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="19"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Effect0" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+									<ObjectRef Name="TensionMeter" ID="{5294B8CC-D57E-4402-88F4-CE3C7A19482A}" WorkUnitID="{C05AB40E-B871-4EB8-A409-6D565A99BAD6}"/>
+								</Reference>
+							</ReferenceList>
+							<ObjectLists/>
+						</AuxBus>
 					</ChildrenList>
 					<ObjectLists/>
 				</Bus>

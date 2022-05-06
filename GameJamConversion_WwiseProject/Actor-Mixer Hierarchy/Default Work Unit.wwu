@@ -22,7 +22,7 @@
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
 								</Reference>
 								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+									<ObjectRef Name="AmbienceAB" ID="{4166661A-8C73-4FD2-B042-44F5EC3ACDE4}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -79,6 +79,73 @@
 							<ObjectLists/>
 							<ActiveSourceList>
 								<ActiveSource Name="Light Buzz Loop" ID="{9176F0A9-526D-4380-B459-B0134C777AAE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Alarm" ID="{EC8ACD3E-7E60-412B-B634-D61836182BF7}" ShortID="603717452">
+							<PropertyList>
+								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Lowpass" Type="int16">
+									<RTPCList>
+										<RTPC Name="" ID="{97FC45F8-5DC4-4C79-95AB-0801A2752CA3}" ShortID="861237855">
+											<ReferenceList>
+												<Reference Name="ControlInput">
+													<ObjectRef Name="CustomOcclusionValueRTPC" ID="{8C4BFCEA-32B2-48CD-AAEE-C5C7B7A6E9F6}" WorkUnitID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}"/>
+												</Reference>
+											</ReferenceList>
+											<Curve Name="" ID="{B1D69F3F-D8C5-44F1-88BE-71C741BC233D}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="65537"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>1</YPos>
+														<Flags>5</Flags>
+													</Point>
+													<Point>
+														<XPos>1</XPos>
+														<YPos>62</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</RTPC>
+									</RTPCList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Attenuation">
+									<ObjectRef Name="LoudNoiseAlarm" ID="{95B9EF86-0086-4311-BE80-3E7F80226631}" WorkUnitID="{AF4250D5-FF57-4147-BA29-9BA89E8B612A}"/>
+								</Reference>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="AmbienceAB" ID="{4166661A-8C73-4FD2-B042-44F5EC3ACDE4}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Alarm" ID="{90F31C24-A943-4F9B-9C72-9A2661C6DBCD}">
+									<PropertyList>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.144236524832656"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Alarm.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="42069676"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists/>
+							<ActiveSourceList>
+								<ActiveSource Name="Alarm" ID="{90F31C24-A943-4F9B-9C72-9A2661C6DBCD}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

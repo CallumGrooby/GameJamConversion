@@ -2,9 +2,9 @@
 <ValidationCache Version="1" SchemaVersion="103">
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1644609227" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1644609227" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1648049793" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1648222663" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\States\Default Work Unit.wwu" DateLow="1644609227" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1648058390" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1648222663" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1647488365" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Queries\Factory Queries.wwu" DateLow="1644609227" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1644609227" DateHigh="0"/>
@@ -14,12 +14,12 @@
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Mixing Sessions\Default Work Unit.wwu" DateLow="1644609224" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Metadata\Default Work Unit.wwu" DateLow="1644609224" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1648222294" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1648217653" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\GameJamConversion_WwiseProject.wproj" DateLow="1647972870" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\GameJamConversion_WwiseProject.thomp.wsettings" DateLow="1648064875" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1647972870" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Events\Default Work Unit.wwu" DateLow="1648050013" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Effects\Factory Effects.wwu" DateLow="1648217653" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1648222663" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\GameJamConversion_WwiseProject.wproj" DateLow="1648222662" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\GameJamConversion_WwiseProject.thomp.wsettings" DateLow="1649121945" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1648222662" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Events\Default Work Unit.wwu" DateLow="1648222662" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Effects\Factory Effects.wwu" DateLow="1648222662" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1647966002" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1644609223" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1644609223" DateHigh="0"/>
@@ -27,5 +27,5 @@
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1644609223" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1644609223" DateHigh="0"/>
 	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1647488361" DateHigh="0"/>
-	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1648222294" DateHigh="0"/>
+	<ValidationCacheItem File="D:\Greenwich\Year3\UEGit\GameJamConversion\GameJamConversion_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1648222662" DateHigh="0"/>
 </ValidationCache>

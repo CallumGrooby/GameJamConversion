@@ -262,6 +262,38 @@
 						</Event>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="States" ID="{576C3A02-DA02-434B-B259-327873AA5202}" ShortID="910703926">
+					<ChildrenList>
+						<Event Name="OnAkSetStateTension" ID="{2BB3D57F-2075-49C1-BDF4-4D3259EEB122}">
+							<ChildrenList>
+								<Action Name="" ID="{D30DEAC5-2357-4461-9D1F-A8F7F3285F1F}" ShortID="40050149">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Tension" ID="{222CB17F-1C72-4C49-B283-9E326AA49F34}" WorkUnitID="{03432106-76B4-4FA7-AA27-D21E6AABCD4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="OnAkSetStateDefault" ID="{822E3813-4BEE-4FDB-9A50-DE8B79C53570}">
+							<ChildrenList>
+								<Action Name="" ID="{F0B51E7C-F677-49DF-B136-35534B62E989}" ShortID="177680045">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Default" ID="{324B8EB0-6DAA-41F6-801E-D00112552269}" WorkUnitID="{03432106-76B4-4FA7-AA27-D21E6AABCD4C}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

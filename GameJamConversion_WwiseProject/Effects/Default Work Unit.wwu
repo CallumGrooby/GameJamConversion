@@ -20,6 +20,10 @@
 	<GameParameter Name="VoiceInputPitchRTPC" ID="{12360441-A3D1-4156-A2D0-4307E45398E3}"/>
 </PluginData>
 				</Effect>
+				<Effect Name="TensionMeter" ID="{5294B8CC-D57E-4402-88F4-CE3C7A19482A}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">					<PluginData>
+	<GameParameter Name="TensionMeterOutputRTPC" ID="{6BC8BDC8-36A4-4CE7-AC54-FCE93599EF89}"/>
+</PluginData>
+				</Effect>
 			</ChildrenList>
 		</WorkUnit>
 	</Effects>
