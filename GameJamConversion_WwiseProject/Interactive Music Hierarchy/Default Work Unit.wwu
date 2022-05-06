@@ -5,50 +5,9 @@
 			<ChildrenList>
 				<Folder Name="AmbienceMusic" ID="{57AFBED0-0081-4D7B-BAE4-B59238C6EFDF}" ShortID="127381127">
 					<ChildrenList>
-						<MusicPlaylistContainer Name="MainAmbienceLoop" ID="{9E922609-3197-46DB-88B9-E024FBE1283F}" ShortID="961451467">
+						<MusicSwitchContainer Name="MusicStateGroup" ID="{A3C2F6C1-4656-4DDC-B0A9-85EBE1A83618}" ShortID="40726343">
 							<PropertyList>
-								<Property Name="Tempo" Type="Real64" Value="45"/>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-15</Value>
-									</ValueList>
-									<RTPCList>
-										<RTPC Name="" ID="{126D374D-A810-43B2-9078-2E83D917B3B1}" ShortID="1045119333">
-											<ReferenceList>
-												<Reference Name="ControlInput">
-													<ObjectRef Name="TensionLevelRTPC" ID="{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}" WorkUnitID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}"/>
-												</Reference>
-											</ReferenceList>
-											<Curve Name="" ID="{26D09AD4-33C4-4F96-AF44-FDB3645555A5}">
-												<PropertyList>
-													<Property Name="Flags" Type="int32" Value="3"/>
-												</PropertyList>
-												<PointList>
-													<Point>
-														<XPos>0</XPos>
-														<YPos>0</YPos>
-														<Flags>5</Flags>
-													</Point>
-													<Point>
-														<XPos>75</XPos>
-														<YPos>0</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>80.23392</XPos>
-														<YPos>-11.67551</YPos>
-														<Flags>0</Flags>
-													</Point>
-													<Point>
-														<XPos>100</XPos>
-														<YPos>-12.17737</YPos>
-														<Flags>37</Flags>
-													</Point>
-												</PointList>
-											</Curve>
-										</RTPC>
-									</RTPCList>
-								</Property>
+								<Property Name="Tempo" Type="Real64" Value="96"/>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -59,10 +18,774 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="DronescapeLoop" ID="{20A376BE-B02D-4507-A6A5-EAAD0D6D6382}" ShortID="455953917">
+								<MusicPlaylistContainer Name="MainAmbienceLoop" ID="{9E922609-3197-46DB-88B9-E024FBE1283F}" ShortID="961451467">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="81688.9502367551"/>
 										<Property Name="Tempo" Type="Real64" Value="45"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+											<RTPCList>
+												<RTPC Name="" ID="{126D374D-A810-43B2-9078-2E83D917B3B1}" ShortID="1045119333">
+													<ReferenceList>
+														<Reference Name="ControlInput">
+															<ObjectRef Name="TensionLevelRTPC" ID="{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}" WorkUnitID="{2D985425-C9B8-4A4F-B566-5F89A46B45B6}"/>
+														</Reference>
+													</ReferenceList>
+													<Curve Name="" ID="{26D09AD4-33C4-4F96-AF44-FDB3645555A5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>0</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>75</XPos>
+																<YPos>0</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>80.23392</XPos>
+																<YPos>-11.67551</YPos>
+																<Flags>0</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>-12.17737</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</RTPC>
+											</RTPCList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="MusicAB" ID="{32268A2C-9AB9-40B1-AAA7-0B27EAD2B71F}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<MusicSegment Name="DronescapeLoop" ID="{20A376BE-B02D-4507-A6A5-EAAD0D6D6382}" ShortID="455953917">
+											<PropertyList>
+												<Property Name="EndPosition" Type="Real64" Value="81688.9502367551"/>
+												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+												<Property Name="Tempo" Type="Real64" Value="96"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<MusicTrack Name="Dronescape" ID="{CB80442E-D366-4A99-8AD3-8A7014838E37}" ShortID="906281439">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Dronescape" ID="{5F5DE0AD-5D04-4743-BB1D-AF76119F67DB}">
+															<Language>SFX</Language>
+															<AudioFile>Dronescape.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="311468022"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{419B7689-F8E7-42E1-8F28-96849927033B}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{E9E5FCBA-A8FC-4301-BB51-30B8026D910F}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Dronescape" ID="{68C62E4F-6802-4D1F-8AAC-804EF7535FD9}">
+																							<PropertyList>
+																								<Property Name="BeginTrimOffset" Type="Real64" Value="5.6843418860808E-13"/>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="78734.5578231292"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Dronescape" ID="{5F5DE0AD-5D04-4743-BB1D-AF76119F67DB}"/>
+																							<PropertyCurveList>
+																								<PropertyCurve PropertyName="Highpass">
+																									<Curve Name="" ID="{EFFAD8D2-E4EF-4D22-8F53-BFF45860C654}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="1"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>78.7345578231293</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																								<PropertyCurve PropertyName="Lowpass">
+																									<Curve Name="" ID="{A90F62DE-D34F-431B-A41A-506E93F5E17C}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="1"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>78.7345578231293</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																								<PropertyCurve PropertyName="Volume">
+																									<Curve Name="" ID="{64C5DDCD-9744-4AC8-A985-38B089067325}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>78.7345578231293</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																							</PropertyCurveList>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Dronescape-Highlight" ID="{E7878B28-F805-4D73-81FC-6D75C696C8EF}" ShortID="753284298">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Dronescape-Highlight" ID="{F630C5EE-1221-4029-BF5A-D88A2EF7F388}">
+															<Language>SFX</Language>
+															<AudioFile>Dronescape-Highlight.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="882218781"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{CF24D6F7-046B-4A5B-BAC4-391A2AC8BF83}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-72.972972972973"/>
+																<Property Name="PanY" Type="Real64" Value="72.1014492753623"/>
+															</PropertyList>
+														</Panner>
+														<Position Name="" ID="{49EC8B3C-8450-4182-82E2-074417F38AC0}">
+															<PropertyList>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="Left" ID="{23974946-16B6-405F-9B30-1D4E0345D499}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="Uint32" Value="10000"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>66.49746</XPos>
+																			<YPos>70.90395</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>1.01522</XPos>
+																			<YPos>-93.22034</YPos>
+																			<Flags>0</Flags>
+																			<Time>10000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="Right" ID="{0A9332AD-C58B-4B03-A223-0E605FFB3E15}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="Uint32" Value="10000"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-70.55838</XPos>
+																			<YPos>59.03954</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>1.01522</XPos>
+																			<YPos>-93.22034</YPos>
+																			<Flags>0</Flags>
+																			<Time>10000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{A0D376CD-CB3B-4B26-9A8C-8990209B16F0}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{EA091754-6788-4138-ABE5-C9E5C8358DE8}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Dronescape-Highlight" ID="{A34C6A9C-1A37-408E-9C2F-64164CE6D22E}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="10774.0589569161"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																								<Property Name="PlayAt" Type="Real64" Value="16000"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Dronescape-Highlight" ID="{F630C5EE-1221-4029-BF5A-D88A2EF7F388}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																				<Reference>
+																					<Local>
+																						<MusicEventCue Name="" ID="{4A41A533-0E89-46EC-9477-534FAD244717}" ShortID="745029107">
+																							<PropertyList>
+																								<Property Name="PlayAt" Type="Real64" Value="22666.6666666667"/>
+																							</PropertyList>
+																							<ReferenceList>
+																								<Reference Name="PostEventTarget">
+																									<ObjectRef Name="OnAkMusicRandomAmbience" ID="{3D1079A2-1C3C-40E3-ACA2-AC74FC8F2ED0}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
+																								</Reference>
+																							</ReferenceList>
+																						</MusicEventCue>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{6EE1EFE6-A565-48A3-8A73-1F98852ED12A}">
+																		<ObjectLists/>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="Dronescape-Highlight_01" ID="{21ED78F6-F216-48FD-82FE-D67F912EAEC1}" ShortID="523628770">
+													<PropertyList>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+														<Property Name="Volume" Type="Real64">
+															<ValueList>
+																<Value>-5</Value>
+															</ValueList>
+														</Property>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="Dronescape-Wine" ID="{292610C2-71CE-4472-9CC2-90C516C2FCA4}">
+															<Language>SFX</Language>
+															<AudioFile>Dronescape-Wine.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="546232237"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{FA9E8B69-D181-490B-B59A-5FEE670B89BD}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="83.445945945946"/>
+																<Property Name="PanY" Type="Real64" Value="-82.6086956521739"/>
+															</PropertyList>
+														</Panner>
+													</PositioningInfo>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{0BD1672F-AF7A-4857-83CA-B0D4BF42409E}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{EA72DAED-1A04-4B14-A615-0F857B8104D2}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="Dronescape-Wine" ID="{FF164891-CF7C-4A7E-BD0F-07A579E8A5BB}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="29892.1768707483"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																								<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																								<Property Name="PlayAt" Type="Real64" Value="16000"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="Dronescape-Wine" ID="{292610C2-71CE-4472-9CC2-90C516C2FCA4}"/>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{B3F0EECD-DF5C-458B-B063-A3B00056BDD3}">
+																		<ObjectLists/>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+												<MusicTrack Name="DroneScape - Dings" ID="{1F993F99-660E-41E2-81B3-56CEFE5E47DF}" ShortID="81332068">
+													<PropertyList>
+														<Property Name="3DPosition" Type="int16" Value="2"/>
+														<Property Name="3DSpatialization" Type="int16" Value="1"/>
+														<Property Name="MusicTrackType" Type="int16" Value="1"/>
+														<Property Name="OverridePositioning" Type="bool" Value="True"/>
+														<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Conversion">
+															<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
+														</Reference>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+														</Reference>
+													</ReferenceList>
+													<ChildrenList>
+														<AudioFileSource Name="DroneScape - Dings" ID="{945D07E9-F497-47A5-9E8C-4EF4CC014AB7}">
+															<Language>SFX</Language>
+															<AudioFile>DroneScape - Dings.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="949250171"/>
+															</MediaIDList>
+														</AudioFileSource>
+													</ChildrenList>
+													<PositioningInfo>
+														<Panner Name="" ID="{DAC2B8EE-188C-4E73-9168-E5C8D2C6AEEB}">
+															<PropertyList>
+																<Property Name="PanX" Type="Real64" Value="-77.3648648648649"/>
+																<Property Name="PanY" Type="Real64" Value="-90.5797101449276"/>
+															</PropertyList>
+														</Panner>
+														<Position Name="" ID="{43034088-8931-484A-AC12-8BE8ADA2385D}">
+															<PropertyList>
+																<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+																<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+															</PropertyList>
+															<ChildrenList>
+																<Path2D Name="DroneScape - Dings_Path" ID="{97C05584-4DF0-4721-B552-7DEC9C3BFC8D}">
+																	<PropertyList>
+																		<Property Name="Duration" Type="Uint32" Value="60000"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>-84.26396</XPos>
+																			<YPos>-28.53107</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-47.26868</XPos>
+																			<YPos>-62.14689</YPos>
+																			<Flags>0</Flags>
+																			<Time>5000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-39.5939086294416</XPos>
+																			<YPos>-64.4067796610169</YPos>
+																			<Flags>0</Flags>
+																			<Time>10000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-32.48730964467</XPos>
+																			<YPos>-63.8418079096045</YPos>
+																			<Flags>0</Flags>
+																			<Time>15000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-27.4111675126904</XPos>
+																			<YPos>-64.4067796610169</YPos>
+																			<Flags>0</Flags>
+																			<Time>20000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-18.7817258883249</XPos>
+																			<YPos>-64.9717514124294</YPos>
+																			<Flags>0</Flags>
+																			<Time>25000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-11.6751269035533</XPos>
+																			<YPos>-65.5367231638418</YPos>
+																			<Flags>0</Flags>
+																			<Time>30000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>32.994923857868</XPos>
+																			<YPos>-61.0169491525424</YPos>
+																			<Flags>0</Flags>
+																			<Time>35000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>44.6700507614213</XPos>
+																			<YPos>-57.0621468926554</YPos>
+																			<Flags>0</Flags>
+																			<Time>40000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>65.989847715736</XPos>
+																			<YPos>-42.9378531073446</YPos>
+																			<Flags>0</Flags>
+																			<Time>45000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>80.7106598984772</XPos>
+																			<YPos>-9.60451977401129</YPos>
+																			<Flags>0</Flags>
+																			<Time>50000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>79.18782</XPos>
+																			<YPos>45.19774</YPos>
+																			<Flags>0</Flags>
+																			<Time>55000</Time>
+																		</Point>
+																		<Point>
+																			<XPos>68.5279187817259</XPos>
+																			<YPos>76.271186440678</YPos>
+																			<Flags>0</Flags>
+																			<Time>60000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+																<Path2D Name="DroneScape - Dings_Path_01" ID="{4C86B651-199E-48C6-81D0-9EAD0F4B6873}">
+																	<PropertyList>
+																		<Property Name="AppendOffset" Type="Uint32" Value="5000"/>
+																		<Property Name="Duration" Type="Uint32" Value="60000"/>
+																	</PropertyList>
+																	<PointList>
+																		<Point>
+																			<XPos>71.06599</XPos>
+																			<YPos>60.73446</YPos>
+																			<Flags>12</Flags>
+																			<Time>0</Time>
+																		</Point>
+																		<Point>
+																			<XPos>64.4670050761421</XPos>
+																			<YPos>-5.08474576271186</YPos>
+																			<Flags>0</Flags>
+																			<Time>8571</Time>
+																		</Point>
+																		<Point>
+																			<XPos>55.3299492385787</XPos>
+																			<YPos>-47.4576271186441</YPos>
+																			<Flags>0</Flags>
+																			<Time>17142</Time>
+																		</Point>
+																		<Point>
+																			<XPos>14.7208121827411</XPos>
+																			<YPos>-67.2316384180791</YPos>
+																			<Flags>0</Flags>
+																			<Time>25714</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-4.06091370558376</XPos>
+																			<YPos>-74.5762711864407</YPos>
+																			<Flags>0</Flags>
+																			<Time>34285</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-27.41117</XPos>
+																			<YPos>-77.9661</YPos>
+																			<Flags>0</Flags>
+																			<Time>42857</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-65.989847715736</XPos>
+																			<YPos>-74.0112994350282</YPos>
+																			<Flags>0</Flags>
+																			<Time>51428</Time>
+																		</Point>
+																		<Point>
+																			<XPos>-87.3096446700508</XPos>
+																			<YPos>-11.864406779661</YPos>
+																			<Flags>0</Flags>
+																			<Time>60000</Time>
+																		</Point>
+																	</PointList>
+																</Path2D>
+															</ChildrenList>
+														</Position>
+													</PositioningInfo>
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{4DE64D69-12E4-4975-9CA3-1BD1668CA1F3}">
+															<PropertyList>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
+															</PropertyList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{F94127CD-00DD-4030-9072-B2F5C1F5BDD8}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="DroneScape - Dings" ID="{A3825E95-AA65-407F-BDEF-491C82C2B699}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="55695.3287981859"/>
+																								<Property Name="PlayAt" Type="Real64" Value="13253.2784946374"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="DroneScape - Dings" ID="{945D07E9-F497-47A5-9E8C-4EF4CC014AB7}"/>
+																							<PropertyCurveList>
+																								<PropertyCurve PropertyName="Volume">
+																									<Curve Name="" ID="{34BDEDBA-754C-4C6E-88CF-2BE5C11A00D9}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																												<SegmentShape>Log2</SegmentShape>
+																											</Point>
+																											<Point>
+																												<XPos>23.26584</XPos>
+																												<YPos>0</YPos>
+																												<Flags>0</Flags>
+																												<SegmentShape>SCurve</SegmentShape>
+																											</Point>
+																											<Point>
+																												<XPos>26.58954</XPos>
+																												<YPos>-16.46616</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>29.61778</XPos>
+																												<YPos>-17.28576</YPos>
+																												<Flags>0</Flags>
+																												<SegmentShape>SCurve</SegmentShape>
+																											</Point>
+																											<Point>
+																												<XPos>32.20288</XPos>
+																												<YPos>-0.07047</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>55.6953287981859</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																							</PropertyCurveList>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{E522501A-D4B4-4BB8-BD74-DFE7F5336869}">
+																		<ObjectLists/>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{B8F968E9-1197-469E-B3ED-3594B57A0293}">
+																		<ObjectLists/>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
+											<ObjectLists>
+												<ObjectList Name="Cues">
+													<Reference>
+														<Local>
+															<MusicCue Name="Entry Cue" ID="{10566678-AA20-4002-890F-594517A06F3F}">
+																<PropertyList>
+																	<Property Name="TimeMs" Type="Real64" Value="4000"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+													<Reference>
+														<Local>
+															<MusicCue Name="Exit Cue" ID="{1089A913-5F25-4910-9944-067AB9F518FD}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="62666.6666666667"/>
+																</PropertyList>
+															</MusicCue>
+														</Local>
+													</Reference>
+												</ObjectList>
+											</ObjectLists>
+										</MusicSegment>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{97963D3E-0F70-4334-B39B-B199FD36B877}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{C4D67D35-6FE3-436D-A36C-C24C28D84809}">
+													<TransitionInfo/>
+												</MusicTransition>
+												<MusicTransition Name="Transition" ID="{A9D514DB-7DAC-4338-B2A9-0A5A41213543}">
+													<PropertyList>
+														<Property Name="DestinationContextType" Type="int16" Value="2"/>
+														<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+														<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+														<Property Name="SourceContextType" Type="int16" Value="2"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="DestinationContextObject">
+															<ObjectRef Name="DronescapeLoop" ID="{20A376BE-B02D-4507-A6A5-EAAD0D6D6382}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
+														</Reference>
+														<Reference Name="SourceContextObject">
+															<ObjectRef Name="DronescapeLoop" ID="{20A376BE-B02D-4507-A6A5-EAAD0D6D6382}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
+														</Reference>
+													</ReferenceList>
+													<TransitionInfo>
+														<SourceFadeOut>
+															<MusicFade Name="Source Fade-out" ID="{3E6FF225-811D-4CE2-81A1-97297D8CF917}">
+																<PropertyList>
+																	<Property Name="FadeOffset" Type="Real64" Value="2"/>
+																	<Property Name="FadeTime" Type="Real64" Value="3"/>
+																	<Property Name="FadeType" Type="int16" Value="1"/>
+																</PropertyList>
+															</MusicFade>
+														</SourceFadeOut>
+														<DestinationFadeIn>
+															<MusicFade Name="Destination Fade-in" ID="{57CA5021-04E5-41A2-B131-51F7CE74488B}">
+																<PropertyList>
+																	<Property Name="FadeOffset" Type="Real64" Value="-2"/>
+																	<Property Name="FadeTime" Type="Real64" Value="3"/>
+																</PropertyList>
+															</MusicFade>
+														</DestinationFadeIn>
+													</TransitionInfo>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{B182207D-81BF-49B5-ABB2-64A346B12545}" ShortID="11191409">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{3EA2709A-66B1-4E9A-8340-60602371ED78}" ShortID="404816296">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="DronescapeLoop" ID="{20A376BE-B02D-4507-A6A5-EAAD0D6D6382}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
+								<MusicPlaylistContainer Name="MainTensionLoop" ID="{1B985D0E-E79D-4335-8DA8-9656C7BEAED1}" ShortID="810239278">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-13</Value>
+											</ValueList>
+										</Property>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -73,126 +796,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="Dronescape" ID="{CB80442E-D366-4A99-8AD3-8A7014838E37}" ShortID="906281439">
-											<ReferenceList>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Dronescape" ID="{5F5DE0AD-5D04-4743-BB1D-AF76119F67DB}">
-													<Language>SFX</Language>
-													<AudioFile>Dronescape.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="311468022"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{419B7689-F8E7-42E1-8F28-96849927033B}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{E9E5FCBA-A8FC-4301-BB51-30B8026D910F}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Dronescape" ID="{68C62E4F-6802-4D1F-8AAC-804EF7535FD9}">
-																					<PropertyList>
-																						<Property Name="BeginTrimOffset" Type="Real64" Value="5.6843418860808E-13"/>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="78734.5578231292"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Dronescape" ID="{5F5DE0AD-5D04-4743-BB1D-AF76119F67DB}"/>
-																					<PropertyCurveList>
-																						<PropertyCurve PropertyName="Highpass">
-																							<Curve Name="" ID="{EFFAD8D2-E4EF-4D22-8F53-BFF45860C654}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="1"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>0</YPos>
-																										<Flags>5</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>78.7345578231293</XPos>
-																										<YPos>0</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</PropertyCurve>
-																						<PropertyCurve PropertyName="Lowpass">
-																							<Curve Name="" ID="{A90F62DE-D34F-431B-A41A-506E93F5E17C}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="1"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>0</YPos>
-																										<Flags>5</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>78.7345578231293</XPos>
-																										<YPos>0</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</PropertyCurve>
-																						<PropertyCurve PropertyName="Volume">
-																							<Curve Name="" ID="{64C5DDCD-9744-4AC8-A985-38B089067325}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="3"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>0</YPos>
-																										<Flags>5</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>78.7345578231293</XPos>
-																										<YPos>0</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</PropertyCurve>
-																					</PropertyCurveList>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-										<MusicTrack Name="Dronescape-Highlight" ID="{E7878B28-F805-4D73-81FC-6D75C696C8EF}" ShortID="753284298">
+										<MusicSegment Name="DroneTension" ID="{348F1F13-8974-4D7F-8D1C-D74053B86141}" ShortID="250483217">
 											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+												<Property Name="EndPosition" Type="Real64" Value="352902.22681693"/>
+												<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+												<Property Name="Tempo" Type="Real64" Value="96"/>
 												<Property Name="Volume" Type="Real64">
 													<ValueList>
-														<Value>-5</Value>
+														<Value>-4</Value>
 													</ValueList>
 												</Property>
 											</PropertyList>
@@ -205,542 +816,231 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="Dronescape-Highlight" ID="{F630C5EE-1221-4029-BF5A-D88A2EF7F388}">
-													<Language>SFX</Language>
-													<AudioFile>Dronescape-Highlight.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="882218781"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{CF24D6F7-046B-4A5B-BAC4-391A2AC8BF83}">
-													<PropertyList>
-														<Property Name="PanX" Type="Real64" Value="-72.972972972973"/>
-														<Property Name="PanY" Type="Real64" Value="72.1014492753623"/>
-													</PropertyList>
-												</Panner>
-												<Position Name="" ID="{49EC8B3C-8450-4182-82E2-074417F38AC0}">
-													<PropertyList>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-													</PropertyList>
+												<MusicTrack Name="DroneTension" ID="{1E35BEF8-BC51-4488-AB58-386AED49F5E5}" ShortID="926518951">
+													<ReferenceList>
+														<Reference Name="OutputBus">
+															<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+														</Reference>
+													</ReferenceList>
 													<ChildrenList>
-														<Path2D Name="Left" ID="{23974946-16B6-405F-9B30-1D4E0345D499}">
-															<PropertyList>
-																<Property Name="Duration" Type="Uint32" Value="10000"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>66.49746</XPos>
-																	<YPos>70.90395</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>1.01522</XPos>
-																	<YPos>-93.22034</YPos>
-																	<Flags>0</Flags>
-																	<Time>10000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="Right" ID="{0A9332AD-C58B-4B03-A223-0E605FFB3E15}">
-															<PropertyList>
-																<Property Name="Duration" Type="Uint32" Value="10000"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-70.55838</XPos>
-																	<YPos>59.03954</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>1.01522</XPos>
-																	<YPos>-93.22034</YPos>
-																	<Flags>0</Flags>
-																	<Time>10000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
+														<AudioFileSource Name="DroneTension" ID="{D1351518-4FB8-4338-9FCF-4586C15AD3FD}">
+															<Language>SFX</Language>
+															<AudioFile>DroneTension.wav</AudioFile>
+															<MediaIDList>
+																<MediaID ID="18696291"/>
+															</MediaIDList>
+														</AudioFileSource>
 													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{A0D376CD-CB3B-4B26-9A8C-8990209B16F0}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{EA091754-6788-4138-ABE5-C9E5C8358DE8}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Dronescape-Highlight" ID="{A34C6A9C-1A37-408E-9C2F-64164CE6D22E}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="10774.0589569161"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																						<Property Name="PlayAt" Type="Real64" Value="16000"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Dronescape-Highlight" ID="{F630C5EE-1221-4029-BF5A-D88A2EF7F388}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																		<Reference>
-																			<Local>
-																				<MusicEventCue Name="" ID="{4A41A533-0E89-46EC-9477-534FAD244717}" ShortID="745029107">
-																					<PropertyList>
-																						<Property Name="PlayAt" Type="Real64" Value="22666.6666666667"/>
-																					</PropertyList>
-																					<ReferenceList>
-																						<Reference Name="PostEventTarget">
-																							<ObjectRef Name="OnAkMusicRandomAmbience" ID="{3D1079A2-1C3C-40E3-ACA2-AC74FC8F2ED0}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
-																						</Reference>
-																					</ReferenceList>
-																				</MusicEventCue>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{6EE1EFE6-A565-48A3-8A73-1F98852ED12A}">
-																<ObjectLists/>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-										<MusicTrack Name="Dronescape-Highlight_01" ID="{21ED78F6-F216-48FD-82FE-D67F912EAEC1}" ShortID="523628770">
-											<PropertyList>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-												<Property Name="Volume" Type="Real64">
-													<ValueList>
-														<Value>-5</Value>
-													</ValueList>
-												</Property>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="Dronescape-Wine" ID="{292610C2-71CE-4472-9CC2-90C516C2FCA4}">
-													<Language>SFX</Language>
-													<AudioFile>Dronescape-Wine.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="546232237"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{FA9E8B69-D181-490B-B59A-5FEE670B89BD}">
-													<PropertyList>
-														<Property Name="PanX" Type="Real64" Value="83.445945945946"/>
-														<Property Name="PanY" Type="Real64" Value="-82.6086956521739"/>
-													</PropertyList>
-												</Panner>
-											</PositioningInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{0BD1672F-AF7A-4857-83CA-B0D4BF42409E}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
-											<ObjectLists>
-												<ObjectList Name="Sequences">
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{EA72DAED-1A04-4B14-A615-0F857B8104D2}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="Dronescape-Wine" ID="{FF164891-CF7C-4A7E-BD0F-07A579E8A5BB}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="29892.1768707483"/>
-																						<Property Name="FadeInMode" Type="int16" Value="0"/>
-																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
-																						<Property Name="PlayAt" Type="Real64" Value="16000"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="Dronescape-Wine" ID="{292610C2-71CE-4472-9CC2-90C516C2FCA4}"/>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{B3F0EECD-DF5C-458B-B063-A3B00056BDD3}">
-																<ObjectLists/>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-												</ObjectList>
-											</ObjectLists>
-										</MusicTrack>
-										<MusicTrack Name="DroneScape - Dings" ID="{1F993F99-660E-41E2-81B3-56CEFE5E47DF}" ShortID="81332068">
-											<PropertyList>
-												<Property Name="3DPosition" Type="int16" Value="2"/>
-												<Property Name="3DSpatialization" Type="int16" Value="1"/>
-												<Property Name="MusicTrackType" Type="int16" Value="1"/>
-												<Property Name="OverridePositioning" Type="bool" Value="True"/>
-												<Property Name="SpeakerPanning" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="DroneScape - Dings" ID="{945D07E9-F497-47A5-9E8C-4EF4CC014AB7}">
-													<Language>SFX</Language>
-													<AudioFile>DroneScape - Dings.wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="949250171"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<PositioningInfo>
-												<Panner Name="" ID="{DAC2B8EE-188C-4E73-9168-E5C8D2C6AEEB}">
-													<PropertyList>
-														<Property Name="PanX" Type="Real64" Value="-77.3648648648649"/>
-														<Property Name="PanY" Type="Real64" Value="-90.5797101449276"/>
-													</PropertyList>
-												</Panner>
-												<Position Name="" ID="{43034088-8931-484A-AC12-8BE8ADA2385D}">
-													<PropertyList>
-														<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
-														<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
-													</PropertyList>
-													<ChildrenList>
-														<Path2D Name="DroneScape - Dings_Path" ID="{97C05584-4DF0-4721-B552-7DEC9C3BFC8D}">
+													<TransitionList>
+														<MusicTransition Name="Root" ID="{9BFD0E8D-E120-49EF-889B-C485A9F7CBC6}">
 															<PropertyList>
-																<Property Name="Duration" Type="Uint32" Value="60000"/>
+																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>-84.26396</XPos>
-																	<YPos>-28.53107</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>-47.26868</XPos>
-																	<YPos>-62.14689</YPos>
-																	<Flags>0</Flags>
-																	<Time>5000</Time>
-																</Point>
-																<Point>
-																	<XPos>-39.5939086294416</XPos>
-																	<YPos>-64.4067796610169</YPos>
-																	<Flags>0</Flags>
-																	<Time>10000</Time>
-																</Point>
-																<Point>
-																	<XPos>-32.48730964467</XPos>
-																	<YPos>-63.8418079096045</YPos>
-																	<Flags>0</Flags>
-																	<Time>15000</Time>
-																</Point>
-																<Point>
-																	<XPos>-27.4111675126904</XPos>
-																	<YPos>-64.4067796610169</YPos>
-																	<Flags>0</Flags>
-																	<Time>20000</Time>
-																</Point>
-																<Point>
-																	<XPos>-18.7817258883249</XPos>
-																	<YPos>-64.9717514124294</YPos>
-																	<Flags>0</Flags>
-																	<Time>25000</Time>
-																</Point>
-																<Point>
-																	<XPos>-11.6751269035533</XPos>
-																	<YPos>-65.5367231638418</YPos>
-																	<Flags>0</Flags>
-																	<Time>30000</Time>
-																</Point>
-																<Point>
-																	<XPos>32.994923857868</XPos>
-																	<YPos>-61.0169491525424</YPos>
-																	<Flags>0</Flags>
-																	<Time>35000</Time>
-																</Point>
-																<Point>
-																	<XPos>44.6700507614213</XPos>
-																	<YPos>-57.0621468926554</YPos>
-																	<Flags>0</Flags>
-																	<Time>40000</Time>
-																</Point>
-																<Point>
-																	<XPos>65.989847715736</XPos>
-																	<YPos>-42.9378531073446</YPos>
-																	<Flags>0</Flags>
-																	<Time>45000</Time>
-																</Point>
-																<Point>
-																	<XPos>80.7106598984772</XPos>
-																	<YPos>-9.60451977401129</YPos>
-																	<Flags>0</Flags>
-																	<Time>50000</Time>
-																</Point>
-																<Point>
-																	<XPos>79.18782</XPos>
-																	<YPos>45.19774</YPos>
-																	<Flags>0</Flags>
-																	<Time>55000</Time>
-																</Point>
-																<Point>
-																	<XPos>68.5279187817259</XPos>
-																	<YPos>76.271186440678</YPos>
-																	<Flags>0</Flags>
-																	<Time>60000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-														<Path2D Name="DroneScape - Dings_Path_01" ID="{4C86B651-199E-48C6-81D0-9EAD0F4B6873}">
-															<PropertyList>
-																<Property Name="AppendOffset" Type="Uint32" Value="5000"/>
-																<Property Name="Duration" Type="Uint32" Value="60000"/>
-															</PropertyList>
-															<PointList>
-																<Point>
-																	<XPos>71.06599</XPos>
-																	<YPos>60.73446</YPos>
-																	<Flags>12</Flags>
-																	<Time>0</Time>
-																</Point>
-																<Point>
-																	<XPos>64.4670050761421</XPos>
-																	<YPos>-5.08474576271186</YPos>
-																	<Flags>0</Flags>
-																	<Time>8571</Time>
-																</Point>
-																<Point>
-																	<XPos>55.3299492385787</XPos>
-																	<YPos>-47.4576271186441</YPos>
-																	<Flags>0</Flags>
-																	<Time>17142</Time>
-																</Point>
-																<Point>
-																	<XPos>14.7208121827411</XPos>
-																	<YPos>-67.2316384180791</YPos>
-																	<Flags>0</Flags>
-																	<Time>25714</Time>
-																</Point>
-																<Point>
-																	<XPos>-4.06091370558376</XPos>
-																	<YPos>-74.5762711864407</YPos>
-																	<Flags>0</Flags>
-																	<Time>34285</Time>
-																</Point>
-																<Point>
-																	<XPos>-27.41117</XPos>
-																	<YPos>-77.9661</YPos>
-																	<Flags>0</Flags>
-																	<Time>42857</Time>
-																</Point>
-																<Point>
-																	<XPos>-65.989847715736</XPos>
-																	<YPos>-74.0112994350282</YPos>
-																	<Flags>0</Flags>
-																	<Time>51428</Time>
-																</Point>
-																<Point>
-																	<XPos>-87.3096446700508</XPos>
-																	<YPos>-11.864406779661</YPos>
-																	<Flags>0</Flags>
-																	<Time>60000</Time>
-																</Point>
-															</PointList>
-														</Path2D>
-													</ChildrenList>
-												</Position>
-											</PositioningInfo>
-											<TransitionList>
-												<MusicTransition Name="Root" ID="{4DE64D69-12E4-4975-9CA3-1BD1668CA1F3}">
-													<PropertyList>
-														<Property Name="IsFolder" Type="bool" Value="True"/>
-													</PropertyList>
-													<TransitionInfo/>
-												</MusicTransition>
-											</TransitionList>
+															<TransitionInfo/>
+														</MusicTransition>
+													</TransitionList>
+													<ObjectLists>
+														<ObjectList Name="Sequences">
+															<Reference>
+																<Local>
+																	<MusicTrackSequence Name="" ID="{23DA442E-E76F-40AF-8703-93DE0193EAE8}">
+																		<ObjectLists>
+																			<ObjectList Name="Clips">
+																				<Reference>
+																					<Local>
+																						<MusicClip Name="DroneTension" ID="{249D4350-221B-40B2-B042-663B2CE3DE1C}">
+																							<PropertyList>
+																								<Property Name="EndTrimOffset" Type="Real64" Value="343242.494331066"/>
+																								<Property Name="FadeInMode" Type="int16" Value="0"/>
+																							</PropertyList>
+																							<AudioSourceRef Name="DroneTension" ID="{D1351518-4FB8-4338-9FCF-4586C15AD3FD}"/>
+																							<PropertyCurveList>
+																								<PropertyCurve PropertyName="Volume">
+																									<Curve Name="" ID="{C64FFAAA-FA49-4181-B90B-13603A7B3F89}">
+																										<PropertyList>
+																											<Property Name="Flags" Type="int32" Value="3"/>
+																										</PropertyList>
+																										<PointList>
+																											<Point>
+																												<XPos>0</XPos>
+																												<YPos>0</YPos>
+																												<Flags>5</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>316.81747</XPos>
+																												<YPos>-0.19113</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>321.78327</XPos>
+																												<YPos>-10.35516</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>330.05959</XPos>
+																												<YPos>-10.55198</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>335.02538</XPos>
+																												<YPos>0</YPos>
+																												<Flags>0</Flags>
+																											</Point>
+																											<Point>
+																												<XPos>343.242494331066</XPos>
+																												<YPos>0</YPos>
+																												<Flags>37</Flags>
+																											</Point>
+																										</PointList>
+																									</Curve>
+																								</PropertyCurve>
+																							</PropertyCurveList>
+																						</MusicClip>
+																					</Local>
+																				</Reference>
+																			</ObjectList>
+																		</ObjectLists>
+																	</MusicTrackSequence>
+																</Local>
+															</Reference>
+														</ObjectList>
+													</ObjectLists>
+												</MusicTrack>
+											</ChildrenList>
 											<ObjectLists>
-												<ObjectList Name="Sequences">
+												<ObjectList Name="Cues">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{F94127CD-00DD-4030-9072-B2F5C1F5BDD8}">
-																<ObjectLists>
-																	<ObjectList Name="Clips">
-																		<Reference>
-																			<Local>
-																				<MusicClip Name="DroneScape - Dings" ID="{A3825E95-AA65-407F-BDEF-491C82C2B699}">
-																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="55695.3287981859"/>
-																						<Property Name="PlayAt" Type="Real64" Value="13253.2784946374"/>
-																					</PropertyList>
-																					<AudioSourceRef Name="DroneScape - Dings" ID="{945D07E9-F497-47A5-9E8C-4EF4CC014AB7}"/>
-																					<PropertyCurveList>
-																						<PropertyCurve PropertyName="Volume">
-																							<Curve Name="" ID="{34BDEDBA-754C-4C6E-88CF-2BE5C11A00D9}">
-																								<PropertyList>
-																									<Property Name="Flags" Type="int32" Value="3"/>
-																								</PropertyList>
-																								<PointList>
-																									<Point>
-																										<XPos>0</XPos>
-																										<YPos>0</YPos>
-																										<Flags>5</Flags>
-																										<SegmentShape>Log2</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>23.26584</XPos>
-																										<YPos>0</YPos>
-																										<Flags>0</Flags>
-																										<SegmentShape>SCurve</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>26.58954</XPos>
-																										<YPos>-16.46616</YPos>
-																										<Flags>0</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>29.61778</XPos>
-																										<YPos>-17.28576</YPos>
-																										<Flags>0</Flags>
-																										<SegmentShape>SCurve</SegmentShape>
-																									</Point>
-																									<Point>
-																										<XPos>32.20288</XPos>
-																										<YPos>-0.07047</YPos>
-																										<Flags>0</Flags>
-																									</Point>
-																									<Point>
-																										<XPos>55.6953287981859</XPos>
-																										<YPos>0</YPos>
-																										<Flags>37</Flags>
-																									</Point>
-																								</PointList>
-																							</Curve>
-																						</PropertyCurve>
-																					</PropertyCurveList>
-																				</MusicClip>
-																			</Local>
-																		</Reference>
-																	</ObjectList>
-																</ObjectLists>
-															</MusicTrackSequence>
+															<MusicCue Name="Entry Cue" ID="{45BA26C1-E498-4725-B02C-39BF1B827716}">
+																<PropertyList>
+																	<Property Name="TimeMs" Type="Real64" Value="4829.86624293244"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{E522501A-D4B4-4BB8-BD74-DFE7F5336869}">
-																<ObjectLists/>
-															</MusicTrackSequence>
-														</Local>
-													</Reference>
-													<Reference>
-														<Local>
-															<MusicTrackSequence Name="" ID="{B8F968E9-1197-469E-B3ED-3594B57A0293}">
-																<ObjectLists/>
-															</MusicTrackSequence>
+															<MusicCue Name="Exit Cue" ID="{2FC8F625-6402-4A3D-86D4-8AA6EEEDFC61}">
+																<PropertyList>
+																	<Property Name="CueType" Type="int16" Value="1"/>
+																	<Property Name="TimeMs" Type="Real64" Value="330040.859933717"/>
+																</PropertyList>
+															</MusicCue>
 														</Local>
 													</Reference>
 												</ObjectList>
 											</ObjectLists>
-										</MusicTrack>
+										</MusicSegment>
 									</ChildrenList>
-									<ObjectLists>
-										<ObjectList Name="Cues">
-											<Reference>
-												<Local>
-													<MusicCue Name="Entry Cue" ID="{10566678-AA20-4002-890F-594517A06F3F}">
-														<PropertyList>
-															<Property Name="TimeMs" Type="Real64" Value="4000"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-											<Reference>
-												<Local>
-													<MusicCue Name="Exit Cue" ID="{1089A913-5F25-4910-9944-067AB9F518FD}">
-														<PropertyList>
-															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="62666.6666666667"/>
-														</PropertyList>
-													</MusicCue>
-												</Local>
-											</Reference>
-										</ObjectList>
-									</ObjectLists>
-								</MusicSegment>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{D1125B21-291A-4F30-8ADD-0A3DDA13199D}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<ChildrenList>
+												<MusicTransition Name="Transition" ID="{ED9B52BE-FCD5-4E1B-997D-F9A51EDFF7EC}">
+													<TransitionInfo/>
+												</MusicTransition>
+											</ChildrenList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists/>
+									<Playlist>
+										<MusicPlaylistItem Name="" ID="{76CE401E-5B0C-4A55-B61A-3F8654CA8981}" ShortID="873092096">
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{CF896341-B5AB-484B-A3B1-3B2AA7D2EF75}" ShortID="65496781">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16" Value="0"/>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<SegmentRef Name="DroneTension" ID="{348F1F13-8974-4D7F-8D1C-D74053B86141}"/>
+												</MusicPlaylistItem>
+											</ChildrenList>
+										</MusicPlaylistItem>
+									</Playlist>
+								</MusicPlaylistContainer>
 							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="Music_States" ID="{FC233272-0E70-411B-BFFC-AA5AEBA6B33A}"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="Default" ID="{324B8EB0-6DAA-41F6-801E-D00112552269}"/>
+										<CustomState Name="" ID="{87DADB38-30C0-4E78-8354-841622EB83E0}" ShortID="633415918"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="Tension" ID="{222CB17F-1C72-4C49-B283-9E326AA49F34}"/>
+										<CustomState Name="" ID="{C4E66904-0A72-4834-96CC-756045FDD068}" ShortID="987820831"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<TransitionList>
-								<MusicTransition Name="Root" ID="{97963D3E-0F70-4334-B39B-B199FD36B877}">
+								<MusicTransition Name="Root" ID="{D0BBFFCE-E698-416A-BFDA-EED241E311E1}">
 									<PropertyList>
 										<Property Name="IsFolder" Type="bool" Value="True"/>
 									</PropertyList>
 									<ChildrenList>
-										<MusicTransition Name="Transition" ID="{C4D67D35-6FE3-436D-A36C-C24C28D84809}">
-											<TransitionInfo/>
-										</MusicTransition>
-										<MusicTransition Name="Transition" ID="{A9D514DB-7DAC-4338-B2A9-0A5A41213543}">
+										<MusicTransition Name="Transition" ID="{CC0BF3CD-A320-4110-BB5C-2FFA43940F20}">
 											<PropertyList>
-												<Property Name="DestinationContextType" Type="int16" Value="2"/>
 												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="SourceContextType" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="DestinationContextObject">
-													<ObjectRef Name="DronescapeLoop" ID="{20A376BE-B02D-4507-A6A5-EAAD0D6D6382}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
-												</Reference>
-												<Reference Name="SourceContextObject">
-													<ObjectRef Name="DronescapeLoop" ID="{20A376BE-B02D-4507-A6A5-EAAD0D6D6382}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
-												</Reference>
-											</ReferenceList>
 											<TransitionInfo>
 												<SourceFadeOut>
-													<MusicFade Name="Source Fade-out" ID="{3E6FF225-811D-4CE2-81A1-97297D8CF917}">
+													<MusicFade Name="Source Fade-out" ID="{ECBA221E-7D91-4BAE-A577-B57441E61157}">
 														<PropertyList>
 															<Property Name="FadeOffset" Type="Real64" Value="2"/>
-															<Property Name="FadeTime" Type="Real64" Value="3"/>
+															<Property Name="FadeTime" Type="Real64" Value="5"/>
 															<Property Name="FadeType" Type="int16" Value="1"/>
 														</PropertyList>
 													</MusicFade>
 												</SourceFadeOut>
 												<DestinationFadeIn>
-													<MusicFade Name="Destination Fade-in" ID="{57CA5021-04E5-41A2-B131-51F7CE74488B}">
+													<MusicFade Name="Destination Fade-in" ID="{4564D49D-876F-4B4F-9F5E-AABB916A2BAB}">
 														<PropertyList>
-															<Property Name="FadeOffset" Type="Real64" Value="-2"/>
-															<Property Name="FadeTime" Type="Real64" Value="3"/>
+															<Property Name="FadeOffset" Type="Real64" Value="-3"/>
+															<Property Name="FadeTime" Type="Real64" Value="5"/>
+														</PropertyList>
+													</MusicFade>
+												</DestinationFadeIn>
+											</TransitionInfo>
+										</MusicTransition>
+										<MusicTransition Name="Transition" ID="{CEC53DC8-334A-4610-AFD5-490E9C577422}">
+											<PropertyList>
+												<Property Name="DestinationContextType" Type="int16" Value="2"/>
+												<Property Name="EnableDestinationFadeIn" Type="bool" Value="True"/>
+												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+												<Property Name="SourceContextType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="DestinationContextObject">
+													<ObjectRef Name="MainTensionLoop" ID="{1B985D0E-E79D-4335-8DA8-9656C7BEAED1}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
+												</Reference>
+												<Reference Name="SourceContextObject">
+													<ObjectRef Name="MainAmbienceLoop" ID="{9E922609-3197-46DB-88B9-E024FBE1283F}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
+												</Reference>
+											</ReferenceList>
+											<TransitionInfo>
+												<SourceFadeOut>
+													<MusicFade Name="Source Fade-out" ID="{7D29730E-3644-4BC4-824C-F0BADDBB9D34}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="2"/>
+															<Property Name="FadeTime" Type="Real64" Value="5"/>
+															<Property Name="FadeType" Type="int16" Value="1"/>
+														</PropertyList>
+													</MusicFade>
+												</SourceFadeOut>
+												<DestinationFadeIn>
+													<MusicFade Name="Destination Fade-in" ID="{2E0F479B-144A-4E57-A0E2-51912456D262}">
+														<PropertyList>
+															<Property Name="FadeOffset" Type="Real64" Value="-3"/>
+															<Property Name="FadeTime" Type="Real64" Value="5"/>
 														</PropertyList>
 													</MusicFade>
 												</DestinationFadeIn>
@@ -751,20 +1051,36 @@
 								</MusicTransition>
 							</TransitionList>
 							<ObjectLists/>
-							<Playlist>
-								<MusicPlaylistItem Name="" ID="{B182207D-81BF-49B5-ABB2-64A346B12545}" ShortID="11191409">
-									<ChildrenList>
-										<MusicPlaylistItem Name="" ID="{3EA2709A-66B1-4E9A-8340-60602371ED78}" ShortID="404816296">
-											<PropertyList>
-												<Property Name="LoopCount" Type="int16" Value="0"/>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<SegmentRef Name="DronescapeLoop" ID="{20A376BE-B02D-4507-A6A5-EAAD0D6D6382}"/>
-										</MusicPlaylistItem>
-									</ChildrenList>
-								</MusicPlaylistItem>
-							</Playlist>
-						</MusicPlaylistContainer>
+							<ArgumentList>
+								<ArgumentRef Name="Music_States" ID="{FC233272-0E70-411B-BFFC-AA5AEBA6B33A}"/>
+							</ArgumentList>
+							<EntryList>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Default" ID="{324B8EB0-6DAA-41F6-801E-D00112552269}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="MainAmbienceLoop" ID="{9E922609-3197-46DB-88B9-E024FBE1283F}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="None" ID="{A329248E-3037-47B2-9599-FBCF7A44B4C0}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="MainAmbienceLoop" ID="{9E922609-3197-46DB-88B9-E024FBE1283F}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+								<Entry>
+									<Path>
+										<PathElementRef Name="Tension" ID="{222CB17F-1C72-4C49-B283-9E326AA49F34}"/>
+									</Path>
+									<AudioNodeInfo>
+										<AudioNodeRef Name="MainTensionLoop" ID="{1B985D0E-E79D-4335-8DA8-9656C7BEAED1}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}" Platform="Linked"/>
+									</AudioNodeInfo>
+								</Entry>
+							</EntryList>
+						</MusicSwitchContainer>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="RAW" ID="{9D9BC355-E046-454B-9F88-D85119DDCAAD}" ShortID="149435535">
@@ -1014,6 +1330,177 @@
 												<PropertyList>
 													<Property Name="CueType" Type="int16" Value="1"/>
 													<Property Name="TimeMs" Type="Real64" Value="55695.3287981859"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="DroneTension" ID="{97A4C770-3220-4EBE-8360-C0FA6CDD47E8}" ShortID="747283635">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="343242.494331066"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="DroneTension" ID="{A5FC3299-3254-46F7-B2C9-EE8058EB3C29}" ShortID="455498660">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="DroneTension" ID="{59F1E108-627E-438E-B909-771ABE23CE9E}">
+											<Language>SFX</Language>
+											<AudioFile>DroneTension.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="18696291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{7B5DABA1-82BF-4F09-9C72-6B44907C622B}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{5E1A3932-F663-4F69-8A4A-91DFF5231B95}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="DroneTension" ID="{CB16B918-193E-4142-9DE1-9EFB66BF74A7}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="343242.494331066"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="DroneTension" ID="{59F1E108-627E-438E-B909-771ABE23CE9E}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{3EA13417-7F80-4B13-97CF-97A1161FAC07}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{8D64D7B8-EA7B-4755-A989-A0F0F356B5A0}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="343242.494331066"/>
+												</PropertyList>
+											</MusicCue>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="SinTone" ID="{010AE757-3DEB-4B2D-9011-234ECBF35936}" ShortID="12640066">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="64314.9433106576"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{2CC16213-8745-476B-B874-CA8B94F97E58}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="MusicAB" ID="{32268A2C-9AB9-40B1-AAA7-0B27EAD2B71F}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+								</Reference>
+								<Reference Name="UserAuxSend0">
+									<ObjectRef Name="AkAuxTensionMeter" ID="{9766695C-EB7A-4F56-9135-305CC8DFC827}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="SinTone" ID="{31777C75-3398-4516-9219-048B0C4AFCD8}" ShortID="533088081">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{9109BA77-8DC1-492F-9315-9E83614F7D0D}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="SinTone" ID="{65DD19CF-E05A-416E-BFF7-21EE508E7275}">
+											<Language>SFX</Language>
+											<AudioFile>SinTone.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="471799466"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<TransitionList>
+										<MusicTransition Name="Root" ID="{F8689ABC-4443-4451-A74F-DE2F4ADD83D8}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</TransitionList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<Reference>
+												<Local>
+													<MusicTrackSequence Name="" ID="{F5A60059-57FA-4EAB-8F16-CC7E434B7810}">
+														<ObjectLists>
+															<ObjectList Name="Clips">
+																<Reference>
+																	<Local>
+																		<MusicClip Name="SinTone" ID="{2FD35FC0-0C53-4EEC-B2C5-A16750F7D864}">
+																			<PropertyList>
+																				<Property Name="EndTrimOffset" Type="Real64" Value="64314.9433106576"/>
+																				<Property Name="FadeInMode" Type="int16" Value="0"/>
+																				<Property Name="FadeOutMode" Type="int16" Value="0"/>
+																			</PropertyList>
+																			<AudioSourceRef Name="SinTone" ID="{65DD19CF-E05A-416E-BFF7-21EE508E7275}"/>
+																		</MusicClip>
+																	</Local>
+																</Reference>
+															</ObjectList>
+														</ObjectLists>
+													</MusicTrackSequence>
+												</Local>
+											</Reference>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<Reference>
+										<Local>
+											<MusicCue Name="Entry Cue" ID="{01C29B50-2B72-4804-AC79-6DDF2F45B7CA}"/>
+										</Local>
+									</Reference>
+									<Reference>
+										<Local>
+											<MusicCue Name="Exit Cue" ID="{DB47C354-9D86-42DF-8830-A2EBE8047661}">
+												<PropertyList>
+													<Property Name="CueType" Type="int16" Value="1"/>
+													<Property Name="TimeMs" Type="Real64" Value="64314.9433106576"/>
 												</PropertyList>
 											</MusicCue>
 										</Local>

@@ -42,8 +42,16 @@
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Alarm" ID="{EC8ACD3E-7E60-412B-B634-D61836182BF7}" WorkUnitID="{909C1E95-B44E-45A1-A662-503D7232D4F2}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="OnAkStartMainAmbienceMusic" ID="{867D8A90-D77E-43C2-8628-B3DC49333403}" WorkUnitID="{8C2C7430-3D21-4D9D-8EED-D0B455C8440A}"/>
 							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SinTone" ID="{010AE757-3DEB-4B2D-9011-234ECBF35936}" WorkUnitID="{F5CFD165-B67B-4DE1-A605-573E61607AFB}"/>
+							<Position X="4" Y="2"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
@@ -53,7 +61,7 @@
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="TensionLevelRTPC" ID="{5AB9C09A-D2DE-4563-B7DD-3B9448B9F76C}"/>
-							<Value>50</Value>
+							<Value>2.73348519362186</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="CustomOcclusionValueRTPC" ID="{8C4BFCEA-32B2-48CD-AAEE-C5C7B7A6E9F6}"/>
@@ -67,8 +75,14 @@
 							<GameParameterRef Name="VoiceInputVolumeRTPC" ID="{A4491F90-B31E-4C0B-B71C-489543E26134}"/>
 							<Value>-48</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="TensionMeterOutputRTPC" ID="{6BC8BDC8-36A4-4CE7-AC54-FCE93599EF89}"/>
+							<Value>-48</Value>
+						</RTPCValue>
 					</RTPCValueList>
-					<CurrentStateList ShowAll="true"/>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Default" ID="{324B8EB0-6DAA-41F6-801E-D00112552269}"/>
+					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Cardboard" ID="{84328938-73AE-41AB-B075-C0991AB0F094}"/>
 					</CurrentSwitchList>
