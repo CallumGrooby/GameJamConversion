@@ -5,11 +5,11 @@
   "SchemaVersion": "12",
   "SoundbankVersion": "140",
   "RootPaths": {
-   "ProjectRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\",
-   "SourceFilesRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Windows\\",
-   "SoundBanksRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows\\English(US)\\",
+   "ProjectRoot": "F:\\Unreal\\GameJamConversion\\GameJamConversion_WwiseProject\\",
+   "SourceFilesRoot": "F:\\Unreal\\GameJamConversion\\GameJamConversion_WwiseProject\\.cache\\Windows\\",
+   "SoundBanksRoot": "F:\\Unreal\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows\\English(US)\\",
    "ExternalSourcesInputFile": "",
-   "ExternalSourcesOutputRoot": "D:\\Greenwich\\Year3\\UEGit\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows"
+   "ExternalSourcesOutputRoot": "F:\\Unreal\\GameJamConversion\\GameJamConversion_WwiseProject\\GeneratedSoundBanks\\Windows"
   },
   "SoundBanks": [
    {
