@@ -20,6 +20,14 @@ Switch	ID	Name	Switch Group			Notes
 	1229756253	Cardboard	FootsepMaterialSwitch			
 	2473969246	Metal	FootsepMaterialSwitch			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1690668539	Music_States			\Default Work Unit\Music State\Music_States	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_States			
+	782826392	Default	Music_States			
+	1571361561	Tension	Music_States			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
 	2332704296	FootstepVolumeRTPC			\Default Work Unit\FootstepVolumeRTPC	

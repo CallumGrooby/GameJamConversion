@@ -162,7 +162,7 @@ FHitResult AThirdPersonCharacter::CastRay(FVector rayLocation, FRotator rayRotat
 {
 	FVector endTrace = FVector::ZeroVector;
 	endTrace = rayLocation + (rayRotation.Vector() * rayCastRange);
-	DrawDebugLine(GetWorld(), rayLocation, endTrace, FColor::Emerald, false, 0.5f, 0, 1);
+	//DrawDebugLine(GetWorld(), rayLocation, endTrace, FColor::Emerald, false, 0.5f, 0, 1);
 	FCollisionQueryParams traceParams(SCENE_QUERY_STAT(instantShot), true, GetInstigator());
 	FHitResult hit(ForceInit);
 	GetWorld()->LineTraceSingleByChannel(hit, rayLocation, endTrace, ECC_Visibility, traceParams);

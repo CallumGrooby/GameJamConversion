@@ -23,6 +23,14 @@ Switch	ID	Name	Switch Group			Notes
 	1229756253	Cardboard	FootsepMaterialSwitch			
 	2473969246	Metal	FootsepMaterialSwitch			
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1690668539	Music_States			\Default Work Unit\Music State\Music_States	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_States			
+	782826392	Default	Music_States			
+	1571361561	Tension	Music_States			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1674421668	TensionLevelRTPC			\Default Work Unit\TensionLevelRTPC	
 	2332704296	FootstepVolumeRTPC			\Default Work Unit\FootstepVolumeRTPC	
@@ -44,11 +52,11 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	133840935	MetalFoostepLeft1	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MetalFoostepLeft1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepLeft1		38652
 	148762542	Light Buzz Loop	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Light Buzz Loop_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ambience\Light Buzz Loop		214476
 	159813921	MetalFoostepRight2	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MetalFoostepRight2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepRight2		58676
-	311468022	Dronescape	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape		13888840
+	311468022	Dronescape	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MusicStateGroup\MainAmbienceLoop\DronescapeLoop\Dronescape		13888840
 	343731245	Scott Holmes Music - Epic Trailer	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Scott Holmes Music - Epic Trailer_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\TestMusic\TestPlaylist\Scott Holmes Music - Epic Trailer\Scott Holmes Music - Epic Trailer		20828224
 	453755115	MetalFoostepRight1	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MetalFoostepRight1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\MetalMaterialFootstep\MetalFoostepRight1		52066
 	497366133	StoneFoostep2	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\StoneFoostep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\StoneMaterialFootstep\StoneFoostep2		45918
-	546232237	Dronescape-Highlight_01	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape-Wine_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape-Highlight_01		5273044
+	546232237	Dronescape-Highlight_01	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape-Wine_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MusicStateGroup\MainAmbienceLoop\DronescapeLoop\Dronescape-Highlight_01		5273044
 	667544809	CardboardFootstep2	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\CardboardFootstep2_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\CardTest\CardboardMaterialFootstep\CardboardFootstep2		59382
 	677254040	ButtonSwitch	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\ButtonSwitch_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SFX\ButtonSwitch		75800
 	685711333	MeLotsofSpeech	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\MeLotsofSpeech_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VoiceChat\MeLotsofSpeech		2401396
@@ -57,7 +65,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	739210481	StoneFoostep1	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\StoneFoostep1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\StoneMaterialFootstep\StoneFoostep1		39140
 	787973230	StoneFoostep3	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\StoneFoostep3_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Footsteps\FootstepMaterialSwitch\StoneMaterialFootstep\StoneFoostep3		42042
 	794933088	You've been spotted	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\You've been spotted_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerRecollection\You've been spotted		1431680
-	882218781	Dronescape-Highlight	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape-Highlight_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\Dronescape-Highlight		1900608
-	949250171	DroneScape - Dings	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\DroneScape - Dings_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MainAmbienceLoop\DronescapeLoop\DroneScape - Dings		9824720
+	882218781	Dronescape-Highlight	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Dronescape-Highlight_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MusicStateGroup\MainAmbienceLoop\DronescapeLoop\Dronescape-Highlight		1900608
+	949250171	DroneScape - Dings	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\DroneScape - Dings_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\AmbienceMusic\MusicStateGroup\MainAmbienceLoop\DronescapeLoop\DroneScape - Dings		9824720
 	1065198573	ClueFound	F:\Unreal\GameJamConversion\GameJamConversion_WwiseProject\.cache\Mac\SFX\Somethings happened_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\PlayerRecollection\ClueFound		551316
 

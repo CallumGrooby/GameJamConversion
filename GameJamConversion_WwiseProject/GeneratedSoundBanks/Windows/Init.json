@@ -16,11 +16,17 @@
     "Id": "1355168291",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "1019664892",
+    "Hash": "1585828819",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "IncludedAuxBusses": [
+     {
+      "Id": "1612307572",
+      "Name": "AkAuxTensionMeter",
+      "ObjectPath": "\\Master-Mixer Hierarchy\\Default Work Unit\\Master Audio Bus\\AkAuxTensionMeter",
+      "GUID": "{9766695C-EB7A-4F56-9135-305CC8DFC827}"
+     },
      {
       "Id": "2105880920",
       "Name": "AkAuxVentReverb",
@@ -46,6 +52,12 @@
       "Name": "VoiceInputVolumeRTPC",
       "ObjectPath": "\\Game Parameters\\Default Work Unit\\VoiceInputVolumeRTPC",
       "GUID": "{A4491F90-B31E-4C0B-B71C-489543E26134}"
+     },
+     {
+      "Id": "1868311250",
+      "Name": "TensionMeterOutputRTPC",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\TensionMeterOutputRTPC",
+      "GUID": "{6BC8BDC8-36A4-4CE7-AC54-FCE93599EF89}"
      }
     ]
    }

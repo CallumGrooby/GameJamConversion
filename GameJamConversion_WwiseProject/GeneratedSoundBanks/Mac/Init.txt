@@ -1,6 +1,15 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1690668539	Music_States			\Default Work Unit\Music State\Music_States	
+
+State	ID	Name	State Group			Notes
+	748895195	None	Music_States			
+	782826392	Default	Music_States			
+	1571361561	Tension	Music_States			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	65187906	VoiceInputPitchRTPC			\Default Work Unit\VoiceInputPitchRTPC	
 	795691508	VoiceInputVolumeRTPC			\Default Work Unit\VoiceInputVolumeRTPC	
+	1868311250	TensionMeterOutputRTPC			\Default Work Unit\TensionMeterOutputRTPC	
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	577952488	Unreal_InputAB			\Default Work Unit\Master Audio Bus\Unreal_InputAB	
@@ -13,6 +22,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	4187370224	VoiceChatRobotAB			\Default Work Unit\Master Audio Bus\VoiceChatRobotAB	
 
 Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	1612307572	AkAuxTensionMeter			\Default Work Unit\Master Audio Bus\AkAuxTensionMeter	
 	2105880920	AkAuxVentReverb			\Default Work Unit\Master Audio Bus\AkAuxVentReverb	
 	2281518896	AkAuxRoomReverb			\Default Work Unit\Master Audio Bus\AkAuxRoomReverb	
 
@@ -20,6 +30,7 @@ Effect plug-ins	ID	Name	Type				Notes
 	230178728	Vent System Reverb	Wwise RoomVerb			
 	846110202	Wwise Meter (Custom)	Wwise Meter			
 	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	2909913184	TensionMeter	Wwise Meter			
 	2982318458	VoiceChatPitchMeter	Wwise Meter			
 
 Audio Devices	ID	Name	Type				Notes
