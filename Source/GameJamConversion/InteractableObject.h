@@ -4,8 +4,6 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "InteractableMachine.h"
-#include "ThirdPersonCharacter.h"
 #include "InteractableObject.generated.h"
 
 UCLASS()
@@ -38,6 +36,6 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	virtual void PickUp(AActor* character, bool doOnce);
 	virtual void Drop();
-	virtual void Use(AInteractableMachine* interactableMachine);
+	//virtual void Use(AInteractableMachine* interactableMachine);
 	FHitResult CastRay(FVector rayLocation, FRotator rayRotation, float castRange);
 };

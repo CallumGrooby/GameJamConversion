@@ -1,9 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "Puzzle_Keyboard.h"
 #include "Components/TextRenderComponent.h"
 #include "Containers/Array.h"
-#include "Puzzle_Keyboard.h"
 #include "Puzzle_KeyboardInputs.h"
 #include "ThirdPersonCharacter.h"
 #include "Net/UnrealNetwork.h"

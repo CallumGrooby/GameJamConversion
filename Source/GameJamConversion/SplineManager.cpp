@@ -1,9 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
+#include "SplineManager.h"
 #include "StaticObjects.h"
 //#include "SplineWalker.h"
-#include "SplineManager.h"
+
 
 // Sets default values
 ASplineManager::ASplineManager()

@@ -1,7 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#include "FuzePuzzle.h"
 #include "InteractableMachine.h"
+#include "FuzePuzzle.h"
+
 
 // Sets default values
 AInteractableMachine::AInteractableMachine()

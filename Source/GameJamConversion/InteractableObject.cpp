@@ -1,12 +1,9 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 // Fill out your copyright notice in the Description page of Project Settings.
-
+#include "InteractableObject.h"
 #include "Components/PrimitiveComponent.h"
 #include "GameFramework/Actor.h"
-#include "InteractableMachine.h"
-#include "InteractableObject.h"
-#include "ThirdPersonCharacter.h"
 #include "DrawDebugHelpers.h"
 
 // Sets default values
@@ -41,7 +38,7 @@ void AInteractableObject::PickUp(AActor* pickedUpCharacter, bool doOnce)
 {
 	if (doOnce)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedUpCharacter->GetActorLabel());
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedUpCharacter->GetActorLabel());
 		objectIsPickedUp = true;
 		characterToFollow = pickedUpCharacter;
 		doOnce = false;
@@ -77,15 +74,15 @@ void AInteractableObject::FollowPlayer()
 	}
 }
 
-void AInteractableObject::Use(AInteractableMachine* interactableMachine)
-{
-	AActor* theOwner = this;
-	if (theOwner != nullptr)
-	{
-		UE_LOG(LogTemp, Warning, TEXT("The owner is valid! Yuppie!"));
-	}
-	interactableMachine->MachineLogic(this);
-}
+//void AInteractableObject::Use(AInteractableMachine* interactableMachine)
+//{
+//	AActor* theOwner = this;
+//	if (theOwner != nullptr)
+//	{
+//		//UE_LOG(LogTemp, Warning, TEXT("The owner is valid! Yuppie!"));
+//	}
+//	interactableMachine->MachineLogic(this);
+//}
 
 void AInteractableObject::Drop()
 {
@@ -95,7 +92,7 @@ void AInteractableObject::Drop()
 		objectIsPickedUp = false;
 		//Drop Logic
 		FVector dropLocation = CalcDropLocation();
-		UE_LOG(LogTemp, Warning, TEXT("PhysicsHandle working %s"), *dropLocation.ToString());
+		//UE_LOG(LogTemp, Warning, TEXT("PhysicsHandle working %s"), *dropLocation.ToString());
 		SetActorLocation(FMath::Lerp(GetActorLocation(), dropLocation, 0.5f));
 		characterToFollow = NULL;
 		//Slerp to location

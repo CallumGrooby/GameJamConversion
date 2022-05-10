@@ -1,11 +1,12 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Green,text)
-#define printFString(text, fstring) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Magenta, FString::Printf(TEXT(text), fstring))
+
+#include "ThirdPersonCharacter.h"
+//#define print(text) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 1.5, FColor::Green,text)
+//#define printFString(text, fstring) if (GEngine) GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Magenta, FString::Printf(TEXT(text), fstring))
 #include "InteractableObject.h"
 #include "InteractableMachine.h"
 #include "GameFramework/Controller.h"
-#include "ThirdPersonCharacter.h"
 #include "DrawDebugHelpers.h"
 #include "Kismet/GameplayStatics.h"
 
@@ -69,13 +70,13 @@ void AThirdPersonCharacter::ChangeCamera(AActor* CameraToChangeTo)
 		}
 		else if (PlayersCamera)
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("player camera"));
+			//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("player camera"));
 			ourPlayerController->SetViewTarget(PlayersCamera);
 		}
 	}
 	else
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("failed to get character"));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("failed to get character"));
 	}
 }
 
@@ -97,7 +98,7 @@ AInteractableObject* AThirdPersonCharacter::PickUpObject()
 
 	if (interactableObject)
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Interactable Object"));
+		//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Red, TEXT("Interactable Object"));
 		return interactableObject;
 	}
 
@@ -134,9 +135,10 @@ void AThirdPersonCharacter::UseObject()
 	if (interactableMachine != NULL)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Hit Interactable"));
-		pickedupObject->Use(interactableMachine);
+		//pickedupObject->Use(interactableMachine);
 		DropObject();
 	}
+
 }
 
 
@@ -154,7 +156,7 @@ void AThirdPersonCharacter::PickUpLogic()
 {
 	if (pickedupObject == NULL)
 		return;
-	GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedupObject->GetActorLabel());
+	//GEngine->AddOnScreenDebugMessage(-1, 5.f, FColor::Orange, pickedupObject->GetActorLabel());
 	pickedupObject->PickUp(this, true);
 }
 
